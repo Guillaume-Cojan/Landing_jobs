@@ -1,0 +1,17 @@
+.subscribe-container {
+    width: 70%;
+    background-color: rgb(197, 197, 197);
+    display: flex;
+}
+
+.subscribe-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    width: 70%;
+}
+
+.subscribe-btn {
+    width: 30%;
+}

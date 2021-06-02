@@ -7,7 +7,17 @@ import Subscribe from "./components/Subscribe";
 import Footer from "./components/Footer";
 
 function App() {
-    return <div className="App"></div>;
+    return (
+        <div className="App">
+            <Intro />
+            <Profile />
+            <Profile />
+            <Benchmark />
+            <Jobs />
+            <Subscribe />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
