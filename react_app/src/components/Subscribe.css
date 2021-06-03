@@ -1,9 +1,16 @@
+*,
+*:focus,
+*:hover {
+    outline: none;
+}
+
 .subscribe-container {
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     border-radius: 10px;
+    margin: auto;
 }
 
 .subscribe-text {
@@ -23,6 +30,7 @@
     line-height: 45px;
     color: #0b132a;
     margin-top: 0;
+    max-width: 600px;
 }
 
 .subscribe-text p {
@@ -59,4 +67,15 @@
     font-size: 16px;
     line-height: 25px;
     color: #f53838;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #f53838;
+    color: #ffffff;
+}
+
+.subscribe-btn:active {
+    background: #f53838;
+    transform: translateY(2px);
 }
