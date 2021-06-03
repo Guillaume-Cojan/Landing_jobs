@@ -10,7 +10,9 @@ function Subscribe() {
                 </h1>
                 <p>Enter an email to send your salary comparison quarterly.</p>
             </div>
-            <button className="subscribe-btn">Subscribe Now</button>
+            <div className="subscribe-btn-container">
+                <button className="subscribe-btn">Subscribe Now</button>
+            </div>
         </div>
     );
 }
