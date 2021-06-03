@@ -70,12 +70,33 @@
     transition: 0.3s;
 }
 
-.subscribe-btn:hover {
+.subscribe-btn-small {
+    width: 100px;
+    height: 40px;
+    left: 975px;
+    top: 1927.5px;
+    background: #ffffff;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 30px 35px -13px rgba(245, 56, 56, 0.35);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f53838;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn-small:hover {
     background: #f53838;
     color: #ffffff;
 }
 
-.subscribe-btn:active {
+.subscribe-btn:active,
+.subscribe-btn-small:active {
     background: #f53838;
     transform: translateY(2px);
 }

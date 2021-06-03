@@ -1,4 +1,5 @@
 import "./Subscribe.css";
+import ModalBtn from "./Modal";
 
 function Subscribe() {
     return (
@@ -11,7 +12,7 @@ function Subscribe() {
                 <p>Enter an email to send your salary comparison quarterly.</p>
             </div>
             <div className="subscribe-btn-container">
-                <button className="subscribe-btn">Subscribe Now</button>
+                <ModalBtn />
             </div>
         </div>
     );
