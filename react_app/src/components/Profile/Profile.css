@@ -1,32 +1,41 @@
 div.profiles{
-display: grid;
-place-content: center;
-background-color: rgba(128, 128, 128, 0.39);
+    display: grid;
+    place-content: center;
+    background-color: rgba(128, 128, 128, 0.39);
+    margin: 0 auto;
+    text-align: left;
 }
 
 .profiles-container {
-margin: 10% auto;
-width: 25vw;
-display: flex;
-flex-direction: row;
-justify-content: center;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 2fr;
+    padding: 5% 10%;
+    text-align: left;
+    justify-items: stretch;
 
 }
 
 .profile-card{
- background-color: white;
- margin: 0 5%;
- padding: 10% 10%;
- display: flex;
- flex-direction: row;
- border-radius: 30px;
- width: 100%;
- height: 316px;
- position: relative;
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    padding: 3% 5%;
+     justify-items: stretch;
+     text-align: left;
+     position: relative;
 }
 
-.profile-right-side{
-  width: 25rem;
+
+.profile-left-side{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    align-items: center;
+    justify-items: stretch;
+    text-align: left;
+
 }
 
 .profile-title , .profile-img {
@@ -34,14 +43,15 @@ justify-content: center;
 }
 
 .profile-title {
+   text-align: left;
     color: #F53838;
     font-size: 2rem;
-    margin-bottom: 20%;
+    text-align: left;
 
 }
 
 .profile-content {
-    margin-bottom: 20%;
+   
     font-size: 18px;
     line-height: 25px;
 }
@@ -52,11 +62,12 @@ justify-content: center;
     color: white;
     border:unset;
     box-shadow: 
-    0 10px 20px 5px #f5383849,
-    0 10px 20px 5px #f5383836,
-    0 3px 20px 5px #f5383877;
+    0 15px 20px 5px #f5383836,
+    0 10px 20px 5px #f538382a;
+
 
     font-size: 16px;
+    font-weight: bold;
     /* height: 65px; */
     padding: 1em 3em;
     white-space: nowrap;
@@ -65,11 +76,11 @@ justify-content: center;
 
 .bttn-get-started:hover {
     background-color: white;
-  font-weight: bold;
+    font-weight: bold;
     color: #F53838;
     box-shadow: 
     0 10px 20px 5px #f53838a1,
-    0 10px 20px 5px #f538387c,
+    0 10px 20px 5px #f5383877,
     0 3px 20px 5px #f5383849;
 }
 
@@ -77,9 +88,6 @@ justify-content: center;
 
 .profile-img {
     position: absolute;
-    bottom: 1em;
-    left: 55%;
-  height: 100%;
-
+    bottom: 5px;
 }
 
