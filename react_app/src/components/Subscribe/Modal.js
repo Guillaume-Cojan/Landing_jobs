@@ -12,18 +12,22 @@ function ModalBtn() {
         <>
             <Button
                 variant="primary"
-                className="subscribe-btn"
+                className={
+                    showModal === false
+                        ? "subscribe-btn"
+                        : "subscribe-btn-hidden"
+                }
                 onClick={handleShow}
             >
                 Subscribe Now
             </Button>
-            <Modal show={showModal} onHide={handleClose}>
+            <Modal show={showModal} onHide={handleClose} className="modal">
                 <ModalBody>
                     <input
                         type="email"
-                        id="email"
-                        pattern=".+@globex.com"
-                        size="30"
+                        name="email"
+                        className="email-input"
+                        placeholder="Enter your email here"
                         required
                     ></input>
                 </ModalBody>
@@ -37,6 +41,8 @@ function ModalBtn() {
                 <Button
                     variant="primary"
                     className="subscribe-btn-small"
+                    type="submit"
+                    value="Send"
                     onClick={handleClose}
                 >
                     Send

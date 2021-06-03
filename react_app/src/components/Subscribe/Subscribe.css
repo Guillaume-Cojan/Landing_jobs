@@ -11,6 +11,7 @@
     align-items: center;
     border-radius: 10px;
     margin: auto;
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35);
 }
 
 .subscribe-text {
@@ -79,7 +80,7 @@
     border: 2px solid #f53838;
     box-sizing: border-box;
     border-radius: 10px;
-    box-shadow: 0px 30px 35px -13px rgba(245, 56, 56, 0.35);
+    box-shadow: 0px 20px 20px -7px rgba(245, 56, 56, 0.35);
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -87,6 +88,7 @@
     line-height: 25px;
     color: #f53838;
     transition: 0.3s;
+    margin: 10px;
 }
 
 .subscribe-btn:hover,
@@ -99,4 +101,28 @@
 .subscribe-btn-small:active {
     background: #f53838;
     transform: translateY(2px);
+}
+
+.email-input {
+    width: 250px;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 8px;
+    padding-top: 10px;
+}
+
+.modal {
+    position: absolute;
+    padding-left: 69%;
+    top: 50px;
+}
+
+.subscribe-btn-hidden {
+    display: none;
 }
