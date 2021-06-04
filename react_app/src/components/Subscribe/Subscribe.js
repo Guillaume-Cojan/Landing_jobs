@@ -1,5 +1,5 @@
 import "./Subscribe.css";
-import SweatAlert from "./SweatAlert";
+import SweetAlert from "./SweetAlert";
 
 function Subscribe() {
     return (
@@ -12,7 +12,7 @@ function Subscribe() {
                 <p>Enter an email to send your salary comparison quarterly.</p>
             </div>
             <div className="subscribe-btn-container">
-                <SweatAlert />
+                <SweetAlert />
             </div>
         </div>
     );
