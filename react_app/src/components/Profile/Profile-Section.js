@@ -21,7 +21,7 @@ function ProfileSection() {
             <Profile
                 title={"Talent"} 
                 content={"Teaser about talent data, or some... ... like that. Teaser about talent data, or some... ...like that."}
-                image={AlluraSitting}
+                image={AlluraStanding}
             />
 
         </div>

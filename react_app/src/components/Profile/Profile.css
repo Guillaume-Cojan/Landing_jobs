@@ -82,6 +82,7 @@ div.profiles{
     grid-row: 1/ -1;
     position: absolute;
     bottom: -10px;
-    height: 110%
+    height: 100%;
+    left: -20px;
 }
 
