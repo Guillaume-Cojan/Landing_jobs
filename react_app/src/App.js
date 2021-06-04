@@ -1,6 +1,6 @@
 import "./App.css";
 import Intro from "./components/Intro";
-import Profile from "./components/Profile";
+import ProfileSection from "./components/Profile/Profile-Section";
 import Benchmark from "./components/Benchmark";
 import Jobs from "./components/Jobs";
 import Subscribe from "./components/Subscribe/Subscribe";
@@ -10,8 +10,7 @@ function App() {
     return (
         <div className="App">
             <Intro />
-            <Profile />
-            <Profile />
+            <ProfileSection />
             <Benchmark />
             <Jobs />
             <Subscribe />
