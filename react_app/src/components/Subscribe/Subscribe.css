@@ -1,0 +1,128 @@
+*,
+*:focus,
+*:hover {
+    outline: none;
+}
+
+.subscribe-container {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35);
+}
+
+.subscribe-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    width: 70%;
+    padding: 30px 50px;
+}
+
+.subscribe-text h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 45px;
+    color: #0b132a;
+    margin-top: 0;
+    max-width: 600px;
+}
+
+.subscribe-text p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4f5665;
+    margin: 0;
+}
+
+.subscribe-btn-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.subscribe-btn {
+    width: 250px;
+    height: 60px;
+    left: 975px;
+    top: 1927.5px;
+    background: #ffffff;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 30px 35px -13px rgba(245, 56, 56, 0.35);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f53838;
+    transition: 0.3s;
+}
+
+.subscribe-btn-small {
+    width: 100px;
+    height: 40px;
+    left: 975px;
+    top: 1927.5px;
+    background: #ffffff;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 20px 20px -7px rgba(245, 56, 56, 0.35);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f53838;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn-small:hover {
+    background: #f53838;
+    color: #ffffff;
+}
+
+.subscribe-btn:active,
+.subscribe-btn-small:active {
+    background: #f53838;
+    transform: translateY(2px);
+}
+
+.email-input {
+    width: 250px;
+    border: 2px solid #f53838;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 8px;
+    padding-top: 10px;
+}
+
+.modal {
+    position: absolute;
+    padding-left: 69%;
+    top: 50px;
+}
+
+.subscribe-btn-hidden {
+    display: none;
+}
