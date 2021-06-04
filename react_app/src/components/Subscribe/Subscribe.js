@@ -1,5 +1,5 @@
 import "./Subscribe.css";
-import ModalBtn from "./Modal";
+import SweatAlert from "./SweatAlert";
 
 function Subscribe() {
     return (
@@ -12,7 +12,7 @@ function Subscribe() {
                 <p>Enter an email to send your salary comparison quarterly.</p>
             </div>
             <div className="subscribe-btn-container">
-                <ModalBtn />
+                <SweatAlert />
             </div>
         </div>
     );
