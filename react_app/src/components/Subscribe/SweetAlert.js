@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Swal from "sweetalert2";
+import "./Subscribe.css";
 
 export default class Sweetalertdemo extends Component {
     constructor() {
@@ -45,6 +46,7 @@ export default class Sweetalertdemo extends Component {
             },
             showCancelButton: true,
             confirmButtonText: "Subscribe",
+            confirmButtonColor: "#F53838",
             showLoaderOnConfirm: true,
             allowOutsideClick: () => !Swal.isLoading(),
         }).then((result) => {

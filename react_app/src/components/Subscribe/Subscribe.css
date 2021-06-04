@@ -62,6 +62,7 @@
     transition: 0.3s;
 }
 
+/*
 .subscribe-btn-small {
     box-sizing: border-box;
     width: 100px;
@@ -77,6 +78,7 @@
     transition: 0.3s;
     margin: 10px;
 }
+*/
 
 .subscribe-btn:hover,
 .subscribe-btn-small:hover {
@@ -95,6 +97,7 @@
     transform: translateY(2px);
 }
 
+/*
 .email-input {
     width: 250px;
     border: 2px solid #f53838;
@@ -108,3 +111,4 @@
     padding: 8px;
     padding-top: 10px;
 }
+*/
