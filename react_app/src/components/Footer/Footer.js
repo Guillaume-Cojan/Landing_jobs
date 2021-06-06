@@ -1,17 +1,25 @@
 import Onion from "../assets/Onion.svg";
+import "./Footer.css";
 function Footer() {
     return (
     <div className="footer-wrapper">
-  <h3 className="footer-logo"><img className="footer-logo-img" src={Onion} alt="logo"></img>
-  &nbsp; LaslesVPN</h3>
- <p><strong>LaslesVPN</strong> is a private virtual network that has unique features and has high security.</p>
-    <div className="big-dot"></div>
-    <div className="big-dot"></div>
-    <div className="big-dot"></div>
+        <div className="column-1">
+            <div>
+            <h3 className="logo"><img className="onion" src={Onion} alt="logo"></img>
+      &nbsp; LaslesVPN</h3>
+  </div>
+ <p className="text"><strong>LaslesVPN</strong> is a private virtual network that <br></br>has unique features and has high security.</p>
+    <span className="dot dot-1"></span>
+    <span className="dot"></span>
+    <span className="dot"></span>
+    <h5 className="copyright">&copy; 2020LaslesVPN</h5>
+    </div>
+    <div className="column-2">
 <h4 className="earn-money">Earn Money</h4>
 <p>Affiliate</p>
 <p>Become a Partner</p>
-<h5>&copy; LaslesVPN</h5>
+</div>
+
     </div>
     )
 }
