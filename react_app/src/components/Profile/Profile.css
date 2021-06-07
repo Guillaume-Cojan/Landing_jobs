@@ -1,13 +1,14 @@
 div.profiles{
     display: grid;
     place-content: center;
-    background-color: rgba(128, 128, 128, 0.39);
+    background-color: rgb(243, 243, 243);
     margin: 0 auto;
     text-align: left;
 }
 
 .profiles-container {
-    height: 30vh;
+    box-sizing: border-box;
+    height: 40vh;
     display: grid;
     grid-template-columns: 2fr 0.5fr 2fr;
     padding: 10% 15%;
@@ -25,6 +26,7 @@ div.profiles{
     justify-items:start;
     grid-gap: 0.6em;
     position:relative;
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35);
 }
 
 .profile-title , .profile-img {
@@ -47,6 +49,15 @@ div.profiles{
     line-height: 25px;
 }
 
+.profile-img {
+    grid-column: 2/ 3;
+    grid-row: 1/ -1;
+    position: absolute;
+    bottom: -10px;
+    height: 100%;
+    left: -20px;
+}
+
 .bttn-get-started {
     box-sizing: border-box;
     grid-column: 1 / 2;
@@ -66,7 +77,7 @@ div.profiles{
 
 }
 
-.bttn-get-started:hover {
+.bttn-get-started:hover , .bttn-get-started:focus {
     background-color: white;
     font-weight: bold;
     color: #F53838;
@@ -77,14 +88,14 @@ div.profiles{
     transition: 0.3s;
 }
 
-
-
-.profile-img {
-    grid-column: 2/ 3;
-    grid-row: 1/ -1;
-    position: absolute;
-    bottom: -10px;
-    height: 100%;
-    left: -20px;
+.bttn-get-started:active {
+    background-color: white;
+    color: #f53838;
+    box-shadow: 
+    0 10px 20px 5px #f53838a1, 
+    0 10px 20px 5px #f5383877;
+    transform: translateY(2px);
 }
+
+
 
