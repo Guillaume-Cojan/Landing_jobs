@@ -62,6 +62,7 @@ div.profiles{
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
+    transition: 0.3s;
 
 }
 
@@ -73,6 +74,7 @@ div.profiles{
     0 10px 20px 5px #f53838a1,
     0 10px 20px 5px #f5383877,
     0 3px 20px 5px #f5383849;
+    transition: 0.3s;
 }
 
 
