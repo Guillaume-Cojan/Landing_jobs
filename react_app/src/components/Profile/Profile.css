@@ -21,7 +21,7 @@ div.profiles{
     border-radius: 30px;
     display: grid;
     grid-template-columns: 1fr 0.2fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.6fr;
     padding: 5% 5%;
     justify-items:start;
     grid-gap: 0.6em;
@@ -36,6 +36,7 @@ div.profiles{
 .profile-title {
     color: #F53838;
     font-size: 2rem;
+    font-weight: 600;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     text-align: left;
@@ -59,10 +60,13 @@ div.profiles{
 }
 
 .bttn-get-started {
+    margin-top: 0;
     box-sizing: border-box;
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    padding: 1em 4.5em;
+    width: 270px;
+    padding: 15px 30px;
+    border: 2px solid #f53838;
     background: #F53838;
     border-radius: 10px;
     color: white;
@@ -71,15 +75,19 @@ div.profiles{
     0 15px 20px 5px #f5383836,
     0 10px 20px 5px #f538382a;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 25px;
     white-space: nowrap;
     transition: 0.3s;
-
+    
 }
 
 .bttn-get-started:hover , .bttn-get-started:focus {
+    margin-top: 0;
+    box-sizing: border-box;
     background-color: white;
     font-weight: bold;
+    border: 2px solid #f53838;
     color: #F53838;
     box-shadow: 
     0 10px 20px 5px #f53838a1,
@@ -89,12 +97,16 @@ div.profiles{
 }
 
 .bttn-get-started:active {
+    margin-top: 0;
+    box-sizing: border-box;
     background-color: white;
+    border: 2px solid #f53838;
     color: #f53838;
     box-shadow: 
     0 10px 20px 5px #f53838a1, 
     0 10px 20px 5px #f5383877;
     transform: translateY(2px);
+    transition: 0.3s;
 }
 
 
