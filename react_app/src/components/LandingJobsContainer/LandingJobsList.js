@@ -2,6 +2,7 @@ import JobCard from "./JobCard";
 import TalentCard from "./TalentCard"
 import "./LandingJobsList.css"
 
+
 // Remove later
 import {useState} from 'react';
 
