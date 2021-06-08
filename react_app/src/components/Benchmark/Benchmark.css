@@ -1,0 +1,16 @@
+.benchmark-container {
+    display: grid;
+    place-content: center;
+    width:100 vw;
+    height: 500px;
+    background-color: #DADADD;
+    ;
+}
+
+.benchmark-title {
+    box-sizing: border-box;
+    margin-top: 10%;
+    background-color: grey;
+    padding: 100px 300px;
+    border-radius: 30px;
+}

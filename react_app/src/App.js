@@ -1,8 +1,8 @@
 import "./App.css";
 import Intro from "./components/Intro";
-import ProfileSection from "./components/Profile/Profile-Section";
-import Benchmark from "./components/Benchmark";
-import Jobs from "./components/Jobs";
+import ProfileSection from "./components/Profile/ProfileSection";
+import Benchmark from "./components/Benchmark/Benchmark";
+import JobList from "./components/Job/JobList";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 
@@ -12,7 +12,7 @@ function App() {
             <Intro />
             <ProfileSection />
             <Benchmark />
-            <Jobs />
+            <JobList />
             <Subscribe />
             <Footer />
         </div>
