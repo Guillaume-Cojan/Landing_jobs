@@ -1,13 +1,14 @@
-import "./Benchmark.css"
+import "./Benchmark.css";
+import Survey from "./Survey";
+import Result from "./Result";
 
 function Benchmark() {
-    return(
+    return (
         <div className="benchmark-container">
-            <h1 className="benchmark-title">
-                Salary Benchmark
-            </h1>
+            <Survey />
+            <Result />
         </div>
-    )
+    );
 }
 
 export default Benchmark;

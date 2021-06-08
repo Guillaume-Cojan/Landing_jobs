@@ -1,7 +1,6 @@
-div.profiles{
+div.profiles {
     display: grid;
     place-content: center;
-    background-color: rgb(243, 243, 243);
     margin: 0 auto;
     text-align: left;
 }
@@ -15,7 +14,7 @@ div.profiles{
     text-align: left;
 }
 
-.profile-card{
+.profile-card {
     box-sizing: border-box;
     background-color: white;
     border-radius: 30px;
@@ -23,29 +22,29 @@ div.profiles{
     grid-template-columns: 1fr 0.2fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.6fr;
     padding: 5% 5%;
-    justify-items:start;
+    justify-items: start;
     grid-gap: 0.6em;
-    position:relative;
+    position: relative;
     box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35);
 }
 
-.profile-title , .profile-img {
+.profile-title,
+.profile-img {
     margin: 0;
 }
 
 .profile-title {
-    color: #F53838;
+    color: #f53838;
     font-size: 2rem;
     font-weight: 600;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     text-align: left;
-
 }
 
 .profile-content {
     grid-column: 1 / 2;
-    grid-row: 2/ span 2;
+    grid-row: 2 / span 2;
     font-size: 18px;
     line-height: 25px;
 }
@@ -67,32 +66,28 @@ div.profiles{
     width: 270px;
     padding: 15px 30px;
     border: 2px solid #f53838;
-    background: #F53838;
+    background: #f53838;
     border-radius: 10px;
     color: white;
-    border:unset;
-    box-shadow: 
-    0 15px 20px 5px #f5383836,
-    0 10px 20px 5px #f538382a;
+    border: unset;
+    box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
     font-size: 16px;
     font-weight: 700;
     line-height: 25px;
     white-space: nowrap;
     transition: 0.3s;
-    
 }
 
-.bttn-get-started:hover , .bttn-get-started:focus {
+.bttn-get-started:hover,
+.bttn-get-started:focus {
     margin-top: 0;
     box-sizing: border-box;
     background-color: white;
     font-weight: bold;
     border: 2px solid #f53838;
-    color: #F53838;
-    box-shadow: 
-    0 10px 20px 5px #f53838a1,
-    0 10px 20px 5px #f5383877,
-    0 3px 20px 5px #f5383849;
+    color: #f53838;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877,
+        0 3px 20px 5px #f5383849;
     transition: 0.3s;
 }
 
@@ -102,12 +97,7 @@ div.profiles{
     background-color: white;
     border: 2px solid #f53838;
     color: #f53838;
-    box-shadow: 
-    0 10px 20px 5px #f53838a1, 
-    0 10px 20px 5px #f5383877;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
     transform: translateY(2px);
     transition: 0.3s;
 }
-
-
-
