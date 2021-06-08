@@ -8,7 +8,7 @@ import {useState} from 'react';
 
 const JobList = () => {
     const [showLJContainer, setShowLJContainer] = useState(true)
-    const [ showJobs , setShowJobs ] = useState(false)
+    const [ showJobs , setShowJobs ] = useState(true)
     
     return(
         <div className={ showLJContainer ? "landingjobs-list-container " : "hidden"} >

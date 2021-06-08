@@ -2,23 +2,19 @@ import avatar from "../assets/avatar.svg"
 
 const TalentCard = () => {
     return(
-        <div className="job-card">
-            <div className="job-logo"> 
-                <img  className="talent-avatar" src={avatar} alt="avatar" /> 
-            </div>
-            <h2 className="job-title">
-                Name Apelido Sobrenome
-            </h2>
-            <div className="company-location">
-                <h3 className="company-name">
-                    UX/UI Designer
+        <div className="talent-card">
+            <img  className="talent-avatar" src={avatar} alt="avatar" /> 
+            <div className="talent-right-side">
+                <h3 className="talent-name">
+                    Name Apelido Sobrenome
                 </h3>
-                <h3 className="location">
+                <h2 className="talent-title">
+                    UX/UI Designer
+                </h2>
+                <h3 className="talent-experience">
                     6 years of experience
                 </h3>
             </div>
-
-            <button className="bttn-job-details"> View more details </button>
         </div>
     )
 }
