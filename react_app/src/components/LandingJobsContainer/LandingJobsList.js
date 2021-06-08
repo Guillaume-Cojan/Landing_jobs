@@ -2,17 +2,10 @@ import JobCard from "./JobCard";
 import TalentCard from "./TalentCard"
 import "./LandingJobsList.css"
 
-
-// Remove later
-import {useState} from 'react';
-
-
-const JobList = () => {
-    const [showLJContainer, setShowLJContainer] = useState(true)
-    const [ showJobs , setShowJobs ] = useState(true)
+const LandingJobsList = ({showLJ, showJobs}) => {
     
     return(
-        <div className={ showLJContainer ? "landingjobs-list-container " : "hidden"} >
+        <div className={ showLJ ? "landingjobs-list-container " : "hidden"} >
             <h1 className="landingjobs-list-title">
                 {showJobs ? "Jobs for UX Designer" : "Find the perfect candidates for UX Designer"}
             </h1>
@@ -28,4 +21,4 @@ const JobList = () => {
     )
 }
 
-export default JobList;
+export default LandingJobsList;
