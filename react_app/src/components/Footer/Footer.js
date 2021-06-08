@@ -1,4 +1,4 @@
-import Onion from "../assets/Onion.svg";
+import Onion from "../../assets/Onion.svg";
 import "./Footer.css";
 function Footer() {
   return (

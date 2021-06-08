@@ -1,4 +1,4 @@
-import ResultNoshow from "../assets/Result-noshow.svg";
+import ResultNoshow from "../../assets/Result-noshow.svg";
 
 function Result() {
     return (
