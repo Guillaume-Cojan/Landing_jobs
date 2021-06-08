@@ -1,6 +1,6 @@
 import Profile from "./Profile"
-import AlluraSitting from "../assets/Allura-Sitting.svg"
-import AlluraStanding from "../assets/Allura-Standing.svg"
+import AlluraSitting from "../../assets/Allura-Sitting.svg"
+import AlluraStanding from "../../assets/Allura-Standing.svg"
 import "./Profile.css"
 
 function ProfileSection() {
