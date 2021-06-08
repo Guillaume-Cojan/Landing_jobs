@@ -1,16 +1,85 @@
 .benchmark-container {
-    display: grid;
-    place-content: center;
-    width:100 vw;
-    height: 500px;
-    background-color: #DADADD;
-    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 900px;
+    margin-top: 70px;
+    padding-top: 30px;
+    background-color: #dadadd;
 }
 
-.benchmark-title {
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    margin-right: 100px;
+}
+
+.survey-container p {
+    text-align: justify;
+    font-size: 16px;
+    color: #4f5665;
+    max-width: 360px;
+}
+
+.survey-container h3 {
+    max-width: 400px;
+    margin-bottom: 5px;
+}
+
+.select {
+    width: 400px;
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 10px;
+    background: white;
+    border: none;
+    padding: 10px;
+}
+
+.survey-title {
+    color: #f53838;
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.calculate-btn {
     box-sizing: border-box;
-    margin-top: 10%;
-    background-color: grey;
-    padding: 100px 300px;
-    border-radius: 30px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    padding: 1em 4.5em;
+    background: #f53838;
+    border: 2px solid #f53838;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+    max-width: 400px;
+    margin: 50px 0px;
+}
+
+.calculate-btn:hover,
+.calculate-btn:focus {
+    background-color: white;
+    border: 2px solid #f53838;
+    color: #f53838;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+}
+
+.calculate-btn:active {
+    background-color: white;
+    border: 2px solid #f53838;
+    color: #f53838;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    transform: translateY(2px);
+}
+
+.no-result-img {
+    margin-left: 100px;
 }

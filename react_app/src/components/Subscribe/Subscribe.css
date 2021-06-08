@@ -55,66 +55,26 @@
     border: 2px solid #f53838;
     border-radius: 10px;
     color: white;
-    box-shadow: 
-    0 15px 20px 5px #f5383836, 
-    0 10px 20px 5px #f538382a;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-}
-
-/*
-.subscribe-btn-small {
-    box-sizing: border-box;
-    width: 100px;
-    height: 40px;
-    background: #f53838;
-    border: 2px solid #f53838;
-    border-radius: 10px;
-    color: white;
     box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
     transition: 0.3s;
-    margin: 10px;
 }
-*/
 
 .subscribe-btn:hover,
-.subscribe-btn-small:hover, .subscribe-btn:focus, .subscribe-btn-small:focus {
+.subscribe-btn:focus {
     background-color: white;
     border: 2px solid #f53838;
     color: #f53838;
-    box-shadow: 
-    0 10px 20px 5px #f53838a1, 
-    0 10px 20px 5px #f5383877;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    cursor: pointer;
 }
 
-.subscribe-btn:active,
-.subscribe-btn-small:active {
+.subscribe-btn:active {
     background-color: white;
     border: 2px solid #f53838;
     color: #f53838;
-    box-shadow: 
-    0 10px 20px 5px #f53838a1, 
-    0 10px 20px 5px #f5383877;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
     transform: translateY(2px);
 }
-
-/*
-.email-input {
-    width: 250px;
-    border: 2px solid #f53838;
-    box-sizing: border-box;
-    border-radius: 10px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 25px;
-    padding: 8px;
-    padding-top: 10px;
-}
-*/
