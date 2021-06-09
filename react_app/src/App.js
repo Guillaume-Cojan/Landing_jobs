@@ -1,6 +1,6 @@
 import "./App.css";
 import {useState} from "react";
-import Intro from "./components/Intro";
+import Intro from "./components/Intro/Intro";
 import ProfileSection from "./components/Profile/ProfileSection";
 import Benchmark from "./components/Benchmark/Benchmark";
 import LandingJobsList from "./components/LandingJobsContainer/LandingJobsList";

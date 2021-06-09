@@ -4,7 +4,7 @@ const Profile = ({title, content, image, showLJ, setShowLJ, id, setShowJobs}) =>
 
 const handleShowLJ = () => {
    setShowLJ(true);
-   if(id == 1) {
+   if(id === 1) {
        setShowJobs(true)
    }
    else {
