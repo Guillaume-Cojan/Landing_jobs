@@ -10437,6 +10437,16 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+sweetalert2-react-content@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/sweetalert2-react-content/-/sweetalert2-react-content-4.0.1.tgz"
+  integrity sha512-vS7/k1BplmX72O0lFp2eG7+FsCvrZ9VOgKNHE2wUx1tbeKx+DLEPgAHnQ19DNhbdleRTW8o998atBmYjCkdg7Q==
+
+sweetalert2@^11.0.16:
+  version "11.0.16"
+  resolved "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.0.16.tgz"
+  integrity sha512-9XStCZJMQpLQBAT/jr/4qZuA5Xwoupi/x5FagZYM1qGnyRqYecaJTPD1Cb5gc7G+9B5muH/JaDaBQGrvLpCmvQ==
+
 symbol-tree@^3.2.4:
   version "3.2.4"
   resolved "https://registry.npmjs.org/symbol-tree/-/symbol-tree-3.2.4.tgz"

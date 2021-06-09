@@ -1,57 +1,42 @@
 .footer-wrapper {
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: left;
   width: 60%;
+  margin-top: 2%;
 }
 
 .column-1 {
-    margin-left: 20%;
-} 
-
-.logo {
-    display: flex;
-    align-items: center;
+  margin-left: 20%;
 }
+
+.logo-text-img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .onion {
-/* Vector */
-
-/* position: absolute; */
-width: 35px;
-height: 36.23px;
+  width: 35px;
+  height: 36.23px;
 }
-/* 
-.logo { 
-    /* LaslesVPN */
 
-/*position: absolute;
-width: 104px;
-height: 24px;
-left: 255px;
-top: 2448.89px;
+.logo-text {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 
-font-family: Rubik;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-/* identical to box height
-
-color: #0B132A;
-
-
-}*/
+  color: #0b132a;
+}
 
 .text {
-    margin-top: 15%;
+  margin-top: 15%;
 }
 
 .dot {
-  /* Ellipse 177 */
-
-  /* position: absolute; */
   border-radius: 50%;
   width: 33.6px;
   height: 33.6px;
@@ -65,17 +50,15 @@ color: #0B132A;
 }
 
 .dot-1 {
-    margin-left: -10px;
+  margin-left: -10px;
 }
 
 .column-2 {
-    margin-top: 10%
+  margin-top: 10%;
 }
 
 .copyright {
-    /* ©2020LaslesVPN */
+  /* ©2020LaslesVPN */
 
-color: #AFB5C0;
-
-
+  color: #afb5c0;
 }
