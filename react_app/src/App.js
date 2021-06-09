@@ -1,5 +1,5 @@
 import "./App.css";
-import Intro from "./components/Intro";
+import Intro from "./components/Begining/Intro";
 import ProfileSection from "./components/Profile/Profile-Section";
 import Benchmark from "./components/Benchmark";
 import Jobs from "./components/Jobs";
