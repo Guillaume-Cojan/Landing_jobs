@@ -92,6 +92,11 @@ div.profiles {
     transition: 0.3s;
 }
 
+.bttn-get-started:focus {
+    background-color: #f53838;
+    color:white;
+}
+
 .bttn-get-started:active {
     margin-top: 0;
     box-sizing: border-box;
