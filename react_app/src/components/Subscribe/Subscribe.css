@@ -5,7 +5,7 @@
     align-items: center;
     border-radius: 10px;
     margin: auto;
-    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35);
+    box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);
 }
 
 .subscribe-text {
@@ -77,4 +77,24 @@
     color: #f53838;
     box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
     transform: translateY(2px);
+}
+
+@media (max-width: 680px) {
+    .subscribe-container {
+        flex-direction: column;
+    }
+    .subscribe-text {
+        width: 85%;
+        padding-bottom: 0px;
+    }
+    .subscribe-text h1 {
+        font-size: 19px;
+        line-height: 25px;
+        text-align: justify;
+    }
+    .subscribe-text p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
 }
