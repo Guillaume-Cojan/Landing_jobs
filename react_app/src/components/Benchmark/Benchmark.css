@@ -62,11 +62,14 @@
     margin: 50px 0px;
 }
 
-.calculate-btn:hover,
-.calculate-btn:focus {
+.calculate-btn:hover {
     background-color: white;
     border: 2px solid #f53838;
     color: #f53838;
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+}
+
+.calculate-btn:focus {
     box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
 
@@ -80,4 +83,48 @@
 
 .no-result-img {
     margin-left: 100px;
+}
+
+@media (max-width: 680px) {
+    .benchmark-container {
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin-top: 100px;
+        padding-top: 0px;
+        height: 100%;
+    }
+    .survey-container {
+        margin-right: 0px;
+        align-items: center;
+    }
+    .no-result-img {
+        margin-left: 0px;
+        width: 220px;
+    }
+    .survey-title {
+        color: #f53838;
+        font-size: 1.5rem;
+        max-width: 200px;
+    }
+    .survey-container p {
+        font-size: 13px;
+        max-width: 60%;
+        margin: 0;
+    }
+    .select {
+        width: 220px;
+        margin-bottom: 0px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .survey-container h3 {
+        font-size: 16px;
+        max-width: 400px;
+        margin-bottom: 5px;
+    }
+    .calculate-btn {
+        max-width: 220px;
+        height: 50px;
+        margin: 40px 0px;
+    }
 }

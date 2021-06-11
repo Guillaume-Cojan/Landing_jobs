@@ -62,13 +62,14 @@
     transition: 0.3s;
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe-btn:hover {
     background-color: white;
     border: 2px solid #f53838;
     color: #f53838;
     box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-    cursor: pointer;
+}
+.subscribe-btn:focus {
+    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
 
 .subscribe-btn:active {
