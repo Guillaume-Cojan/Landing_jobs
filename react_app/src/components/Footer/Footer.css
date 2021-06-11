@@ -62,3 +62,21 @@
 
   color: #afb5c0;
 }
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .column-2 {
+    margin-left: 20%;
+    order: 1;
+  }
+  .column-1 {
+    margin-left: 20%;
+    order: 2;
+  }
+}
