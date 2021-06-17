@@ -16,7 +16,7 @@
   flex-direction: row;
   margin-top: 5%;
   align-items: center;
-  font-size: 0.50em;
+  font-size: 0.5em;
 }
 .intro-content {
   margin-top: 4%;
@@ -53,18 +53,16 @@
   .intro-container {
     flex-direction: column;
     width: 100vw;
-    padding: 3%;
-    height: 100%;
+    padding-left: 0%;
+    height: 450px;
+    margin-right: 0px;
   }
 
   .intro-content {
     margin-right: 0px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
-  }
-
-  .c1 {
-    max-width: 85%;
   }
 
   .intro-title {
@@ -79,12 +77,18 @@
     margin: 0;
   }
 
+  .onion {
+    height: 20px;
+    width: 20px;
+  }
+
   .top-logo {
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     color: white;
-    font-size: 10px;
+    font-size: 0.3em;
   }
 
   .intro-image {

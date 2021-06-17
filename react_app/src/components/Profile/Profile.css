@@ -98,6 +98,44 @@
 }
 
 @media (max-width: 680px) {
+  .profiles-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    top: 50vh;
+  }
+
+  .profile-card {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+    box-sizing: border-box;
+    margin: 3%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 320px;
+    height: 255px;
+
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35),
+      0px 10px 10px -7px rgba(179, 179, 179, 0.212),
+      0px 5px 5px -7px rgba(179, 179, 179, 0.26);
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
 }
 /*
 .profile-title,

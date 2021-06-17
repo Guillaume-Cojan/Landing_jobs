@@ -30,7 +30,7 @@ const Profile = ({
       </div>
       <div className="profile-right-side">
          <img className="profile-img" src={image} alt="worker" /> 
-      </div>*
+      </div>
     </div>
   );
 };
