@@ -1,4 +1,104 @@
 div.profiles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profiles-container {
+  box-sizing: border-box;
+}
+
+.profile-card {
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 30px;
+  width: 460px;
+  height: 316px;
+}
+/*
+.profile-title,
+.profile-img {
+
+}
+
+.profile-title {
+   
+}
+
+.profile-content {
+  
+}
+
+.profile-img {
+
+}
+
+.bttn-get-started {
+    
+}
+
+.bttn-get-started:hover,
+.bttn-get-started:focus {
+ 
+}
+
+.bttn-get-started:focus {
+    
+
+.bttn-get-started:active {
+  
+}
+/*
+@media (max-width: 680px)
+{
+    div.profiles {
+  
+    }
+    
+    .profiles-container {
+     
+    }
+    
+    .profile-card {
+      
+    }
+    
+    .profile-title,
+    .profile-img {
+    
+    }
+    
+    .profile-title {
+       
+    }
+    
+    .profile-content {
+        
+    }
+    
+    .profile-img {
+    
+    }
+    
+    .bttn-get-started {
+        
+    }
+    
+    .bttn-get-started:hover,
+    .bttn-get-started:focus {
+     
+    }
+    
+    .bttn-get-started:focus {
+        
+    
+    .bttn-get-started:active {
+      
+    }
+}
+
+/*
+div.profiles {
     display: grid;
     place-content: center;
     margin: 0 auto;
@@ -110,3 +210,4 @@ div.profiles {
     transform: translateY(2px);
     transition: 0.3s;
 }
+*/

@@ -1,107 +1,102 @@
 .intro-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 579px;
+  background: black;
+  color: white;
+  padding-left: 10%;
+}
+
+.top-logo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+  align-items: center;
+  font-size: 10px;
+}
+.intro-content {
+  margin-top: 4%;
+  display: flex;
+}
+
+.intro-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.intro-description {
+  font-size: 16px;
+  color: #c4c4c4;
+  width: 555px;
+  height: 60px;
+}
+
+.intro-image {
+  margin-left: 10%;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 1;
+}
+.session {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 680px) {
+  .intro-container {
+    flex-direction: column;
+    width: 100vw;
+    padding: 3%;
+    height: 100%;
+  }
+
+  .intro-content {
+    margin-right: 0px;
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 579px;
-    background: black;
-    color: white;
-    padding-left: 10%;
   }
-  
+
+  .c1 {
+    max-width: 85%;
+  }
+
+  .intro-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .intro-description {
+    font-size: 13px;
+    max-width: 90%;
+    margin: 0;
+  }
+
   .top-logo {
     display: flex;
     flex-direction: row;
-    margin-top: 1%;
     align-items: center;
+    color: white;
     font-size: 10px;
   }
-  .intro-content {
-    margin-top: 4%;
-    display: flex;
-  }
-  
-  .intro-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-  }
-  
-  .intro-description {
-    font-size: 16px;
-    color: #c4c4c4;
-    width: 555px;
-    height: 60px;
-  }
-  
+
   .intro-image {
-    margin-left: 10%;
+    margin-top: 7%;
+    margin-left: 0px;
   }
-  
+
   .ellipse {
     position: absolute;
     z-index: 1;
-    
+    max-width: 70%;
   }
   .session {
     position: relative;
     z-index: 2;
+    max-width: 70%;
   }
-  
-  @media (max-width: 680px) {
-    .intro-container {
-      flex-direction: column;
-      width: 100vw;
-      padding-top: 0px;
-      height: 100%;
-    }
-  
-    .intro-content {
-      margin-right: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .c1 {
-      max-width: 85%;
-    }
-    
-    .intro-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-align: left;
-    }
-  
-    .intro-description {
-      font-size: 13px;
-      max-width: 90%;
-      margin: 0;
-    }
-  
-    .top-logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: white;
-      font-size: 10px;
-    }
-  
-    .intro-image {
-        margin-top: 7%;
-      margin-left: 0px;
-    }
-  
-    .ellipse {
-      position: absolute;
-      z-index: 1;
-      max-width: 70%
-      
-    }
-    .session {
-      position: relative;
-      z-index: 2;
-      max-width: 70%
-  
-    }
-  
-    
-  }
+}
