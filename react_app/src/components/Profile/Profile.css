@@ -5,19 +5,21 @@
 } */
 
 .profiles-container {
+  /* position: absolute; */
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: 15%;
+
   margin-right: 15%;
   top: 50vh;
+  padding: 10% 15%;
 }
 
 .profile-card {
   display: flex;
   flex-direction: row;
-  position: relative;
+  /* position: relative; */
 
   box-sizing: border-box;
   margin: 2%;
@@ -103,18 +105,20 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    margin-left: 3%;
-    margin-right: 3%;
+    /* margin-left: 3%;
+    margin-right: 3%; */
+    margin-right: 0px;
+    margin: -30px;
     top: 50vh;
   }
 
   .profile-card {
     display: flex;
     flex-direction: row;
-    position: relative;
+    
 
     box-sizing: border-box;
-    margin: 3%;
+    /* margin: 3%; */
     background-color: white;
     border: 1px solid black;
     border-radius: 30px;

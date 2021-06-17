@@ -9,13 +9,17 @@ function Footer() {
           <h3 className="logo-text">&nbsp; LaslesVPN</h3>
         </div>
         <p className="text">
+          <strong>LaslesVPN</strong> is a private virtual network that <br></br>
+          has unique features and has high security.
+        </p>
+        <p className="text2">
           <strong>LaslesVPN</strong> is a private virtual network that
           has unique features and has high security.
         </p>
         <div className="dot-container">
-        <span className="dot dot-1"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
+          <span className="dot dot-1"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
         </div>
         <h5 className="copyright">&copy; 2020LaslesVPN</h5>
       </div>
