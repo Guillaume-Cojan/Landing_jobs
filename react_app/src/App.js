@@ -1,5 +1,5 @@
 import "./App.css";
-import {useState} from "react";
+import {useState, useEffect } from "react";
 import Intro from "./components/Intro/Intro";
 import ProfileSection from "./components/Profile/ProfileSection";
 import Benchmark from "./components/Benchmark/Benchmark";
@@ -11,6 +11,18 @@ import React from "react";
 function App() {
     const [ showLJ , setShowLJ ] = useState(false)
     const [showJobs, setShowJobs] = useState(true)
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+const getSalarybenchmark = () => {
+    fetch("http://localhost:3000/api/salaryex")
+        .then(response => response.json())
+        .then((data) => {console.log(data) })
+}
+
+useEffect( getSalarybenchmark, [])
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
     return (
         <div className="App">

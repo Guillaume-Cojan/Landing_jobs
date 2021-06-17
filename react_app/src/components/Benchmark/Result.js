@@ -1,6 +1,6 @@
 import ResultNoshow from "../../assets/Result-noshow.svg";
 
-function Result() {
+function Result({salaryData}) {
     return (
         <img src={ResultNoshow} alt="result-img" className="no-result-img" />
     );
