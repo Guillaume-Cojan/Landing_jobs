@@ -1,19 +1,22 @@
 .intro-container {
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  padding-left: 10%;
   width: auto;
-  height: 579px;
+  height: 35em;
   background: black;
   color: white;
-  padding-left: 10%;
 }
 
 .top-logo {
+  align-self: flex-start;
+
   display: flex;
   flex-direction: row;
-  margin-top: 1%;
+  margin-top: 5%;
   align-items: center;
-  font-size: 10px;
+  font-size: 0.50em;
 }
 .intro-content {
   margin-top: 4%;
@@ -22,19 +25,19 @@
 
 .intro-title {
   font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-size: 3.5em;
   font-weight: 400;
 }
 
 .intro-description {
-  font-size: 16px;
+  font-size: 1.2em;
   color: #c4c4c4;
   width: 555px;
   height: 60px;
 }
 
 .intro-image {
-  margin-left: 10%;
+  margin-left: 20%;
 }
 
 .ellipse {
