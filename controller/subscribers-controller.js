@@ -7,6 +7,7 @@ const addSubscriber = (req, res, next) => {
         } else {
             const id = result.insertId;
             req.id = id;
+            res.send("user added");
             next();
         }
     });
