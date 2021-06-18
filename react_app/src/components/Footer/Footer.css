@@ -36,6 +36,10 @@
   margin-top: 15%;
 }
 
+.text2 {
+  display: none;
+}
+
 .dot {
   border-radius: 50%;
   width: 33.6px;
@@ -58,8 +62,6 @@
 }
 
 .copyright {
-  /* ©2020LaslesVPN */
-
   color: #afb5c0;
 }
 
@@ -69,14 +71,48 @@
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    margin-right: 20px;
+  }
+
+  .logo-text-img-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.3em;
   }
 
   .column-2 {
-    margin-left: 20%;
-    order: 1;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   .column-1 {
-    margin-left: 20%;
-    order: 2;
+    margin-left: 60px;
+    text-align: justify;
+  }
+
+  .text {
+    margin-top: -2px;
+    margin-right: 10%;
+  }
+
+  .earn-money {
+    margin-top: -20px;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .copyright2 {
+    color: #afb5c0;
+  }
+
+  .text2 {
+    margin-top: 15%;
+  }
+
+  .text {
+    display: none;
   }
 }

@@ -12,10 +12,14 @@ function Footer() {
           <strong>LaslesVPN</strong> is a private virtual network that <br></br>
           has unique features and has high security.
         </p>
+        <p className="text2">
+          <strong>LaslesVPN</strong> is a private virtual network that
+          has unique features and has high security.
+        </p>
         <div className="dot-container">
-        <span className="dot dot-1"></span>
-        <span className="dot"></span>
-        <span className="dot"></span>
+          <span className="dot dot-1"></span>
+          <span className="dot"></span>
+          <span className="dot"></span>
         </div>
         <h5 className="copyright">&copy; 2020LaslesVPN</h5>
       </div>
@@ -23,6 +27,7 @@ function Footer() {
         <h4 className="earn-money">Earn Money</h4>
         <p>Affiliate</p>
         <p>Become a Partner</p>
+        <h5 className="copyright2">&copy; 2020LaslesVPN</h5>
       </div>
     </div>
   );

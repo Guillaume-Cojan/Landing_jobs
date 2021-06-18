@@ -1,3 +1,145 @@
+/* div.profiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+} */
+
+.profiles-container {
+  /* position: absolute; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-right: 15%;
+  top: 50vh;
+  padding: 10% 15%;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+
+  box-sizing: border-box;
+  margin: 2%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 460px;
+  height: 316px;
+
+  box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35),
+    0px 10px 10px -7px rgba(179, 179, 179, 0.212),
+    0px 5px 5px -7px rgba(179, 179, 179, 0.26);
+}
+
+.profile-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 110px;
+}
+
+.profile-title {
+  color: #f53838;
+}
+
+.profile-img {
+  position: absolute;
+  margin-left: -150px;
+}
+
+.bttn-get-started {
+  margin-top: 0;
+  box-sizing: border-box;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  width: 270px;
+  padding: 15px 30px;
+  border: 2px solid #f53838;
+  background: #f53838;
+  border-radius: 10px;
+  color: white;
+  border: unset;
+  box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.bttn-get-started:hover,
+.bttn-get-started:focus {
+  margin-top: 0;
+  box-sizing: border-box;
+  background-color: white;
+  font-weight: bold;
+  border: 2px solid #f53838;
+  color: #f53838;
+  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877,
+    0 3px 20px 5px #f5383849;
+  transition: 0.3s;
+}
+
+.bttn-get-started:focus {
+  background-color: #f53838;
+  color: white;
+}
+
+.bttn-get-started:active {
+  margin-top: 0;
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid #f53838;
+  color: #f53838;
+  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+  transform: translateY(2px);
+  transition: 0.3s;
+}
+
+@media (max-width: 680px) {
+  .profiles-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    margin-right: 0px;
+    margin: -30px;
+    top: 50vh;
+  }
+
+  .profile-card {
+    display: flex;
+    flex-direction: row;
+    
+
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 320px;
+    height: 255px;
+
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35),
+      0px 10px 10px -7px rgba(179, 179, 179, 0.212),
+      0px 5px 5px -7px rgba(179, 179, 179, 0.26);
+  }
+
+  .profile-img {
+    display: none;
+  }
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+}
+
+/* Keep this as reference for now
 div.profiles {
     display: grid;
     place-content: center;
@@ -110,3 +252,4 @@ div.profiles {
     transform: translateY(2px);
     transition: 0.3s;
 }
+*/

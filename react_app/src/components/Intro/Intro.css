@@ -1,107 +1,110 @@
+
 .intro-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  width: auto;
+  height: 35em;
+  background: black;
+  color: white;
+}
+
+.top-logo {
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  align-items: center;
+  font-size: 0.5em;
+}
+.intro-content {
+  margin-top: 4%;
+  display: flex;
+}
+
+.intro-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+.intro-description {
+  font-size: 1.2em;
+  color: #c4c4c4;
+  width: 555px;
+  height: 60px;
+}
+
+.intro-image {
+  margin-left: 20%;
+}
+
+.ellipse {
+  position: absolute;
+  z-index: 1;
+}
+.session {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 680px) {
+  .intro-container {
+    flex-direction: column;
+    width: 100vw;
+    padding-left: 0%;
+    height: 450px;
+    margin-right: 0px;
+  }
+
+  .intro-content {
+    margin-right: 0px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
-    width: auto;
-    height: 579px;
-    background: black;
-    color: white;
-    padding-left: 10%;
   }
-  
+
+  .intro-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .intro-description {
+    font-size: 13px;
+    max-width: 90%;
+    margin: 0;
+  }
+
+  .onion {
+    height: 20px;
+    width: 20px;
+  }
+
   .top-logo {
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
-    margin-top: 1%;
     align-items: center;
-    font-size: 10px;
+    color: white;
+    font-size: 0.3em;
   }
-  .intro-content {
-    margin-top: 4%;
-    display: flex;
-  }
-  
-  .intro-title {
-    font-family: "Montserrat", sans-serif;
-    font-size: 50px;
-    font-weight: 400;
-  }
-  
-  .intro-description {
-    font-size: 16px;
-    color: #c4c4c4;
-    width: 555px;
-    height: 60px;
-  }
-  
+
   .intro-image {
-    margin-left: 10%;
+    margin-top: 7%;
+    margin-left: 0px;
   }
-  
+
   .ellipse {
     position: absolute;
     z-index: 1;
-    
+    max-width: 70%;
   }
   .session {
     position: relative;
     z-index: 2;
+    max-width: 70%;
   }
-  
-  @media (max-width: 680px) {
-    .intro-container {
-      flex-direction: column;
-      width: 100vw;
-      padding-top: 0px;
-      height: 100%;
-    }
-  
-    .intro-content {
-      margin-right: 0px;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .c1 {
-      max-width: 85%;
-    }
-    
-    .intro-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      text-align: left;
-    }
-  
-    .intro-description {
-      font-size: 13px;
-      max-width: 90%;
-      margin: 0;
-    }
-  
-    .top-logo {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      color: white;
-      font-size: 10px;
-    }
-  
-    .intro-image {
-        margin-top: 7%;
-      margin-left: 0px;
-    }
-  
-    .ellipse {
-      position: absolute;
-      z-index: 1;
-      max-width: 70%
-      
-    }
-    .session {
-      position: relative;
-      z-index: 2;
-      max-width: 70%
-  
-    }
-  
-    
-  }
+}
+
