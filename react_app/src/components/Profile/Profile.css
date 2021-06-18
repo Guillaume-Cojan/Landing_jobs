@@ -105,8 +105,6 @@
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
-    /* margin-left: 3%;
-    margin-right: 3%; */
     margin-right: 0px;
     margin: -30px;
     top: 50vh;
@@ -118,7 +116,6 @@
     
 
     box-sizing: border-box;
-    /* margin: 3%; */
     background-color: white;
     border: 1px solid black;
     border-radius: 30px;
@@ -141,89 +138,8 @@
     margin-right: 0px;
   }
 }
-/*
-.profile-title,
-.profile-img {
 
-}
-
-.profile-title {
-   
-}
-
-.profile-content {
-  
-}
-
-.profile-img {
-
-}
-
-.bttn-get-started {
-    
-}
-
-.bttn-get-started:hover,
-.bttn-get-started:focus {
- 
-}
-
-.bttn-get-started:focus {
-    
-
-.bttn-get-started:active {
-  
-}
-/*
-@media (max-width: 680px)
-{
-    div.profiles {
-  
-    }
-    
-    .profiles-container {
-     
-    }
-    
-    .profile-card {
-      
-    }
-    
-    .profile-title,
-    .profile-img {
-    
-    }
-    
-    .profile-title {
-       
-    }
-    
-    .profile-content {
-        
-    }
-    
-    .profile-img {
-    
-    }
-    
-    .bttn-get-started {
-        
-    }
-    
-    .bttn-get-started:hover,
-    .bttn-get-started:focus {
-     
-    }
-    
-    .bttn-get-started:focus {
-        
-    
-    .bttn-get-started:active {
-      
-    }
-}
-
-/*
+/* Keep this as reference for now
 div.profiles {
     display: grid;
     place-content: center;

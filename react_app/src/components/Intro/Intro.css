@@ -2,7 +2,6 @@
 .intro-container {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   padding-left: 10%;
   width: auto;
   height: 35em;
