@@ -4,6 +4,8 @@
     font-family: Montserrat;
 }
 
+html, body { overscroll-behavior: none }
+
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
