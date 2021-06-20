@@ -1,6 +1,12 @@
 const connection = require("../config");
 
-const getAll = "SELECT * FROM salaryex" 
+const Salary = {};
 
+Salary.getDataSalary = (callback) => {
+    "SELECT job_role FROM salarybenchmark LIMIT 10",
+    (err, result) => {
+        callback(err, result);
+    }
+}
 
-module.exports = getAll;
+module.exports = Salary;
