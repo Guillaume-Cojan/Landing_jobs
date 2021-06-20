@@ -14,10 +14,11 @@ const cors = require("cors");
 const port = 3000;
 
 //Importing a query to see all the data on the salary table in mysql. This from the model folder
-const getAll = require("./model/salarybenchmark");
+// const getAll = require("./model/salarybenchmark");
 
 //Importing routes
 const subscribersRoute = require("./routes/route-subscribers");
+const salaryRoute = require("./routes/route-salarybenchmark");
 
 // global middleware
 app.use(express.urlencoded({ extended: false }));
@@ -40,20 +41,20 @@ connection.connect((err) => {
 });
 
 //Setting an api route. For now this is here but we will move this to the routes folder next
-app.get("/api/salaryex", (req, res) => {
-    connection
-        .promise()
-        .query(getAll)
-        .then(([result]) => {
-            res.status(200).json(result);
-        })
-        .catch((err) => {
-            res.status(500).send("Error retrieving data");
-        });
-});
+// app.get("/api/salarybenchmark", (req, res) => {
+//     connection
+//         .promise()
+//         .query(getAll)
+//         .then(([result]) => {
+//             res.status(200).json(result);
+//         })
+//         .catch((err) => {
+//             res.status(500).send("Error retrieving data");
+//         });
+// });
 
-//We use the getAll function in the route above, but it is the same as writing this:
-// app.get("/api/salaryex", (req, res) => {
+// //We use the getAll function in the route above, but it is the same as writing this:
+// app.get("/api/salarybenchmark", (req, res) => {
 //   connection.promise().query("SELECT * FROM salaryex")
 //     .then(([result]) => {
 //       res.status(200).json(result)
@@ -62,6 +63,18 @@ app.get("/api/salaryex", (req, res) => {
 //       res.status(500).send("Error retrieving data")
 //     })
 // })
+
+app.use("/salarybenchmark", (req,res) => {
+    connection.query('SELECT AVG(Avg_Salary) FROM salarybenchmark WHERE job_role = "Back-End Developer" AND Working_Experience_Aggregated = "0 - 3 years" ', (err, result) => {
+        if (err) {
+          res.status(500).send('Error retrieving data from database');
+        } else {
+          res.status(200).json(result);
+        }
+      });
+})
+
+
 
 //Use the route for subscribers
 app.use("/subscribe", subscribersRoute);
