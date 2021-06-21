@@ -89,9 +89,11 @@
     .benchmark-container {
         flex-direction: column-reverse;
         width: 100vw;
-        margin-top: 100px;
+        margin-top: -20px;
+        margin-bottom: 20px;
         padding-top: 0px;
         height: 100%;
+        margin-right: 0px;
     }
     .survey-container {
         margin-right: 0px;
@@ -127,4 +129,48 @@
         height: 50px;
         margin: 40px 0px;
     }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+.benchmark-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 900px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-color: #dadadd;
+
+}
+
+    .survey-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: top;
+        margin-right: 0px;
+    }
+
+
+.no-result-img {
+    margin-left: 0px;
+    width: 420px;
+}
+
+.benchmark-container h3 {
+    max-width: auto;
+    margin-bottom: 5px;
+    align-self: center;
+}
+
+
 }
