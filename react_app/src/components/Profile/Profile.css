@@ -45,7 +45,7 @@
 }
 
 .profile-title {
-  color: #f53838;
+ color: #4293EA;
 }
 
 .profile-img {
@@ -80,7 +80,7 @@
   background-color: white;
   font-weight: bold;
   border: 2px solid #f53838;
-  color: #f53838;
+  color:    #3BBCB0;
   box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877,
     0 3px 20px 5px #f5383849;
   transition: 0.3s;
@@ -96,7 +96,7 @@
   box-sizing: border-box;
   background-color: white;
   border: 2px solid #f53838;
-  color: #f53838;
+  color:    #3BBCB0;
   box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
   transform: translateY(2px);
   transition: 0.3s;

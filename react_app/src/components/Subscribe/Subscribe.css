@@ -55,11 +55,11 @@ body {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
   padding: 1em 4.5em;
-  background: #f53838;
-  border: 2px solid #f53838;
+  background:  #3BBCB0;
+ /* border: 2px solid #f53838;*/
   border-radius: 10px;
   color: white;
-  box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+/*  box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -68,20 +68,21 @@ body {
 
 .subscribe-btn:hover {
   background-color: white;
-  border: 2px solid #f53838;
-  color: #f53838;
-  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+  border: 2px solid #3BBCB0;
+  color: #3BBCB0;
+}
+ /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
 .subscribe-btn:focus {
   box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
-
+*/
 .subscribe-btn:active {
   background-color: white;
-  border: 2px solid #f53838;
-  color: #f53838;
-  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-  transform: translateY(2px);
+  border: 2px solid #3BBCB0;
+  color: #3BBCB0
+ /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+  transform: translateY(2px);*/
 }
 
 @media (max-width: 680px) {
