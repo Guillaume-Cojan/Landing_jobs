@@ -6,7 +6,7 @@
     height: 900px;
     margin-top: 200px;
     padding-top: 30px;
-    background-color: #dadadd;
+    background-color:  #E7F2F1;
 }
 
 .survey-container {
@@ -20,7 +20,7 @@
 .survey-container p {
     text-align: justify;
     font-size: 16px;
-    color: #4f5665;
+    color: #E7F2F1;
     max-width: 360px;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .survey-title {
-    color: #f53838;
+    color: #3BBCB0;
     font-size: 2.7rem;
     font-weight: 600;
     text-align: left;
@@ -49,11 +49,11 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     padding: 1em 4.5em;
-    background: #f53838;
-    border: 2px solid #f53838;
+    background: #3BBCB0;
+    border: 2px solid #3BBCB0;
     border-radius: 10px;
     color: white;
-    box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+/*box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
@@ -64,20 +64,20 @@
 
 .calculate-btn:hover {
     background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    border: 2px solid   #3BBCB0;
+    color:    #3BBCB0;
+   /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
 }
-
+  /*
 .calculate-btn:focus {
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-}
+  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+}*/
 
 .calculate-btn:active {
     background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    border: 2px solid     #3BBCB0;
+    color:     #3BBCB0;
+   /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
     transform: translateY(2px);
 }
 
@@ -104,7 +104,7 @@
         width: 220px;
     }
     .survey-title {
-        color: #f53838;
+        color:     #3BBCB0;
         font-size: 1.5rem;
         max-width: 200px;
     }
@@ -148,7 +148,7 @@
     margin-bottom: 10px;
     padding-top: 30px;
     padding-bottom: 40px;
-    background-color: #dadadd;
+    background-color: #E7F2F1;
 
 }
 
