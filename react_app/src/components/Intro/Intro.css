@@ -6,7 +6,7 @@
   width: auto;
   height: 35em;
   background: #26333C;
-  color: white;
+  color:  #FFFFFF;
 }
 
 .top-logo {
@@ -18,6 +18,14 @@
   align-items: center;
   font-size: 0.5em;
 }
+.salary{
+font-family: Rubik;
+font-style: normal;
+font-weight: 500;
+color: #73D3CA;
+
+}
+
 .intro-content {
   margin-top: 4%;
   display: flex;
@@ -31,7 +39,7 @@
 
 .intro-description {
   font-size: 1.2em;
-  color: #c4c4c4;
+  color:   #C4C4C4;
   width: 555px;
   height: 60px;
 }
