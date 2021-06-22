@@ -1,8 +1,3 @@
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//            Importing modules
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-//express is the framework we use for setting up the server
 const express = require("express");
 const connection = require("./config");
 const app = express();
@@ -11,10 +6,8 @@ const app = express();
 const cors = require("cors");
 
 //declare the port that the backend server will run on. This will be a different port than what the frontend server runs on
-const port = 3000;
+const port = 5000;
 
-//Importing a query to see all the data on the salary table in mysql. This from the model folder
-// const getAll = require("./model/salarybenchmark");
 
 //Importing routes
 const subscribersRoute = require("./routes/route-subscribers");
@@ -25,9 +18,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(cors());
 
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 //Make sure that you are connected to the mysql database. If you get this error then go back to .env and the config files for debugging.
 connection.connect((err) => {
@@ -40,44 +30,25 @@ connection.connect((err) => {
     );
 });
 
-//Setting an api route. For now this is here but we will move this to the routes folder next
-// app.get("/api/salarybenchmark", (req, res) => {
-//     connection
-//         .promise()
-//         .query(getAll)
-//         .then(([result]) => {
-//             res.status(200).json(result);
-//         })
-//         .catch((err) => {
-//             res.status(500).send("Error retrieving data");
-//         });
-// });
+//Middlewares: 
 
-// //We use the getAll function in the route above, but it is the same as writing this:
-// app.get("/api/salarybenchmark", (req, res) => {
-//   connection.promise().query("SELECT * FROM salaryex")
-//     .then(([result]) => {
-//       res.status(200).json(result)
-//     })
-//     .catch((err) => {
-//       res.status(500).send("Error retrieving data")
-//     })
+
+//Salarybenchmark middleware
+app.use("/salarybenchmark", salaryRoute )
+// app.get("/salarybenchmark", (req,res,) => {
+//     connection.query('SELECT AVG(Avg_Salary) FROM salarybenchmark WHERE job_role = "Front-End Developer" AND Working_Experience_Aggregated = "0 - 3 years" ', (err, result) => {
+//         if (err) {
+//           res.status(500).send('Error retrieving data from database');
+//         } else {
+//           res.status(200).json(result);
+//         }
+//       });
 // })
 
-app.use("/salarybenchmark", (req,res) => {
-    connection.query('SELECT AVG(Avg_Salary) FROM salarybenchmark WHERE job_role = "Back-End Developer" AND Working_Experience_Aggregated = "0 - 3 years" ', (err, result) => {
-        if (err) {
-          res.status(500).send('Error retrieving data from database');
-        } else {
-          res.status(200).json(result);
-        }
-      });
-})
-
-
-
-//Use the route for subscribers
+//Subscribers middleware
 app.use("/subscribe", subscribersRoute);
+
+
 
 //Make sure that the server is actually running. If it's not, you will get this error (make sure you have all the modules imported correctly or installed with npm if you get an error here)
 app.listen(port, (err) => {
