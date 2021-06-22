@@ -174,3 +174,26 @@
 
 
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .benchmark-container {
+        flex-direction: column-reverse;
+        width: 100vw;
+        margin-top: -20px;
+        margin-bottom: 20px;
+        padding-top: 0px;
+        height: 100%;
+        margin-right: 0px;
+    }
+    .survey-container {
+        margin-right: 0px;
+        align-items: center;
+    }
+    
+
+  }

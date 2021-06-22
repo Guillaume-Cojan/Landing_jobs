@@ -17,8 +17,8 @@ console.log(showJobs)
                     id={1}
                     setShowJobs = {setShowJobs}
                 />
-                <div>
-                    {""}
+                <div className="space">
+                    {"space here"}
                 </div>
                 <Profile
                     title={"Talent"} 
