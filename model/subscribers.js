@@ -1,4 +1,5 @@
 // Emails collection: create 1 database for emails collection (1 id + 1 email) → POST method
+const express = require("express");
 const connection = require("../config");
 
 const Subscribers = {};
