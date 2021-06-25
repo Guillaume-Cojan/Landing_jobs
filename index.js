@@ -35,15 +35,6 @@ connection.connect((err) => {
 
 //Salarybenchmark middleware
 app.use("/salarybenchmark", salaryRoute )
-// app.get("/salarybenchmark", (req,res,) => {
-//     connection.query('SELECT AVG(Avg_Salary) FROM salarybenchmark WHERE job_role = "Front-End Developer" AND Working_Experience_Aggregated = "0 - 3 years" ', (err, result) => {
-//         if (err) {
-//           res.status(500).send('Error retrieving data from database');
-//         } else {
-//           res.status(200).json(result);
-//         }
-//       });
-// })
 
 //Subscribers middleware
 app.use("/subscribe", subscribersRoute);

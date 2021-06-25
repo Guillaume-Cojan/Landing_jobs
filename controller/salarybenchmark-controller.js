@@ -3,7 +3,7 @@ const express = require("express");
 
 
 const getAverageSalary = (req, res ) => {
-    Salary.getDataSalary((err, result) => {
+    Salary.getDataSalary((err, result ) => {
         if(err){
             res.status(500).send("Error")
         }
@@ -11,6 +11,7 @@ const getAverageSalary = (req, res ) => {
             res.status(200).json(result)
         }
     })
+ 
 };
 
 
