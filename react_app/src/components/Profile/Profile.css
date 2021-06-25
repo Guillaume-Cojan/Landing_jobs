@@ -101,6 +101,7 @@
 @media (max-width: 680px) {
     .profiles {
         background-color: #000000;
+        border: 1px solid #000000;
     }
 
     .profiles-container {
@@ -109,6 +110,7 @@
         align-items: center;
         margin: 0px;
         padding-top: 0;
+        padding: 10% 7%;
     }
 
     .profile-card {
@@ -139,6 +141,11 @@
         flex-direction: column;
         margin-left: 30px;
         margin-right: 0px;*/
+    }
+
+    .bttn-get-started {
+        width: 300px;
+        height: 77px;
     }
 }
 
