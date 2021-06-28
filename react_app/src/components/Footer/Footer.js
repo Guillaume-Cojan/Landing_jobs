@@ -1,36 +1,72 @@
-import Onion from "../../assets/Onion.svg";
+import LjLogo from "./../../assets/LJ_Logo.svg";
+import Linkedin from "./../../assets/social-linkedin-md.svg";
+import Instagram from "./../../assets/social-instagram-md.svg";
+import Github from "./../../assets/social-github-md.svg";
 import "./Footer.css";
+
 function Footer() {
-  return (
-    <div className="footer-wrapper">
-      <div className="column-1">
-        <div className="logo-text-img-container">
-          <img className="onion" src={Onion} alt="logo"></img>
-          <h3 className="logo-text">&nbsp; LaslesVPN</h3>
+    return (
+        <div className="footer-wrapper">
+            <div className="footer-left">
+                <img className="lj-logo-footer" src={LjLogo} alt="logo"></img>
+                <p className="footer-text">
+                    Landing... nononoono onoo onono onon ooonoonn noono n
+                </p>
+                <div className="social-icons">
+                    <img
+                        className="social_icon"
+                        src={Linkedin}
+                        alt="linkedin"
+                    ></img>
+                    <img
+                        className="social_icon"
+                        src={Instagram}
+                        alt="instagram"
+                    ></img>
+                    <img
+                        className="social_icon"
+                        src={Github}
+                        alt="github"
+                    ></img>
+                </div>
+                <h5 className="copyright">©2021LandingJobs</h5>
+            </div>
+            <div className="footer-center">
+                <h4 className="footer-title">RESOURCES</h4>
+                <p>Reading Materials</p>
+                <p>Blog</p>
+                <p>Press Kit</p>
+            </div>
+            <div className="footer-right">
+                <h4 className="footer-title">HELP</h4>
+                <p>About</p>
+                <p>Contacts</p>
+                <p>FAQ</p>
+                <p>Privacy</p>
+                <p>Terms</p>
+            </div>
+            <div className="end-footer-mobile">
+                <div className="social-icons">
+                    <img
+                        className="social_icon"
+                        src={Linkedin}
+                        alt="linkedin"
+                    ></img>
+                    <img
+                        className="social_icon"
+                        src={Instagram}
+                        alt="instagram"
+                    ></img>
+                    <img
+                        className="social_icon"
+                        src={Github}
+                        alt="github"
+                    ></img>
+                </div>
+                <h5 className="copyright">©2021LandingJobs</h5>
+            </div>
         </div>
-        <p className="text">
-          <strong>LaslesVPN</strong> is a private virtual network that <br></br>
-          has unique features and has high security.
-        </p>
-        <p className="text2">
-          <strong>LaslesVPN</strong> is a private virtual network that
-          has unique features and has high security.
-        </p>
-        <div className="dot-container">
-          <span className="dot dot-1"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-        </div>
-        <h5 className="copyright">&copy; 2020LaslesVPN</h5>
-      </div>
-      <div className="column-2">
-        <h4 className="earn-money">Earn Money</h4>
-        <p>Affiliate</p>
-        <p>Become a Partner</p>
-        <h5 className="copyright2">&copy; 2020LaslesVPN</h5>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default Footer;

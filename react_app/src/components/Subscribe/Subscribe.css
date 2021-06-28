@@ -3,13 +3,15 @@ body {
 }
 
 .subscribe-container {
+    position: relative;
+    top: -16vh;
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     border-radius: 10px;
     margin: auto;
-    box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);
+    /*box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);*/
 }
 
 .subscribe-text {
@@ -88,6 +90,7 @@ body {
 @media (max-width: 680px) {
     .subscribe-container {
         flex-direction: column;
+        top: -6vh;
     }
     .subscribe-text {
         width: 85%;
