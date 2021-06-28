@@ -35,7 +35,7 @@ const Profile = ({
                     onClick={() => handleShowLJ()}
                 >
                     {" "}
-                    {id === 1 ? "I'm Companie" : "I'm Talent"}{" "}
+                    {id === 1 ? "I'm Company" : "I'm Talent"}{" "}
                 </button>
             </div>
             <div className="profile-right-side">

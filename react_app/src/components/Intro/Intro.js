@@ -1,6 +1,6 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
-import Allura from "./../../assets/Allurra-FeedbackSession1.svg";
-import Ellipse from "./../../assets/Ellipse.svg";
+//import Allura from "./../../assets/Allurra-FeedbackSession1.svg";
+import ImgHero from "./../../assets/IMG_HERO.png";
 import "./Intro.css";
 
 function Intro() {
@@ -21,8 +21,7 @@ function Intro() {
                     </p>
                 </div>
                 <div className="intro-image">
-                    <img className="ellipse" src={Ellipse} alt="ellipse" />
-                    <img className="session" src={Allura} alt="session"></img>
+                    <img className="ellipse" src={ImgHero} alt="ellipse" />
                 </div>
             </div>
         </div>

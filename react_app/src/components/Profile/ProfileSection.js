@@ -1,6 +1,6 @@
 import Profile from "./Profile";
-import AlluraSitting from "../../assets/Allura-Sitting.svg";
-import AlluraStanding from "../../assets/Allura-Standing.svg";
+import AlluraSitting from "../../assets/woman-sitting.png";
+import AlluraStanding from "../../assets/sharing-presentation.png";
 import "./Profile.css";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {

@@ -46,7 +46,7 @@ export default class Sweetalertdemo extends Component {
             },
             showCancelButton: true,
             confirmButtonText: "Subscribe",
-            confirmButtonColor: "#F53838",
+            confirmButtonColor: "#3bbcb0",
             showLoaderOnConfirm: true,
             allowOutsideClick: () => !Swal.isLoading(),
         }).then((result) => {

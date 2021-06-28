@@ -21,14 +21,14 @@
 }
 
 .salary {
-    font-family: Rubik;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 500;
     color: #73d3ca;
 }
 
 .intro-content {
-    margin-top: 4%;
+    margin-top: 0%;
     display: flex;
 }
 
@@ -42,6 +42,7 @@
     font-size: 1.5em;
     margin: 2% 0;
     color: #73d3ca;
+    margin-top: 8%;
 }
 
 .intro-title {
@@ -60,21 +61,18 @@
 
 .intro-image {
     width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-right: 1.5%;
 }
 
 .ellipse {
-    width: 100%;
+    width: auto;
+    margin-top: -20%;
+    margin-left: -35%;
 }
-.session {
+/*.session {
     position: absolute;
     z-index: 2;
     width: 100%;
-}
+}*/
 
 /*iphone*/
 @media (max-width: 680px) {
@@ -86,7 +84,7 @@
         padding-left: 0%;
         padding-right: 0%;
         padding-bottom: 0%;
-        border: 1px solid #000000;
+        border-bottom: 1px solid #000000;
     }
 
     .intro-content {
@@ -103,6 +101,7 @@
         font-family: "Rubik", sans-serif;
         font-size: 1em;
         margin-bottom: 5%;
+        margin-top: 0;
     }
 
     .intro-text {
@@ -135,23 +134,19 @@
     }
 
     .intro-image {
-        margin: 10px 0px;
+        margin: 0px 0px;
         display: flex;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
     .ellipse {
-        position: absolute;
-        z-index: 1;
-        max-width: 70%;
+        max-width: 80%;
         margin-right: 0px;
-    }
-    .session {
-        position: relative;
-        z-index: 2;
-        max-width: 70%;
-        margin-right: 0px;
+        margin-top: -5%;
+        margin-left: -5%;
+        margin-bottom: -5%;
     }
 }
 
