@@ -1,113 +1,70 @@
-<br />
-<p align="center">
-  <a href="#">
-    <img src="src/assets/Landing-jobs-log.png" alt="Logo" width="90" height="90">
-  </a>
+# Getting Started with Create React App
 
-  <h3 align="center">Landing Jobs Salaries</h3>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  <p align="center">
-Use our salary benchmark tool to check how your salary compares to that of your peers!
-    <br />
-    <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Request Feature</a>
-  </p>
-</p>
+## Available Scripts
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-      <li><a href="#license">License</a></li>
-      <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contact">Contact the Developers</a></li>
-    
-  </ol>
-</details>
+In the project directory, you can run:
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-![Image](src/assets/landing-jobs-tempscreenshot.png)
+### `yarn start`
 
-A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and education. 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![Image](src/assets/techguy.png)
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-### Built With
+### `yarn test`
 
-* [React](https://reactjs.org/)
-* [Node.js](https://nodejs.dev/)
-* [Express](https://expressjs.com/)
-* [mySQL](https://www.mysql.com/)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<!-- GETTING STARTED -->
-## Getting Started
+### `yarn build`
 
-To get a local copy up and running follow these simple example steps.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Prerequisites
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Here is a list things you need in order to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-* [node.j](https://nodejs.org/en/download/)
-* [mySQL](https://dev.mysql.com/downloads/installer/)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Installation
+### `yarn eject`
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/Guillaume-Cojan/Landing_jobs.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Happy coding!
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-<!-- LICENSE -->
-## License
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Distributed under the Landing.Jobs License.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-<p align="center">
-<img src="src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
-</p>
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+## Learn More
 
-Many thanks to our amazing client [Landing.Jobs](https://landing.jobs/) for offering us this opportunity to work on an exciting tool for both tech talents and companies! 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-<p align="center">
-<img src="src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
-</p>
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-<!-- CONTACT -->
-## Contact The Developers
+### Code Splitting
 
-Anna Gosme - [Github](https://github.com/AnnaGosme) - [LinkedIn](https://www.linkedin.com/in/anna-gosme/)  
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Carmen Llamas - [Github](https://github.com/makrmeen) - [LinkedIn](https://www.linkedin.com/in/makarmeen/)
+### Analyzing the Bundle Size
 
-Guillaume Cojan - [Github](https://github.com/Guillaume-Cojan) - [LinkedIn](https://www.linkedin.com/in/guillaumecojan/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.linkedin.com/in/anca-laura-gheorghe/)
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
