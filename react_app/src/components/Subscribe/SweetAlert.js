@@ -13,7 +13,7 @@ export default class Sweetalertdemo extends Component {
         Swal.fire({
             title: "Thank You!",
             html: "You were succesfully added to our mailing list.",
-            timer: 2400,
+            timer: 2500,
             timerProgressBar: true,
             onBeforeOpen: () => {
                 Swal.showLoading();
@@ -47,7 +47,25 @@ export default class Sweetalertdemo extends Component {
             showCancelButton: true,
             confirmButtonText: "Subscribe",
             confirmButtonColor: "#3bbcb0",
-            showLoaderOnConfirm: true,
+            showLoaderOnConfirm: false,
+            preConfirm: (emailInput) => {
+                const requestOptions = {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        email: emailInput,
+                    }),
+                };
+                return fetch(
+                    `http://localhost:3000/subscribe`,
+                    requestOptions
+                ).catch((error) => {
+                    console.log(error);
+                    Swal.showValidationMessage(
+                        `Unable to subscribe now. Please try again later.`
+                    );
+                });
+            },
             allowOutsideClick: () => !Swal.isLoading(),
         }).then((result) => {
             if (result.isConfirmed) {
