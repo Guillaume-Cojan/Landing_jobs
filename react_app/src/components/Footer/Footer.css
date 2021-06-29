@@ -37,6 +37,14 @@
     color: #afb5c0;
 }
 
+.footer-link,
+.footer-link:visited,
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    color: white;
+}
+
 @media (min-width: 681px) {
     .end-footer-mobile {
         display: none;
