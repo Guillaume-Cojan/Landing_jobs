@@ -4,15 +4,15 @@ import Instagram from "./../../assets/social-instagram-md.svg";
 import Github from "./../../assets/social-github-md.svg";
 import "./Footer.css";
 
-function Footer() {
+function Footer({ showLJ }) {
     return (
-        <div className="footer-wrapper">
+        <div className={showLJ ? "footer-wrapper-grey" : "footer-wrapper"}>
             <div className="footer-left">
                 <img className="lj-logo-footer" src={LjLogo} alt="logo"></img>
                 <p className="footer-text">
                     Landing... nononoono onoo onono onon ooonoonn noono n
                 </p>
-                <div className="social-icons">
+                <div className="social-icons-desktop">
                     <a
                         href="https://www.linkedin.com/company/landing-jobs/"
                         target="_blank"
@@ -47,7 +47,7 @@ function Footer() {
                         ></img>
                     </a>
                 </div>
-                <h5 className="copyright">©2021LandingJobs</h5>
+                <h5 className="copyright-desktop">©2021LandingJobs</h5>
             </div>
             <div className="footer-center">
                 <h4 className="footer-title">RESOURCES</h4>
@@ -136,7 +136,7 @@ function Footer() {
                 </p>
             </div>
             <div className="end-footer-mobile">
-                <div className="social-icons">
+                <div className="social-icons-mobile">
                     <a
                         href="https://www.linkedin.com/company/landing-jobs/"
                         target="_blank"
@@ -171,7 +171,7 @@ function Footer() {
                         ></img>
                     </a>
                 </div>
-                <h5 className="copyright">©2021LandingJobs</h5>
+                <h5 className="copyright-mobile">©2021LandingJobs</h5>
             </div>
         </div>
     );
