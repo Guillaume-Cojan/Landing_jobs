@@ -49,8 +49,6 @@
 
 .calculate-btn {
     box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
     padding: 1em 4.5em;
     background: #3bbcb0;
     border: 2px solid #3bbcb0;
@@ -62,7 +60,7 @@
     white-space: nowrap;
     transition: 0.3s;
     max-width: 400px;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 
 .calculate-btn:hover {
@@ -134,8 +132,8 @@
         margin-bottom: 5px;
     }
     .calculate-btn {
-        max-width: 220px;
-        height: 50px;
+        width: 270px;
+        height: 57px;
         margin: 40px 0px;
     }
 }

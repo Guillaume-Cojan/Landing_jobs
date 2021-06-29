@@ -20,6 +20,8 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                 <a
                     className={showJobs ? "a-talent" : "a-job"}
                     href="https://landing.jobs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     {" "}
                     Landing.Jobs{" "}

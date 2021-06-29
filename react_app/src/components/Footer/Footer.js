@@ -13,21 +13,39 @@ function Footer() {
                     Landing... nononoono onoo onono onon ooonoonn noono n
                 </p>
                 <div className="social-icons">
-                    <img
-                        className="social_icon"
-                        src={Linkedin}
-                        alt="linkedin"
-                    ></img>
-                    <img
-                        className="social_icon"
-                        src={Instagram}
-                        alt="instagram"
-                    ></img>
-                    <img
-                        className="social_icon"
-                        src={Github}
-                        alt="github"
-                    ></img>
+                    <a
+                        href="https://www.linkedin.com/company/landing-jobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Linkedin}
+                            alt="linkedin"
+                        ></img>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/landing.jobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Instagram}
+                            alt="instagram"
+                        ></img>
+                    </a>
+                    <a
+                        href="https://github.com/LandingJobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Github}
+                            alt="github"
+                        ></img>
+                    </a>
                 </div>
                 <h5 className="copyright">©2021LandingJobs</h5>
             </div>
@@ -47,21 +65,39 @@ function Footer() {
             </div>
             <div className="end-footer-mobile">
                 <div className="social-icons">
-                    <img
-                        className="social_icon"
-                        src={Linkedin}
-                        alt="linkedin"
-                    ></img>
-                    <img
-                        className="social_icon"
-                        src={Instagram}
-                        alt="instagram"
-                    ></img>
-                    <img
-                        className="social_icon"
-                        src={Github}
-                        alt="github"
-                    ></img>
+                    <a
+                        href="https://www.linkedin.com/company/landing-jobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Linkedin}
+                            alt="linkedin"
+                        ></img>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/landing.jobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Instagram}
+                            alt="instagram"
+                        ></img>
+                    </a>
+                    <a
+                        href="https://github.com/LandingJobs/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <img
+                            className="social_icon"
+                            src={Github}
+                            alt="github"
+                        ></img>
+                    </a>
                 </div>
                 <h5 className="copyright">©2021LandingJobs</h5>
             </div>
