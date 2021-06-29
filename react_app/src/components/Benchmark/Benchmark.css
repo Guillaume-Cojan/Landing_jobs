@@ -192,6 +192,7 @@
     transition: 0.3s;
 }
 
+/*Phone*/
 @media (max-width: 680px) {
     .benchmark-container,
     .benchmark-container-cie,
@@ -248,38 +249,22 @@
     }
 }
 
-/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
     .benchmark-container {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
         width: 100vw;
-        height: 900px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        background-color: #e7f2f1;
-    }
-
-    .survey-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: top;
-        margin-right: 0px;
-    }
-
-    .no-result-img {
-        margin-left: 0px;
-        width: 420px;
-    }
-
-    .benchmark-container h3 {
-        max-width: auto;
-        margin-bottom: 5px;
-        align-self: center;
+        height: 100%;
+        margin-top: -37%;
+        padding-top: 25%;
     }
 }
-*/
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+    .benchmark-container {
+        width: 100vw;
+        height: 100%;
+        margin-top: -33%;
+        padding-top: 25%;
+    }
+}

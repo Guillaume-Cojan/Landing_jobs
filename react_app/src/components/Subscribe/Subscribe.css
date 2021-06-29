@@ -92,6 +92,7 @@ body {
     .subscribe-container {
         flex-direction: column;
         top: -6vh;
+        margin-top: 5%;
     }
     .subscribe-text {
         width: 85%;
