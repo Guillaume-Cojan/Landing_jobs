@@ -16,7 +16,7 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                 {showJobs ? <TalentCard /> : <JobCard />}
             </div>
             <p className="job-list-link">
-                View more jobs on{" "}
+                View more on{" "}
                 <a
                     className={showJobs ? "a-talent" : "a-job"}
                     href="https://landing.jobs/"

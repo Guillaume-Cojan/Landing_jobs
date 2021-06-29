@@ -76,7 +76,7 @@
 
 .job-card {
     box-sizing: border-box;
-    background-color: #e7f2f1;
+    background-color: #ecf0f5;
     border-radius: 12px;
     margin: 0 2%;
     padding: 2% 4% 2% 2%;
@@ -182,11 +182,12 @@ h3.location {
 div.talent-card {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    background-color: #e7f2f1;
+    flex-direction: column;
+    align-items: center;
+    background-color: #efe6ed;
     border-radius: 12px;
-    margin: 0 2%;
-    padding: 2% 10% 2% 3%;
+    margin: 0 5%;
+    padding: 2% 5% 2% 5%;
     white-space: nowrap;
     box-shadow: 0px 10px 10px -7px rgba(90, 90, 90, 0.349),
         0px 10px 20px -7px rgba(145, 145, 145, 0.438),
@@ -197,6 +198,8 @@ div.talent-card {
     background-color: white;
     border-radius: 50%;
     margin: 2%;
+    width: 100px;
+    height: 100px;
 }
 
 .talent-right-side {
@@ -260,8 +263,8 @@ div.talent-card {
         grid-row: 3 / 4;
         margin-top: 3%;
         padding: 0.5em 4.5em;
-        width: 250px;
-        height: 45px;
+        width: 230px;
+        height: 55px;
         background: white;
         border: 2px solid #4293ea;
         border-radius: 10px;
@@ -275,10 +278,10 @@ div.talent-card {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+/*@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
     .landingjobs-items {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
+}*/
