@@ -13,7 +13,7 @@ function App() {
     const [showJobs, setShowJobs] = useState(true);
 
     return (
-        <div className="App">
+        <div className={showLJ ? (showJobs ? "App-cie" : "App-talent") : "App"}>
             <Intro />
             <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
             <Benchmark showLJ={showLJ} showJobs={showJobs} />

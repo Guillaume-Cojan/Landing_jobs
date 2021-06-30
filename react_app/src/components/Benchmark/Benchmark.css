@@ -7,7 +7,6 @@
     margin-top: 6%;
     padding-bottom: 10%;
     padding-top: 16%;
-    background-color: #e7f2f1;
     transition: 0.3s;
 }
 
@@ -20,7 +19,6 @@
     margin-top: 6%;
     padding-bottom: 10%;
     padding-top: 16%;
-    background-color: #efe6ed;
     transition: 0.3s;
 }
 
@@ -33,7 +31,6 @@
     margin-top: 6%;
     padding-bottom: 10%;
     padding-top: 16%;
-    background-color: #ecf0f5;
     transition: 0.3s;
 }
 
@@ -295,10 +292,10 @@
 }
 
 /*Big desktop*/
-@media (min-width: 1800px) {
+@media (min-width: 1550px) {
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
-        margin-top: 9%;
+        margin-top: 7%;
     }
 }

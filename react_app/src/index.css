@@ -4,7 +4,10 @@
     font-family: Montserrat;
 }
 
-html, body { overscroll-behavior: none }
+html,
+body {
+    overscroll-behavior: none;
+}
 
 body {
     margin: 0;
