@@ -1,15 +1,37 @@
 .benchmark-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100%;
-    margin-top: 4%;
+    margin-top: 20vh;
     padding-bottom: 10%;
     padding-top: 16%;
-    padding-left: 15%;
-    padding-right: 20%;
-    background-color: #e7f2f1;
+    transition: 0.3s;
+}
+
+.benchmark-container-cie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 6%;
+    padding-bottom: 10%;
+    padding-top: 16%;
+    transition: 0.3s;
+}
+
+.benchmark-container-talent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    margin-top: 6%;
+    padding-bottom: 10%;
+    padding-top: 16%;
+    transition: 0.3s;
 }
 
 .survey-container {
@@ -17,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: top;
-    margin-right: 100px;
+    margin-right: 12%;
 }
 
 .survey-p {
@@ -45,53 +67,121 @@
     font-size: 2.7rem;
     font-weight: 600;
     text-align: left;
+    transition: 0.3s;
+}
+
+.survey-title-cie {
+    color: #a729d2;
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.survey-title-talent {
+    color: #007eff;
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-align: left;
+    transition: 0.3s;
 }
 
 .calculate-btn {
     box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
     padding: 1em 4.5em;
     background: #3bbcb0;
     border: 2px solid #3bbcb0;
     border-radius: 39px;
     color: white;
-    /*box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
     transition: 0.3s;
     max-width: 400px;
-    margin: 50px 0px;
+    margin: 40px 0px;
 }
 
 .calculate-btn:hover {
     background-color: white;
     border: 2px solid #3bbcb0;
     color: #3bbcb0;
-    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
 }
-/*
-.calculate-btn:focus {
-  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-}*/
 
 .calculate-btn:active {
     background-color: white;
     border: 2px solid #3bbcb0;
     color: #3bbcb0;
-    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
+    transform: translateY(4px);
+}
+
+.calculate-btn-cie {
+    box-sizing: border-box;
+    padding: 1em 4.5em;
+    background: #a729d2;
+    border: 2px solid #a729d2;
+    border-radius: 39px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+    max-width: 400px;
+    margin: 40px 0px;
+}
+
+.calculate-btn-cie:hover {
+    background-color: white;
+    border: 2px solid #a729d2;
+    color: #a729d2;
+}
+
+.calculate-btn-cie:active {
+    background-color: white;
+    border: 2px solid #a729d2;
+    color: #a729d2;
+    transform: translateY(4px);
+}
+
+.calculate-btn-talent {
+    box-sizing: border-box;
+    padding: 1em 4.5em;
+    background: #007eff;
+    border: 2px solid #007eff;
+    border-radius: 39px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+    max-width: 400px;
+    margin: 40px 0px;
+}
+
+.calculate-btn-talent:hover {
+    background-color: white;
+    border: 2px solid #007eff;
+    color: #007eff;
+}
+
+.calculate-btn-talent:active {
+    background-color: white;
+    border: 2px solid #007eff;
+    color: #007eff;
     transform: translateY(4px);
 }
 
 .no-result-img {
-    margin-left: 2%;
+    margin-right: 5%;
     margin-top: 4%;
+    transition: 0.3s;
 }
   
 
-@media (max-width: 680px) {
-    .benchmark-container {
+/*Phone*/
+@media (max-width: 767px) {
+    .benchmark-container,
+    .benchmark-container-cie,
+    .benchmark-container-talent {
         flex-direction: column;
         justify-content: center;
         width: 100vw;
@@ -112,8 +202,9 @@
         margin-left: 0px;
         width: 220px;
     }
-    .survey-title {
-        color: #3bbcb0;
+    .survey-title,
+    .survey-title-cie,
+    .survey-title-talent {
         font-size: 1.5rem;
         max-width: 70%;
     }
@@ -134,44 +225,78 @@
         max-width: 400px;
         margin-bottom: 5px;
     }
-    .calculate-btn {
-        max-width: 220px;
-        height: 50px;
+    .calculate-btn,
+    .calculate-btn-cie,
+    .calculate-btn-talent {
+        width: 270px;
+        height: 57px;
         margin: 40px 0px;
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    .benchmark-container {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
+    .benchmark-container,
+    .benchmark-container-cie,
+    .benchmark-container-talent {
         width: 100vw;
-        height: 900px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        padding-top: 30px;
-        padding-bottom: 40px;
-        background-color: #e7f2f1;
+        height: 100%;
+        margin-top: -37%;
+        padding-top: 25%;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .survey-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: top;
-        margin-right: 0px;
+        margin-right: 0%;
+        align-items: center;
     }
 
     .no-result-img {
-        margin-left: 0px;
-        width: 420px;
+        margin-right: 0%;
+        transition: 0.3s;
     }
 
-    .benchmark-container h3 {
-        max-width: auto;
-        margin-bottom: 5px;
-        align-self: center;
+    .calculate-btn,
+    .calculate-btn-cie,
+    .calculate-btn-talent {
+        width: 300px;
+    }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+    .benchmark-container,
+    .benchmark-container-cie,
+    .benchmark-container-talent {
+        width: 100vw;
+        height: 100%;
+        margin-top: -33%;
+        padding-top: 25%;
+    }
+
+    .survey-container {
+        margin-right: 3%;
+        align-items: center;
+    }
+
+    .no-result-img {
+        margin: 0% 3%;
+        transition: 0.3s;
+    }
+
+    .survey-title,
+    .survey-title-cie,
+    .survey-title-talent {
+        font-size: 2.2rem;
+    }
+}
+
+/*Big desktop*/
+@media (min-width: 1550px) {
+    .benchmark-container,
+    .benchmark-container-cie,
+    .benchmark-container-talent {
+        margin-top: 15vh;
     }
 }

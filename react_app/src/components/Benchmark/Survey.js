@@ -47,15 +47,25 @@ const location = [
     "Beja, South",
 ];
 
-function Survey({setShowResult}) {
+function Survey({ showLJ, showJobs, setShowResult }) {
 
- const handleCalculateClick = ()  => {
-    setShowResult(false)
- } 
+    const handleCalculateClick = ()  => {
+        setShowResult(true)
+     } 
 
     return (
         <div className="survey-container">
-            <h2 className="survey-title"> Salary Benchmarking </h2>
+            <h2
+                className={
+                    showLJ
+                        ? showJobs
+                            ? "survey-title-cie"
+                            : "survey-title-talent"
+                        : "survey-title"
+                }
+            >
+                Salary Benchmarking
+            </h2>
             <p className="survey-p">
                 You can explore the features that we provide with fun and have
                 their own functions each feature.
@@ -63,7 +73,18 @@ function Survey({setShowResult}) {
             <SurveyList title={"Category"} list={category} />
             <SurveyList title={"Experience"} list={experience} />
             <SurveyList title={"Location"} list={location} />
-            <button className="calculate-btn" onClick={() => handleCalculateClick()}>Calculate</button>
+            <button
+                className={
+                    showLJ
+                        ? showJobs
+                            ? "calculate-btn-cie"
+                            : "calculate-btn-talent"
+                        : "calculate-btn"
+                }
+                onClick={() => handleCalculateClick()}
+            >
+                Calculate
+            </button>
         </div>
     );
 }

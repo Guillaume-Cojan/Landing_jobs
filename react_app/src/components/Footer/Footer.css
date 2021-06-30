@@ -10,6 +10,18 @@
     color: white;
 }
 
+.footer-wrapper-grey {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -14%;
+    padding-top: 11%;
+    padding-bottom: 3%;
+    padding-left: 13%;
+    padding-right: 13%;
+    background-color: #26333c;
+    color: white;
+}
+
 .footer-left {
     width: 30%;
 }
@@ -24,27 +36,50 @@
     color: white;
 }
 
-.social-icons {
+.social-icons-desktop {
     margin-top: 10%;
     display: flex;
     justify-content: space-between;
     width: 40%;
 }
 
-.copyright {
+.social-icons-mobile {
+    margin-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+}
+
+.copyright-desktop {
     font-size: 16px;
     line-height: 30px;
     color: #afb5c0;
 }
 
-@media (min-width: 681px) {
+.copyright-mobile {
+    margin-top: 30%;
+    font-size: 16px;
+    line-height: 10px;
+    color: #afb5c0;
+}
+
+.footer-link,
+.footer-link:visited,
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 768px) {
     .end-footer-mobile {
         display: none;
     }
 }
 
-@media (max-width: 680px) {
-    .footer-wrapper {
+@media (max-width: 767px) {
+    .footer-wrapper,
+    .footer-wrapper-grey {
         flex-direction: column;
     }
 
@@ -52,13 +87,39 @@
         width: 100%;
     }
 
-    .social-icons {
+    .social-icons-desktop {
         display: none;
     }
-    .copyright {
+    .copyright-desktop {
         display: none;
     }
     .footer-title {
         margin-top: 20%;
+    }
+}
+
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+    .lj-logo-footer {
+        width: 90%;
+    }
+    .social-icons-desktop {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .lj-logo-footer {
+        width: 70%;
+    }
+    .social-icons-desktop {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
     }
 }

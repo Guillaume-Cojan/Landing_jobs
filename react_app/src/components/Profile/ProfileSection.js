@@ -4,7 +4,6 @@ import AlluraStanding from "../../assets/sharing-presentation.png";
 import "./Profile.css";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
-    console.log(showJobs);
     return (
         <div className="profiles">
             <div className="profiles-container">

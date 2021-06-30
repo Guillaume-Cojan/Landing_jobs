@@ -9,19 +9,19 @@ import Footer from "./components/Footer/Footer";
 import React from "react";
 
 function App() {
-  const [showLJ, setShowLJ] = useState(false);
-  const [showJobs, setShowJobs] = useState(true);
+    const [showLJ, setShowLJ] = useState(false);
+    const [showJobs, setShowJobs] = useState(true);
 
-  return (
-    <div className="App">
-      <Intro />
-      <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
-      <Benchmark />
-      <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
-      <Subscribe />
-      <Footer />
-    </div>
-  );
+    return (
+        <div className={showLJ ? (showJobs ? "App-cie" : "App-talent") : "App"}>
+            <Intro />
+            <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
+            <Benchmark showLJ={showLJ} showJobs={showJobs} />
+            <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
+            <Subscribe />
+            <Footer showLJ={showLJ} />
+        </div>
+    );
 }
 
 export default App;
