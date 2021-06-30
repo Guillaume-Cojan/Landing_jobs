@@ -8,8 +8,8 @@ const getAverageSalary = (req, res, next ) => {
             res.status(500).send("Error getting average salary")
         }
         else{
-            res.averageSalary = result;
-            // res.status(200).json(result)
+            res.averageSalary = result[0];
+            console.log(res.averageSalary)
             next()
         }
     })
@@ -22,8 +22,8 @@ const getMinimumSalary = (req, res, next ) => {
             res.status(500).send("Error getting minimum salary")
         }
         else{
-            res.minimumSalary = result;
-            // res.status(200).json(result)
+            res.minimumSalary = result[0];
+            console.log(res.minimumSalary);
             next()
         }
     })
@@ -36,8 +36,8 @@ const getMaximumSalary = (req, res ) => {
             res.status(500).send("Error getting maximum salary")
         }
         else{
-            const salaryInfo = {...res.averageSalary,...res.minimumSalary,result
-            }
+            res.maximumSalary = result[0]
+            const salaryInfo = {...res.averageSalary,...res.minimumSalary,...res.maximumSalary}
             console.log(salaryInfo)
             res.status(200).json(salaryInfo)
         }
@@ -46,10 +46,4 @@ const getMaximumSalary = (req, res ) => {
 };
 
 
-<<<<<<< HEAD
 module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary }
-=======
-
-
-module.exports = { getAverageSalary }
->>>>>>> 72725b3e343e5d7a24fd45c06a303257ed8d9737
