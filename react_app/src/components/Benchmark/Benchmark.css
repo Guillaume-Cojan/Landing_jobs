@@ -1,12 +1,15 @@
 .benchmark-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     width: 100vw;
-    height: 900px;
-    margin-top: 200px;
-    padding-top: 30px;
-    background-color: #dadadd;
+    height: 100%;
+    margin-top: 4%;
+    padding-bottom: 10%;
+    padding-top: 16%;
+    padding-left: 15%;
+    padding-right: 20%;
+    background-color: #e7f2f1;
 }
 
 .survey-container {
@@ -17,7 +20,7 @@
     margin-right: 100px;
 }
 
-.survey-container p {
+.survey-p {
     text-align: justify;
     font-size: 16px;
     color: #4f5665;
@@ -38,7 +41,7 @@
 }
 
 .survey-title {
-    color: #f53838;
+    color: #3bbcb0;
     font-size: 2.7rem;
     font-weight: 600;
     text-align: left;
@@ -49,11 +52,11 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     padding: 1em 4.5em;
-    background: #f53838;
-    border: 2px solid #f53838;
-    border-radius: 10px;
+    background: #3bbcb0;
+    border: 2px solid #3bbcb0;
+    border-radius: 39px;
     color: white;
-    box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+    /*box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
@@ -64,52 +67,60 @@
 
 .calculate-btn:hover {
     background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    border: 2px solid #3bbcb0;
+    color: #3bbcb0;
+    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
 }
-
+/*
 .calculate-btn:focus {
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-}
+  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+}*/
 
 .calculate-btn:active {
     background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-    transform: translateY(2px);
+    border: 2px solid #3bbcb0;
+    color: #3bbcb0;
+    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;*/
+    transform: translateY(4px);
 }
 
 .no-result-img {
-    margin-left: 100px;
+    margin-left: 2%;
+    margin-top: 4%;
 }
 
 @media (max-width: 680px) {
     .benchmark-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        justify-content: center;
         width: 100vw;
-        margin-top: 100px;
+        margin-top: -1%;
+        margin-bottom: 20px;
+        padding-left: 0%;
+        padding-right: 0%;
         padding-top: 0px;
         height: 100%;
+        margin-right: 0px;
     }
     .survey-container {
         margin-right: 0px;
         align-items: center;
+        padding-top: 10%;
     }
     .no-result-img {
         margin-left: 0px;
         width: 220px;
     }
     .survey-title {
-        color: #f53838;
+        color: #3bbcb0;
         font-size: 1.5rem;
-        max-width: 200px;
+        max-width: 70%;
     }
-    .survey-container p {
+    .survey-p {
         font-size: 13px;
-        max-width: 60%;
+        max-width: 70%;
         margin: 0;
+        margin-bottom: 5%;
     }
     .select {
         width: 220px;
@@ -126,5 +137,40 @@
         max-width: 220px;
         height: 50px;
         margin: 40px 0px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .benchmark-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 900px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        background-color: #e7f2f1;
+    }
+
+    .survey-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: top;
+        margin-right: 0px;
+    }
+
+    .no-result-img {
+        margin-left: 0px;
+        width: 420px;
+    }
+
+    .benchmark-container h3 {
+        max-width: auto;
+        margin-bottom: 5px;
+        align-self: center;
     }
 }

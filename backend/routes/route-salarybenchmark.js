@@ -1,11 +1,12 @@
 const express = require("express");
+const connection = require("../config");
 const router = express.Router();
-const {
-  getAverageSalary,
-  addSalary,
-} = require("../controller/salarybenchmark-controller");
+const { getMinimumSalary, getMaximumSalary, getAverageSalary, addSalary } = require("../controller/salarybenchmark-controller");
 
-router.get("/", getAverageSalary);
+// router.get("/minimum", getMinimumSalary)
+// router.get("/maximum", getMaximumSalary)
+router.get("/", getAverageSalary, getMinimumSalary, getMaximumSalary)
+
 
 router.post("/", addSalary);
 

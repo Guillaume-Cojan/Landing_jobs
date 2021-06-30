@@ -1,11 +1,17 @@
+body {
+    overflow-x: hidden;
+}
+
 .subscribe-container {
+    position: relative;
+    top: -16vh;
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     border-radius: 10px;
     margin: auto;
-    box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);
+    /*box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);*/
 }
 
 .subscribe-text {
@@ -51,11 +57,11 @@
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     padding: 1em 4.5em;
-    background: #f53838;
-    border: 2px solid #f53838;
-    border-radius: 10px;
-    color: white;
-    box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;
+    background: white;
+    border: 3px solid #3bbcb0;
+    border-radius: 39px;
+    color: #3bbcb0;
+    /*  box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
@@ -63,26 +69,28 @@
 }
 
 .subscribe-btn:hover {
-    background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+    background-color: #3bbcb0;
+    color: white;
+}
+/* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
 .subscribe-btn:focus {
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
 }
-
+*/
 .subscribe-btn:active {
-    background-color: white;
-    border: 2px solid #f53838;
-    color: #f53838;
-    box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-    transform: translateY(2px);
+    background-color: #3bbcb0;
+    color: white;
+    transform: translateY(4px);
+
+    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
+  transform: translateY(2px);*/
 }
 
 @media (max-width: 680px) {
     .subscribe-container {
         flex-direction: column;
+        top: -6vh;
     }
     .subscribe-text {
         width: 85%;
@@ -97,5 +105,13 @@
         font-size: 14px;
         line-height: 20px;
         margin-top: 10px;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    .subscribe-container {
+        flex-direction: column;
+        width: auto;
+        margin: 5px;
     }
 }
