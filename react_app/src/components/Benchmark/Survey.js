@@ -47,7 +47,12 @@ const location = [
     "Beja, South",
 ];
 
-function Survey() {
+function Survey({setShowResult}) {
+
+ const handleCalculateClick = ()  => {
+    setShowResult(false)
+ } 
+
     return (
         <div className="survey-container">
             <h2 className="survey-title"> Salary Benchmarking </h2>
@@ -58,7 +63,7 @@ function Survey() {
             <SurveyList title={"Category"} list={category} />
             <SurveyList title={"Experience"} list={experience} />
             <SurveyList title={"Location"} list={location} />
-            <button className="calculate-btn">Calculate</button>
+            <button className="calculate-btn" onClick={() => handleCalculateClick()}>Calculate</button>
         </div>
     );
 }

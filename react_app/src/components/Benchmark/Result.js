@@ -1,15 +1,14 @@
-import {useState} from "react";
 import ResultNoshow from "../../assets/Result-noshow.svg";
 import VerticalBar from "./Graph"
 
-function Result({salaryData}) {
-    const [ showResult, setShowResult] = useState(false);
+
+function Result({showResult}) {
     
     return (
         <div>
         { showResult 
             ? <img src={ResultNoshow} alt="result-img" className="no-result-img" />
-            : < VerticalBar/> 
+            : < VerticalBar /> 
         }
         </div>
 

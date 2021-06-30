@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { Bar } from 'react-chartjs-2';
-
+import "./Benchmark.css"
 
 const VerticalBar = () => {
 
@@ -25,37 +25,13 @@ const VerticalBar = () => {
         fetch("http://localhost:5000/salarybenchmark/")
         .then(response => response.json())
         .then((data) => {
-            setAverageSalary(data[0].average_salary_calculation)
+          setAverageSalary(data.average_salary)
+          setMinimumSalary(data.minimum_salary)
+          setMaximumSalary(data.maximum_salary)
         })
     } 
 
-    const getMinimumResult = () => {
-        fetch("http://localhost:5000/salarybenchmark/minimum")
-        .then(response => response.json())
-        .then((data) => {
-            setMinimumSalary(data[0].minimum_salary)
-        })
-    } 
-
-    const getMaximumResult = () => {
-        fetch("http://localhost:5000/salarybenchmark/maximum")
-        .then(response => response.json())
-        .then((data) => {
-            setMaximumSalary(data[0].maximum_salary)
-        })
-    } 
-    
-
-    useEffect(getMinimumResult, [])
-    useEffect(getMaximumResult, [])
     useEffect( getAverageResult, [])
-    // useEffect( () => {
-    //     setAverageSalary( (minimumSalary + maximumSalary) / 2)
-    // }, [maximumSalary, minimumSalary])
-
-    console.log("Minimum salary is ", minimumSalary)
-    console.log("Average salary is ", averageSalary)
-    console.log("Maximum salary is ",maximumSalary)
 
     const data = {
         labels: ['Minimum Salary', 'Average Salary', 'Maximum Salary'],
