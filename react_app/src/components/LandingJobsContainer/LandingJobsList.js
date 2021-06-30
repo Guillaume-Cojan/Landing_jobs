@@ -1,8 +1,22 @@
 import JobCard from "./JobCard";
 import TalentCard from "./TalentCard";
 import "./LandingJobsList.css";
+import { useState, useEffect } from "react";
 
 const LandingJobsList = ({ showLJ, showJobs }) => {
+    const [job, setJob] = useState("");
+    const [searchResult, setSearchResult] = useState([]);
+
+    const searchJob = () => {
+        fetch("https://landing.jobs/api/v1/jobs")
+            .then((res) => res.json())
+            .then((data) => setSearchResult(data));
+    };
+
+    useEffect(searchJob, []);
+
+    console.log(searchResult);
+
     return (
         <div className={showLJ ? "landingjobs-list-container " : "hidden"}>
             <h1 className="landingjobs-list-title">
