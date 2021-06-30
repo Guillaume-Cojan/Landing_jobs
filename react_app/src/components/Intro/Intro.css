@@ -1,7 +1,7 @@
 .intro-container {
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 2% 10%;
     height: 35em;
     background: #000000;
     color: #ffffff;
@@ -68,14 +68,9 @@
     margin-top: -20%;
     margin-left: -35%;
 }
-/*.session {
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-}*/
 
-/*iphone*/
-@media (max-width: 680px) {
+/*Phone*/
+@media (max-width: 767px) {
     .intro-container {
         flex-direction: column;
         width: 100%;
@@ -150,25 +145,58 @@
     }
 }
 
-/*Ipad*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .intro-container {
-        display: flex;
-        flex-direction: column;
-        margin-right: 0px;
-
-        width: auto;
-        height: 45em;
+        padding: 4% 5%;
+        height: 27em;
     }
-    .intro-content {
-        margin-right: 0px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .intro-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        margin: 2% 0;
+    }
+
+    .intro-description {
+        font-size: 1.1em;
     }
 
     .intro-image {
-        margin-left: -80px;
+        width: 32%;
+    }
+
+    .ellipse {
+        width: 130%;
+        margin-top: -10%;
+        margin-left: -15%;
+    }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .intro-container {
+        padding: 3% 9%;
+        height: 28em;
+    }
+
+    .intro-title {
+        font-size: 2.5em;
+        font-weight: 300;
+        margin: 2% 0;
+    }
+
+    .intro-description {
+        font-size: 1.1em;
+    }
+
+    .intro-image {
+        width: 32%;
+    }
+
+    .ellipse {
+        width: 130%;
+        margin-top: -10%;
+        margin-left: -15%;
     }
 }
