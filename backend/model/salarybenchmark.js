@@ -2,12 +2,12 @@ const connection = require("../config");
 
 const Salary = {};
 
-let jobRole = "Back-End Developer";
+let jobRole = "Front-End Developer";
 let experience = "0 - 3 years";
 let location = "Porto";
 
 Salary.getDataSalary = (callback) => {
-    connection.query('SELECT AVG(Avg_Salary) AS average_salary_calculation FROM salarybenchmark WHERE job_role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ', [ jobRole, experience, location ], 
+    connection.query('SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE job_role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ', [ jobRole, experience, location ], 
     (err, result) => {
         callback(err, result);
     }
