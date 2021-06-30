@@ -51,7 +51,7 @@ function Survey() {
     return (
         <div className="survey-container">
             <h2 className="survey-title"> Salary Benchmarking </h2>
-            <p>
+            <p className="survey-p">
                 You can explore the features that we provide with fun and have
                 their own functions each feature.
             </p>
