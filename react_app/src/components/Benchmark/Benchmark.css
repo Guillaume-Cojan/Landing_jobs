@@ -4,7 +4,7 @@
     align-items: center;
     width: 100vw;
     height: 100%;
-    margin-top: 6%;
+    margin-top: 20vh;
     padding-bottom: 10%;
     padding-top: 16%;
     transition: 0.3s;
@@ -296,6 +296,6 @@
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
-        margin-top: 7%;
+        margin-top: 15vh;
     }
 }

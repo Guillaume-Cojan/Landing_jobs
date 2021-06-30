@@ -97,3 +97,29 @@
         margin-top: 20%;
     }
 }
+
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+    .lj-logo-footer {
+        width: 90%;
+    }
+    .social-icons-desktop {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .lj-logo-footer {
+        width: 70%;
+    }
+    .social-icons-desktop {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+}

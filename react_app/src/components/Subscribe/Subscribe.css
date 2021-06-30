@@ -12,7 +12,6 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     margin: auto;
-    /*box-shadow: 0px 15px 25px 3px rgba(179, 179, 179, 0.35);*/
 }
 
 .subscribe-text {
@@ -62,7 +61,6 @@ body {
     border: 3px solid #3bbcb0;
     border-radius: 39px;
     color: #3bbcb0;
-    /*  box-shadow: 0 15px 20px 5px #f5383836, 0 10px 20px 5px #f538382a;*/
     font-size: 16px;
     font-weight: bold;
     white-space: nowrap;
@@ -73,21 +71,14 @@ body {
     background-color: #3bbcb0;
     color: white;
 }
-/* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-}
-.subscribe-btn:focus {
-  box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-}
-*/
+
 .subscribe-btn:active {
     background-color: #3bbcb0;
     color: white;
     transform: translateY(4px);
-
-    /* box-shadow: 0 10px 20px 5px #f53838a1, 0 10px 20px 5px #f5383877;
-  transform: translateY(2px);*/
 }
 
+/*Phone*/
 @media (max-width: 767px) {
     .subscribe-container {
         flex-direction: column;
@@ -107,5 +98,43 @@ body {
         font-size: 14px;
         line-height: 20px;
         margin-top: 10px;
+    }
+}
+
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+    .subscribe-container {
+        top: -6vh;
+        margin-top: 5%;
+    }
+
+    .subscribe-text h1 {
+        font-size: 19px;
+        line-height: 25px;
+    }
+
+    .subscribe-text {
+        padding: 4%;
+    }
+    .subscribe-text p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+    .subscribe-btn {
+        padding: 1em 4.3em;
+        margin-right: 15px;
+    }
+}
+
+/*Tablet Landscape*/
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    .subscribe-container {
+        top: -10vh;
+        margin-top: 5%;
+    }
+    .subscribe-text h1 {
+        font-size: 19px;
+        line-height: 25px;
     }
 }
