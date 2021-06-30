@@ -8,10 +8,10 @@
     flex-wrap: wrap;
     justify-content: space-around;
     border: none;
-    margin-top: -30vh;
-    margin-bottom: -70vh;
+    margin-top: -15vh;
+    margin-bottom: -65vh;
     padding-left: 8%;
-    padding-top: 10%;
+    padding-top: 0%;
     padding-bottom: 10%;
     padding-right: 15%;
 }
@@ -19,6 +19,7 @@
 .profile-card {
     display: flex;
     flex-direction: row;
+    top: -10%;
     box-sizing: border-box;
     background-color: white;
     border-radius: 10px;
@@ -136,7 +137,7 @@
 }
 
 /*Phone*/
-@media (max-width: 680px) {
+@media (max-width: 767px) {
     .profiles {
         background-color: #000000;
         border: 1px solid #000000;
@@ -226,7 +227,7 @@
 /*Tablet Landscape*/
 @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     .profiles-container {
-        margin-top: -2%;
+        margin-top: -5%;
         margin-bottom: 0;
         padding-left: 5%;
         padding-top: 0;
@@ -251,5 +252,17 @@
         justify-content: space-around;
         margin-left: 4%;
         margin-right: 4%;
+    }
+}
+
+/*Big desktop*/
+@media (min-width: 1800px) {
+    .profiles-container {
+        margin-top: -7vh;
+    }
+    .profile-img {
+        margin-left: -7vw;
+        margin-top: 1vw;
+        height: 180px;
     }
 }

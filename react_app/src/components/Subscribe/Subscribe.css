@@ -88,7 +88,7 @@ body {
   transform: translateY(2px);*/
 }
 
-@media (max-width: 680px) {
+@media (max-width: 767px) {
     .subscribe-container {
         flex-direction: column;
         top: -6vh;
@@ -107,13 +107,5 @@ body {
         font-size: 14px;
         line-height: 20px;
         margin-top: 10px;
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    .subscribe-container {
-        flex-direction: column;
-        width: auto;
-        margin: 5px;
     }
 }

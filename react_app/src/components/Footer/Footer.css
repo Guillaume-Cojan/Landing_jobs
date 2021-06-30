@@ -71,13 +71,13 @@
     color: white;
 }
 
-@media (min-width: 681px) {
+@media (min-width: 768px) {
     .end-footer-mobile {
         display: none;
     }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 767px) {
     .footer-wrapper,
     .footer-wrapper-grey {
         flex-direction: column;

@@ -232,7 +232,8 @@ div.talent-card {
     margin: 0;
 }
 
-@media (max-width: 680px) {
+/*Phone*/
+@media (max-width: 767px) {
     .landingjobs-items {
         flex-direction: column;
         align-items: center;
