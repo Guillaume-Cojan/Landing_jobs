@@ -45,5 +45,15 @@ const getMaximumSalary = (req, res ) => {
 
 };
 
+const addSalary = (req, res) => {
+  Salary.addDataSalary(req.body, (err, results) => {
+    if (err) {
+      res.status(500).json(`${err}`);
+    } else {
+      res.status(201).json(results);
+    }
+  });
+};
 
-module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary }
+module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary, addSalary }
+

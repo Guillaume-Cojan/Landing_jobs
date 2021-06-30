@@ -29,20 +29,7 @@ connection.connect((err) => {
 });
 
 //Middlewares:
-app.post("/salarybenchmark", (req, res) => {
-  connection.query(
-    "INSERT INTO `landing_pay`.`salarybenchmark` (`Work_Company_PT_District`, `Job_Role_Original`, `Working_Experience`) VALUES (?)",
-    [req.body],
-    (err, results) => {
-      if (err) {
-        res.status(500).json(`${err}`);
-      } else {
-        res.status(201).json(results);
-        console.log(req.body);
-      }
-    }
-  );
-});
+
 
 //Salarybenchmark middleware
 app.use("/salarybenchmark", salaryRoute, addSalaryRoute); 
