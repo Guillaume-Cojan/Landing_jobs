@@ -46,4 +46,10 @@ const getMaximumSalary = (req, res ) => {
 };
 
 
+<<<<<<< HEAD
 module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary }
+=======
+
+
+module.exports = { getAverageSalary }
+>>>>>>> 72725b3e343e5d7a24fd45c06a303257ed8d9737
