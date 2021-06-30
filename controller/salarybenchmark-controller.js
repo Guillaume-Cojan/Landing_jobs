@@ -15,4 +15,6 @@ const getAverageSalary = (req, res ) => {
 };
 
 
+
+
 module.exports = { getAverageSalary }
