@@ -280,3 +280,22 @@ div.talent-card {
         place-content: center;
     }
 }
+
+/*Tablet Portrait*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+    .job-card {
+        padding: 2px;
+        margin: 15px;
+        width: 385px;
+    }
+    .bttn-job-details {
+        width: 215px;
+    }
+    .job-logo {
+        width: 50px;
+        height: 50px;
+    }
+    div.talent-card {
+        padding: 2% 7% 2% 7%;
+    }
+}
