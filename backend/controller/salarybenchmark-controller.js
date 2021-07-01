@@ -2,6 +2,22 @@ const Salary = require("../model/salarybenchmark");
 const express = require("express");
 
 
+const receiveSalaryInput = (req, res) => {
+    Salary.addDataSalary(req.body, (err, result) =>
+    {
+      if (err) {
+        res.status(500).json(`${err}`);
+      } else {
+          res.formInput = req.body.formSelection
+          console.log("res.input is", res.formInput)
+          res.status(200).json(result);
+        
+      }
+    
+    }
+    );
+  };
+
 const getAverageSalary = (req, res, next ) => {
 
     Salary.getDataSalary((err, result) => {
@@ -9,6 +25,7 @@ const getAverageSalary = (req, res, next ) => {
             res.status(500).send("Error getting average salary")
         }
         else{
+            console.log(res)
             res.averageSalary = result[0];
             next()
         }
@@ -44,15 +61,7 @@ const getMaximumSalary = (req, res ) => {
 
 };
 
-const addSalary = (req, res) => {
-  Salary.addDataSalary(req.body, (err, results) => {
-    if (err) {
-      res.status(500).json(`${err}`);
-    } else {
-      res.status(200).json(results);
-    }
-  });
-};
 
-module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary, addSalary }
+
+module.exports = { getAverageSalary, getMinimumSalary, getMaximumSalary, receiveSalaryInput }
 
