@@ -3,17 +3,17 @@ const express = require("express");
 
 
 const getAverageSalary = (req, res, next ) => {
-    Salary.getDataSalary((err, result ) => {
+
+    Salary.getDataSalary((err, result) => {
         if(err){
             res.status(500).send("Error getting average salary")
         }
         else{
             res.averageSalary = result[0];
-            console.log(res.averageSalary)
             next()
         }
     })
- 
+    
 };
 
 const getMinimumSalary = (req, res, next ) => {
@@ -23,7 +23,6 @@ const getMinimumSalary = (req, res, next ) => {
         }
         else{
             res.minimumSalary = result[0];
-            console.log(res.minimumSalary);
             next()
         }
     })
