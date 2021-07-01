@@ -8,7 +8,7 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
     const [companiesList, setCompaniesList] = useState([]);
 
     const searchJob = () => {
-        fetch("https://landing.jobs/api/v1/jobs")
+        fetch("https://landing.jobs/api/v1/jobs?limit=3&offset=47")
             .then((res) => res.json())
             .then((data) => setJobsList(data));
     };
@@ -20,6 +20,8 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
             .then((data) => setCompaniesList(data));
     };
     useEffect(searchCompany, []);
+
+    console.log(jobsList);
 
     return (
         <div className={showLJ ? "landingjobs-list-container " : "hidden"}>
