@@ -21,8 +21,6 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
     };
     useEffect(searchCompany, []);
 
-    console.log(jobsList);
-
     return (
         <div className={showLJ ? "landingjobs-list-container " : "hidden"}>
             <h1 className="landingjobs-list-title">
