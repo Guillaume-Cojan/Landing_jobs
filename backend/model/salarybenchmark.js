@@ -31,13 +31,11 @@ Salary.getDataMaximumSalary = (callback) => {
 
 Salary.addDataSalary = (userInput, callback) => {
     console.log(userInput);
-    let sql = "INSERT INTO salarybenchmark (`Work_Company_PT_District`, `Job_Role`, `Working_Experience_Aggregated`) VALUES (?)";
-    let post = {
-        Work_Company_PT_District: userInput.Work_Company_PT_District,
-        Job_Role: userInput.Job_Role,
-        Working_Experience_Aggregated: userInput.Working_Experience_Aggregated,
-        };
-    connection.query(sql, post, (err, result) => {
+    // let sql = "INSERT INTO salarybenchmark (`Work_Company_PT_District`, `Job_Role`, `Working_Experience_Aggregated`) VALUES (?)";
+    let sqlQuery = "SELECT ID, Job_Role, Working_Experience_Aggregated, Work_Company_PT_District FROM salarybenchmark WHERE job_role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? "
+    let sqlValues = []
+    sqlValues.push(userInput.Job_Role, userInput.Working_Experience_Aggregated, userInput.Work_Company_PT_District)
+    connection.query(sqlQuery, sqlValues, (err, result) => {
         callback(err, result);
         });
         };
