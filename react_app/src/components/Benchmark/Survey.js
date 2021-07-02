@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SurveyList from "./SurveyList";
 
 
@@ -56,7 +56,8 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     console.log("Right now selection is : ", userSelection)
 
     const handleCalculateClick = () => {
-                setShowResult(true)
+                setShowResult(true);
+                sendSelectionToBE()
              }
 
     const sendSelectionToBE = () => {
@@ -75,7 +76,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     }
    
 
-    useEffect( sendSelectionToBE, [userSelection])
+    // useEffect( sendSelectionToBE, [userSelection])
  
    
     return (
