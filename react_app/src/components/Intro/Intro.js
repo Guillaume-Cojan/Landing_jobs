@@ -1,6 +1,6 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
 //import Allura from "./../../assets/Allurra-FeedbackSession1.svg";
-import ImgHero from "./../../assets/IMG_HERO.png";
+import ImgHero from "./../../assets/Ativo 1 1.svg";
 import "./Intro.css";
 
 function Intro() {

@@ -4,9 +4,8 @@
     align-items: center;
     width: 100vw;
     height: 100%;
-    margin-top: 20vh;
     padding-bottom: 10%;
-    padding-top: 16%;
+    padding-top: 25%;
     transition: 0.3s;
 }
 
@@ -16,9 +15,8 @@
     align-items: center;
     width: 100vw;
     height: 100%;
-    margin-top: 6%;
     padding-bottom: 10%;
-    padding-top: 16%;
+    padding-top: 25%;
     transition: 0.3s;
 }
 
@@ -28,9 +26,8 @@
     align-items: center;
     width: 100vw;
     height: 100%;
-    margin-top: 6%;
     padding-bottom: 10%;
-    padding-top: 16%;
+    padding-top: 25%;
     transition: 0.3s;
 }
 
@@ -297,6 +294,6 @@
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
-        margin-top: 15vh;
+        padding-top: 23%;
     }
 }
