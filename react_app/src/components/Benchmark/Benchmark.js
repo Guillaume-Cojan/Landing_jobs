@@ -7,6 +7,7 @@ import Result from "./Result";
 
 function Benchmark({ showLJ, showJobs }) {
     const [ showResult, setShowResult] = useState(false);
+    const [ graphData, setGraphData] = useState({})
 
     return (
         <div
@@ -18,8 +19,8 @@ function Benchmark({ showLJ, showJobs }) {
                     : "benchmark-container"
             }
         >
-            <Survey showLJ={showLJ} showJobs={showJobs} setShowResult={setShowResult}/>
-            <Result showLJ={showLJ} showJobs={showJobs} showResult={showResult}/>
+            <Survey showLJ={showLJ} showJobs={showJobs} setShowResult={setShowResult} setGraphData={setGraphData}/>
+            <Result showLJ={showLJ} showJobs={showJobs} showResult={showResult} graphData= {graphData}/>
         </div>
     )
 }

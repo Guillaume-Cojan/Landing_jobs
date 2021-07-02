@@ -1,13 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
 import "./Benchmark.css"
 
-const VerticalBar = () => {
-
-    const [ averageSalary, setAverageSalary ]  = useState(0);
-    const [ minimumSalary, setMinimumSalary ] = useState(0);
-    const [ maximumSalary, setMaximumSalary ] = useState(0);
-
+const VerticalBar = ({graphData}) => {
+  console.log("I am the graph data on graph", graphData)
+    const averageSalary = graphData.average_salary;
+    const minimumSalary = graphData.minimum_salary;
+    const maximumSalary = graphData.maximum_salary;
 
     const options = {
         scales: {
@@ -21,17 +20,6 @@ const VerticalBar = () => {
         },
       };
     
-    const getAverageResult = () => {
-        fetch("http://localhost:5000/salarybenchmark/")
-        .then(response => response.json())
-        .then((data) => {
-          setAverageSalary(data.average_salary)
-          setMinimumSalary(data.minimum_salary)
-          setMaximumSalary(data.maximum_salary)
-        })
-    } 
-
-    useEffect( getAverageResult, [])
 
     const data = {
         labels: ['Minimum Salary', 'Average Salary', 'Maximum Salary'],
