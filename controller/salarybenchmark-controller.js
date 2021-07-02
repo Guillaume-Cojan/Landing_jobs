@@ -2,30 +2,29 @@ const Salary = require("../model/salarybenchmark");
 const express = require("express");
 
 
-const receiveSalaryInput = (req, res) => {
+const receiveSalaryInput = (req, res, next) => {
     Salary.addDataSalary(req.body, (err, result) =>
     {
       if (err) {
         res.status(500).json(`${err}`);
       } else {
           res.formInput = req.body.formSelection
-          console.log("res.input is", res.formInput)
-          res.status(200).json(result);
-        
+           next() 
       }
-    
     }
     );
   };
 
+
+
 const getAverageSalary = (req, res, next ) => {
 
-    Salary.getDataSalary((err, result) => {
+    Salary.getDataSalary(res.formInput, (err, result) => {
         if(err){
             res.status(500).send("Error getting average salary")
         }
         else{
-            console.log(res)
+            console.log("i'm from the response object", res.formInput)
             res.averageSalary = result[0];
             next()
         }
@@ -34,7 +33,7 @@ const getAverageSalary = (req, res, next ) => {
 };
 
 const getMinimumSalary = (req, res, next ) => {
-    Salary.getDataMinimumSalary((err, result ) => {
+    Salary.getDataMinimumSalary(res.formInput,(err, result ) => {
         if(err){
             res.status(500).send("Error getting minimum salary")
         }
@@ -47,14 +46,14 @@ const getMinimumSalary = (req, res, next ) => {
 };
 
 const getMaximumSalary = (req, res ) => {
-    Salary.getDataMaximumSalary((err, result ) => {
+    Salary.getDataMaximumSalary(res.formInput, (err, result ) => {
         if(err){
             res.status(500).send("Error getting maximum salary")
         }
         else{
             res.maximumSalary = result[0]
             const salaryInfo = {...res.averageSalary,...res.minimumSalary,...res.maximumSalary}
-            console.log(salaryInfo)
+            console.log("Salary Info",salaryInfo)
             res.status(200).json(salaryInfo)
         }
     })
