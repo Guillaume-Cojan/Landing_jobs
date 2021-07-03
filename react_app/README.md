@@ -43,11 +43,15 @@ Use our salary benchmark tool to check how your salary compares to that of your 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![Image](src/assets/landing-jobs-tempscreenshot.png)
+![Project Screenshot](https://user-images.githubusercontent.com/62710917/124365176-f7547800-dc4e-11eb-8f3b-2dfb363d8967.png)
 
-A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and education. 
 
-![Image](src/assets/techguy.png)
+A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and job role. 
+
+
+![Project Screenshot 2](https://user-images.githubusercontent.com/62710917/124365322-dc363800-dc4f-11eb-962c-153192597854.png)
+
+
 
 ### Built With
 
