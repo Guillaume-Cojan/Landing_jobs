@@ -1,4 +1,6 @@
+import React, { useState } from "react";
 import SurveyList from "./SurveyList";
+
 
 const category = [
     "Back-End Developer",
@@ -24,30 +26,59 @@ const category = [
 const experience = ["0 Years", "0 - 3 years", "3 - 6 years", "6+ years"];
 
 const location = [
-    "Lisboa, Lisbon Metropolitan Area",
-    "Coimbra, Centre",
-    "Açores, Azores and Madeira",
-    "Braga, North",
-    "Viseu, Centre",
-    "Aveiro, Centre",
-    "Porto, Porto Metropolitan Area",
-    "Madeira, Azores and Madeira",
-    "Leiria, Centre",
-    "Viana do Castelo, North",
-    "Castelo Branco, Centre",
-    "Other, Other",
-    "Faro, South",
-    "Vila Real, North",
-    "Setúbal, Lisbon Metropolitan Area",
-    "Évora, South",
-    "Bragança, North",
-    "Guarda, Centre",
-    "Portalegre, South",
-    "Santarém, Centre",
-    "Beja, South",
+    "Lisboa",
+    "Coimbra",
+    "Açores",
+    "Braga",
+    "Viseu",
+    "Aveiro",
+    "Porto",
+    "Madeira",
+    "Leiria",
+    "Viana do Castelo",
+    "Castelo Branco",
+    "Other",
+    "Faro",
+    "Vila Real",
+    "Setúbal",
+    "Évora",
+    "Bragança",
+    "Guarda",
+    "Portalegre",
+    "Santarém",
+    "Beja",
 ];
 
-function Survey({ showLJ, showJobs }) {
+function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
+    
+    const [ userSelection, setUserSelection] = useState({})
+
+    console.log("Right now selection is : ", userSelection)
+
+    const handleCalculateClick = () => {
+                setShowResult(true);
+                sendSelectionToBE()
+             }
+
+    const sendSelectionToBE = () => {
+        if(userSelection.category && userSelection.experience && userSelection.location){ 
+            fetch("http://localhost:5000/salarybenchmark/", {
+                method: "POST",
+                headers: {
+                    "Content-type": "application/json",
+                },
+                body: JSON.stringify({formSelection: userSelection}),
+             })
+                .then((res) => res.json())
+                .then((data) => {setGraphData(data)})
+        }
+ 
+    }
+   
+
+    // useEffect( sendSelectionToBE, [userSelection])
+ 
+   
     return (
         <div className="survey-container">
             <h2
@@ -65,9 +96,9 @@ function Survey({ showLJ, showJobs }) {
                 You can explore the features that we provide with fun and have
                 their own functions each feature.
             </p>
-            <SurveyList title={"Category"} list={category} />
-            <SurveyList title={"Experience"} list={experience} />
-            <SurveyList title={"Location"} list={location} />
+            <SurveyList title={"Category"} list={category} setUserSelection={setUserSelection} userSelection={userSelection}/>
+            <SurveyList title={"Experience"} list={experience} setUserSelection={setUserSelection} userSelection={userSelection}/>
+            <SurveyList title={"Location"} list={location} setUserSelection={setUserSelection} userSelection={userSelection}/>
             <button
                 className={
                     showLJ
@@ -76,6 +107,7 @@ function Survey({ showLJ, showJobs }) {
                             : "calculate-btn-talent"
                         : "calculate-btn"
                 }
+                onClick={handleCalculateClick}
             >
                 Calculate
             </button>
