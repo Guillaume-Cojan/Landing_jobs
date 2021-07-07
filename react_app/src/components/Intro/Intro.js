@@ -1,13 +1,16 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
-//import Allura from "./../../assets/Allurra-FeedbackSession1.svg";
-import ImgHero from "./../../assets/Ativo 1 1.svg";
+import IntroImg from "./../../assets/intro.png";
 import "./Intro.css";
 
 function Intro() {
     return (
         <div className="intro-container">
             <div className="top-logo">
-                <img className="lj-logo" src={LjLogo} alt="logo"></img>
+                <img
+                    className="lj-logo"
+                    src={LjLogo}
+                    alt="Landing.Jobs-logo"
+                ></img>
             </div>
             <div className="intro-content">
                 <div className="intro-text">
@@ -15,13 +18,16 @@ function Intro() {
                     <h2 className="intro-title">Tech Professionals</h2>
                     <h2 className="intro-title">Salary Benchmarking</h2>
                     <p className="intro-description">
-                        {" "}
-                        Provide a network for all your needs with ease and fun
-                        using LaslesVPN discover interesting features from us.{" "}
+                        Trusted data that you need to land a new job or make the
+                        right compensation decision with confidence.
                     </p>
                 </div>
                 <div className="intro-image">
-                    <img className="ellipse" src={ImgHero} alt="ellipse" />
+                    <img
+                        className="ellipse"
+                        src={IntroImg}
+                        alt="intro-talents-companies"
+                    />
                 </div>
             </div>
         </div>

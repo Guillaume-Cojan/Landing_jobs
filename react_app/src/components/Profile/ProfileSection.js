@@ -1,6 +1,6 @@
 import Profile from "./Profile";
-import AlluraSitting from "../../assets/woman-sitting.png";
-import AlluraStanding from "../../assets/sharing-presentation.png";
+import ProfileCompany from "../../assets/profile_company.png";
+import ProfileTalent from "../../assets/profile_talent.png";
 import "./Profile.css";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
@@ -8,11 +8,11 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
         <div className="profiles">
             <div className="profiles-container">
                 <Profile
-                    title={"Companies"}
+                    title={"Company"}
                     content={
-                        "Teaser about companies datas, or some... ... like that. Teaser about companies datas, or some... like that...."
+                        "Pay what your talent deserves. Make confident decisions with transparent salary data."
                     }
-                    image={AlluraSitting}
+                    image={ProfileCompany}
                     setShowLJ={setShowLJ}
                     id={1}
                     setShowJobs={setShowJobs}
@@ -21,9 +21,9 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                 <Profile
                     title={"Talent"}
                     content={
-                        "Teaser about talent data, or some... ... like that. Teaser about talent data, or some... ...like that."
+                        "Stop guessing what you are worth. Gain the insights needed to make the smartest career move decision."
                     }
-                    image={AlluraStanding}
+                    image={ProfileTalent}
                     setShowLJ={setShowLJ}
                     id={2}
                     setShowJobs={setShowJobs}

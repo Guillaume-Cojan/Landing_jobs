@@ -171,8 +171,8 @@
     margin-right: 5%;
     margin-top: 4%;
     transition: 0.3s;
+    width: 25%;
 }
-  
 
 /*Phone*/
 @media (max-width: 767px) {
@@ -252,6 +252,7 @@
     .no-result-img {
         margin-right: 0%;
         transition: 0.3s;
+        width: 45%;
     }
 
     .calculate-btn,

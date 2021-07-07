@@ -6,10 +6,10 @@ function Subscribe() {
         <div className="subscribe-container">
             <div className="subscribe-text">
                 <h1>
-                    Do you want to receive regular information about your
-                    salary?
+                    Do you want to receive regular information about salary and
+                    career trends?
                 </h1>
-                <p>Enter an email to send your salary comparison quarterly.</p>
+                <p>Enter your email and receive.</p>
             </div>
             <div className="subscribe-btn-container">
                 <SweetAlert />
