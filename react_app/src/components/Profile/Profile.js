@@ -24,8 +24,7 @@ const Profile = ({
                 <h2
                     className={id === 1 ? "profile-title-cie" : "profile-title"}
                 >
-                    {" "}
-                    {title}{" "}
+                    {title}
                 </h2>
                 <p className="profile-content"> {content} </p>
                 <button
@@ -34,8 +33,9 @@ const Profile = ({
                     }
                     onClick={() => handleShowLJ()}
                 >
-                    {" "}
-                    {id === 1 ? "I'm Company" : "I'm Talent"}{" "}
+                    {id === 1
+                        ? "Gain Salary Insights"
+                        : "Get my Salary Estimates"}
                 </button>
             </div>
             <div className="profile-right-side">

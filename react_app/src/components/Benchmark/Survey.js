@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SurveyList from "./SurveyList";
 
-
 const category = [
     "Back-End Developer",
     "Business Applications (BI/CRM/ERP)",
@@ -50,35 +49,37 @@ const location = [
 ];
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
-    
-    const [ userSelection, setUserSelection] = useState({})
+    const [userSelection, setUserSelection] = useState({});
 
-    console.log("Right now selection is : ", userSelection)
+    console.log("Right now selection is : ", userSelection);
 
     const handleCalculateClick = () => {
-                setShowResult(true);
-                sendSelectionToBE()
-             }
+        setShowResult(true);
+        sendSelectionToBE();
+    };
 
     const sendSelectionToBE = () => {
-        if(userSelection.category && userSelection.experience && userSelection.location){ 
+        if (
+            userSelection.category &&
+            userSelection.experience &&
+            userSelection.location
+        ) {
             fetch("http://localhost:5000/salarybenchmark/", {
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",
                 },
-                body: JSON.stringify({formSelection: userSelection}),
-             })
+                body: JSON.stringify({ formSelection: userSelection }),
+            })
                 .then((res) => res.json())
-                .then((data) => {setGraphData(data)})
+                .then((data) => {
+                    setGraphData(data);
+                });
         }
- 
-    }
-   
+    };
 
     // useEffect( sendSelectionToBE, [userSelection])
- 
-   
+
     return (
         <div className="survey-container">
             <h2
@@ -92,13 +93,25 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             >
                 Salary Benchmarking
             </h2>
-            <p className="survey-p">
-                You can explore the features that we provide with fun and have
-                their own functions each feature.
-            </p>
-            <SurveyList title={"Category"} list={category} setUserSelection={setUserSelection} userSelection={userSelection}/>
-            <SurveyList title={"Experience"} list={experience} setUserSelection={setUserSelection} userSelection={userSelection}/>
-            <SurveyList title={"Location"} list={location} setUserSelection={setUserSelection} userSelection={userSelection}/>
+            <p className="survey-p">Put the power of "pay" into your hands.</p>
+            <SurveyList
+                title={"Category"}
+                list={category}
+                setUserSelection={setUserSelection}
+                userSelection={userSelection}
+            />
+            <SurveyList
+                title={"Experience"}
+                list={experience}
+                setUserSelection={setUserSelection}
+                userSelection={userSelection}
+            />
+            <SurveyList
+                title={"Location"}
+                list={location}
+                setUserSelection={setUserSelection}
+                userSelection={userSelection}
+            />
             <button
                 className={
                     showLJ

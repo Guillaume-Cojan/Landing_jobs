@@ -46,10 +46,9 @@
 
 .profile-img {
     position: absolute;
-    margin-left: -8vw;
-    margin-top: 1vw;
-    height: 22vh;
-    border-radius: 50%;
+    margin-left: -12vw;
+    margin-top: 3vw;
+    width: 13vw;
 }
 
 .bttn-get-started {
@@ -211,10 +210,9 @@
     }
 
     .profile-img {
-        margin-left: 25vw;
-        margin-top: -6vw;
-        height: 130px;
-        border-radius: 50%;
+        margin-left: 27vw;
+        margin-top: 1.5vw;
+        width: 13vw;
     }
 
     .profile-text {
@@ -242,10 +240,9 @@
     }
 
     .profile-img {
-        margin-left: 25vw;
-        margin-top: -6vw;
-        height: 130px;
-        border-radius: 50%;
+        margin-left: 21vw;
+        margin-top: 0vw;
+        width: 13vw;
     }
 
     .profile-text {
