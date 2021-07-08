@@ -1,6 +1,6 @@
-import ResultNoshow from "../../assets/calculator_all.png";
-import ResultNoshowTalent from "../../assets/calculator_talent.png";
-import ResultNoshowCie from "../../assets/calculator_company.png";
+import ResultNoshow from "../../assets/calculator_all.svg";
+import ResultNoshowTalent from "../../assets/calculator_talent.svg";
+import ResultNoshowCie from "../../assets/calculator_company.svg";
 import VerticalBar from "./Graph";
 
 function Result({ showLJ, showJobs, showResult, graphData }) {

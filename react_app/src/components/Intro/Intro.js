@@ -1,5 +1,5 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
-import IntroImg from "./../../assets/intro.png";
+import IntroImg from "./../../assets/intro.svg";
 import "./Intro.css";
 
 function Intro() {
