@@ -1,6 +1,6 @@
 import Profile from "./Profile";
-import ProfileCompany from "../../assets/profile_company.png";
-import ProfileTalent from "../../assets/profile_talent.png";
+import ProfileCompany from "../../assets/profile_company.svg";
+import ProfileTalent from "../../assets/profile_talent.svg";
 import "./Profile.css";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
