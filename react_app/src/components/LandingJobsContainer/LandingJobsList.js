@@ -2,6 +2,9 @@ import JobCard from "./JobCard";
 import TalentCard from "./TalentCard";
 import "./LandingJobsList.css";
 import { useState, useEffect } from "react";
+import AvatarDev from "../../assets/talent_dev.svg";
+import AvatarPm from "../../assets/talent_pm.svg";
+import AvatarUx from "../../assets/talent_ux.svg";
 
 const LandingJobsList = ({ showLJ, showJobs }) => {
     const [jobsList, setJobsList] = useState([]);
@@ -28,7 +31,12 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
             </h1>
             <div className="landingjobs-items">
                 {showJobs ? (
-                    <TalentCard />
+                    <TalentCard
+                        avatar={AvatarDev}
+                        name={"Tomas SANCHEZ"}
+                        title={"Full-Stack Engineer"}
+                        experience={"6+ years"}
+                    />
                 ) : (
                     <JobCard
                         logo={
@@ -51,7 +59,12 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                     />
                 )}
                 {showJobs ? (
-                    <TalentCard />
+                    <TalentCard
+                        avatar={AvatarUx}
+                        name={"Julia ORTIZ"}
+                        title={"UX Designer"}
+                        experience={"6+ years"}
+                    />
                 ) : (
                     <JobCard
                         logo={
@@ -74,7 +87,12 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                     />
                 )}
                 {showJobs ? (
-                    <TalentCard />
+                    <TalentCard
+                        avatar={AvatarPm}
+                        name={"Alan MULLER"}
+                        title={"Application Product Manager"}
+                        experience={"3 years"}
+                    />
                 ) : (
                     <JobCard
                         logo={
