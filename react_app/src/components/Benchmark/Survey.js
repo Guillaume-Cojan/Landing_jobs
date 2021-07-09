@@ -48,6 +48,43 @@ const location = [
     "Beja",
 ];
 
+const industry = [
+    "Financial and banking",
+    "Software development - other",
+    "Web development or design",
+    "Consulting",
+    "Retail or ecommerce",
+    "Government or public administration",
+    "Energy or utilities",
+    "Software as a service (saas) development",
+    "Cloud-based solutions or services",
+    "Internet",
+    "Telecommunications",
+    "Healthcare or social services",
+    "Information technology",
+    "Transportation",
+    "Data and analytics",
+    "Education and training",
+    "Manufacturing",
+    "Media, advertising, publishing, or entertainment",
+    "Marketing",
+    "Security",
+    "Travel",
+    "Research - academic or scientific",
+    "Real estate",
+    "Nonprofit",
+];
+
+const company_type = [
+    "Corporate",
+    "SME - Small or Medium Enterprise (personnel <250)",
+    "Startup (new business venture)",
+    "Consulting Business",
+    `Scale-up (fast growing company aka "unicorn")`,
+    "Nearshore (outsource business processes to companies in a nearby country)",
+    "Outsourcing",
+];
+
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     const [userSelection, setUserSelection] = useState({});
 
@@ -109,6 +146,18 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             <SurveyList
                 title={"Location"}
                 list={location}
+                setUserSelection={setUserSelection}
+                userSelection={userSelection}
+            />
+            <SurveyList
+                title={"Industry"}
+                list={industry}
+                setUserSelection={setUserSelection}
+                userSelection={userSelection}
+            />
+            <SurveyList
+                title={"Company type"}
+                list={company_type}
                 setUserSelection={setUserSelection}
                 userSelection={userSelection}
             />
