@@ -1,76 +1,83 @@
-.intro-container {
+
+ /* FLEX BOX VERSION  */
+ .intro-container {
+    margin: 0;
     display: flex;
-    flex-direction: column;
-    padding: 2% 10%;
-    height: 35em;
+    flex-direction: column; 
+    /* padding: 2% 10%; */
     background: #000000;
     color: #ffffff;
-}
+} 
 
 .top-logo {
-    align-self: flex-start;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+
     width: 100%;
-    margin-top: 10px;
 }
 
 .lj-logo {
-    width: 25%;
-}
-
-.salary {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    color: #73d3ca;
+    width: 15%;
 }
 
 .intro-content {
-    margin-top: 0%;
+    margin: 0%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
 }
 
 .intro-text {
-    width: 65%;
-    margin-left: 1.5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    /* was 65% before */
 }
 
 .intro-app {
     font-family: "Rubik", sans-serif;
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    font-weight: 500;
     margin: 2% 0;
     color: #73d3ca;
-    margin-top: 8%;
+    /* margin-top: 8%; */
 }
 
 .intro-title {
     font-family: "Montserrat", sans-serif;
-    font-size: 3.3em;
+    font-size: 3.2rem;
     font-weight: 300;
+    white-space: nowrap;
     margin: 2% 0;
 }
 
 .intro-description {
-    font-size: 1.2em;
+    font-size: 1rem;
     color: #c4c4c4;
     width: 80%;
-    height: 60px;
+    /* height: 60px; */
 }
 
 .intro-image {
-    width: 38%;
+    display: flex;
+    justify-content: flex-end;
+    /* width: 40%;
+    height: 100%; */
 }
 
 .ellipse {
-    width: 100%;
-    margin-top: -5%;
-    margin-left: -10%;
+    width: 95%;
+    /* margin-top: -5%; */
+    /* margin-left: -10%;  */
+} 
+
+.intro-bottom-section{
+    height: 5em;
 }
 
 /*Phone*/
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .intro-container {
         flex-direction: column;
         width: 100%;
@@ -141,10 +148,10 @@
         margin-right: 0px;
         margin-left: 0%;
     }
-}
+} */
 
 /*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .intro-container {
         padding: 4% 5%;
         height: 27em;
@@ -169,10 +176,10 @@
         margin-top: -10%;
         margin-left: -15%;
     }
-}
+} */
 
 /*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     .intro-container {
         padding: 3% 9%;
         height: 28em;
@@ -197,4 +204,89 @@
         margin-top: -10%;
         margin-left: -15%;
     }
+} */
+
+
+
+
+/* Grid version of Intro component */
+
+/* .intro-container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 80vh;
+    left: -576px;
+    top: 11px;
+    background: #232324;
+    margin: 0;
+    padding: 0 15%;
 }
+
+.intro-content {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 10%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-gap: 5%;
+}
+
+.left-side {
+    box-sizing: border-box;
+    color: white;
+}
+
+.right-side {
+    box-sizing: border-box;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    /* position: relative; */
+/* }
+
+.session {
+    position: absolute;
+    bottom: -210px;
+    left: 20px;
+}
+
+.ellipse {
+    width: 100%;
+    margin-top: -5%;
+    margin-left: -10%; 
+}
+
+.intro-title {
+    margin: 0;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.intro-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.top-logo {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.lj-logo {
+    width: 20%;
+}
+
+.intro-image {
+    position: absolute;
+    width: 35px;
+    height: 36.23px;
+}  */
+

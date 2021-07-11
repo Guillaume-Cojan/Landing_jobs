@@ -1,4 +1,62 @@
-.profiles {
+div.profiles {
+    display: grid;
+    place-content: center;
+    margin: 0;
+    text-align: left;
+}
+
+.profiles-container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 10% 15%;
+    text-align: left;
+}
+
+.profile-card {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+    /* grid-template-rows: 0.5fr 0.5fr 0.5fr 0.6fr; */
+    padding: 5% 5%;
+    justify-items: start;
+    grid-gap: 0.6em;
+    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35),
+    0px 10px 10px -7px rgba(179, 179, 179, 0.212),
+    0px 5px 5px -7px rgba(179, 179, 179, 0.26);
+}
+
+.profile-title,
+.profile-img {
+    margin: 0;
+}
+
+.profile-title {
+    color: #f53838;
+    font-size: 2rem;
+    font-weight: 600;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-align: left;
+}
+
+.profile-content {
+    grid-column: 1 / 2;
+    grid-row: 2 / span 2;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.profile-img {
+    grid-column: 2/ 3;
+    grid-row: 1/ -1;
+
+}
+
+
+/* .profiles {
     position: relative;
 }
 
@@ -49,7 +107,7 @@
     margin-left: -12vw;
     margin-top: 3vw;
     width: 13vw;
-}
+} */
 
 .bttn-get-started {
     margin-top: 0;
@@ -135,18 +193,20 @@
     transition: 0.3s;
 }
 
-/*Phone*/
-@media (max-width: 767px) {
+/* Phone */
+/* @media (max-width: 767px) {
     .profiles {
+        display: f;
         background-color: #000000;
         border: 1px solid #000000;
     }
 
     .profiles-container {
+        display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        margin: 0px;
+        margin: 10px 2px ;
         padding-top: 0;
         padding: 10% 7%;
     }
@@ -159,6 +219,7 @@
         width: 0%;
         height: 0%;
         box-shadow: none;
+        background-color: black;
     }
 
     .profile-img {
@@ -190,10 +251,10 @@
         width: 300px;
         height: 77px;
     }
-}
+} */
 
 /*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .profiles-container {
         margin-top: -9%;
         margin-bottom: 0;
@@ -220,10 +281,10 @@
         margin-left: 4%;
         margin-right: 4%;
     }
-}
+} */
 
 /*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     .profiles-container {
         margin-top: -5%;
         margin-bottom: 0;
@@ -250,10 +311,10 @@
         margin-left: 4%;
         margin-right: 4%;
     }
-}
+} */
 
 /*Big desktop*/
-@media (min-width: 1800px) {
+/* @media (min-width: 1800px) {
     .profiles-container {
         margin-top: -7vh;
     }
@@ -262,4 +323,4 @@
         margin-top: 1vw;
         height: 180px;
     }
-}
+} */

@@ -2,15 +2,17 @@
 
 * {
     font-family: Montserrat;
+    box-sizing: border-box;
 }
 
 html,
 body {
+    font-size: 16px;
+    margin: 0;
     overscroll-behavior: none;
 }
 
 body {
-    margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -29,4 +31,8 @@ code {
 button:hover,
 button:focus {
     cursor: pointer;
+}
+
+* {
+    border: 1px solid rebeccapurple;
 }

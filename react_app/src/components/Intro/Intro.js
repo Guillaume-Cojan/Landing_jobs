@@ -30,6 +30,7 @@ function Intro() {
                     />
                 </div>
             </div>
+            <div className="intro-bottom-section"> </div>
         </div>
     );
 }
