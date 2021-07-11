@@ -14,7 +14,7 @@ function Benchmark({ showLJ, showJobs }) {
             className={
                 showLJ
                     ? showJobs
-                        ? "benchmark-container-cie"
+                        ? "benchmark-container-company"
                         : "benchmark-container-talent"
                     : "benchmark-container"
             }

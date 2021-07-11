@@ -1,35 +1,28 @@
-.benchmark-container {
+.benchmark-container, 
+.benchmark-container-company, 
+.benchmark-container-talent  {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    /* height: 100%; */
-    padding-bottom: 10%;
-
+    width: 100%;
+    height: 100%;
+    /* padding-bottom: 10%; */
+    /* margin-top: 50%; */
     transition: 0.3s;
 }
 
-.benchmark-container-cie {
+/* .benchmark-container-company, .benchmark-container-talent {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     /* height: 100%; */
-    padding-bottom: 10%;
+    /* padding-bottom: 10%; */
     /* padding-top: 25%; */
-    transition: 0.3s;
-}
+    /* transition: 0.3s; 
+    } 
+*/
 
-.benchmark-container-talent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    /* height: 100%; */
-    padding-bottom: 10%;
-    /* padding-top: 25%; */
-    transition: 0.3s;
-}
 
 .survey-container {
     display: flex;
@@ -175,7 +168,7 @@
 }
 
 /*Phone*/
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
@@ -229,10 +222,10 @@
         height: 57px;
         margin: 40px 0px;
     }
-}
+} */
 
 /*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
@@ -240,7 +233,7 @@
         height: 100%;
         margin-top: -37%;
         /* padding-top: 25%; */
-        flex-direction: column;
+        /* flex-direction: column;
         justify-content: center;
     }
 
@@ -260,19 +253,19 @@
     .calculate-btn-talent {
         width: 300px;
     }
-}
+} */
 
 /*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+/* @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
     .benchmark-container,
     .benchmark-container-cie,
     .benchmark-container-talent {
         width: 100vw;
         height: 100%;
-        margin-top: -33%;
+        margin-top: -33%; 
         /* padding-top: 25%; */
-    }
-
+    /* }  */
+/* 
     .survey-container {
         margin-right: 3%;
         align-items: center;
@@ -288,7 +281,7 @@
     .survey-title-talent {
         font-size: 2.2rem;
     }
-}
+} */ 
 
 /* Big desktop
 @media (min-width: 1550px) {
