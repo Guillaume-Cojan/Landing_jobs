@@ -4,7 +4,9 @@
     margin: 0;
     display: flex;
     flex-direction: column; 
-    /* padding: 2% 10%; */
+    padding-top: 1em; 
+    /* padding-left: 10%;
+    padding-right: 10%; */
     background: #000000;
     color: #ffffff;
 } 
@@ -15,19 +17,19 @@
 }
 
 .lj-logo {
-    width: 15%;
+    width: 35%;
 }
 
 .intro-content {
     margin: 0%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
    
 }
 
 .intro-text {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -37,37 +39,38 @@
 
 .intro-app {
     font-family: "Rubik", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
     margin: 2% 0;
     color: #73d3ca;
-    /* margin-top: 8%; */
+    margin-top: 8%;
 }
 
 .intro-title {
     font-family: "Montserrat", sans-serif;
-    font-size: 3.2rem;
+    font-size: 4rem;
     font-weight: 300;
     white-space: nowrap;
     margin: 2% 0;
 }
 
 .intro-description {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: #c4c4c4;
     width: 80%;
     /* height: 60px; */
 }
 
 .intro-image {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: center; */
     /* width: 40%;
     height: 100%; */
+    margin-top: 5%;
 }
 
 .ellipse {
-    width: 95%;
+    height: 35em;
     /* margin-top: -5%; */
     /* margin-left: -10%;  */
 } 
@@ -205,88 +208,3 @@
         margin-left: -15%;
     }
 } */
-
-
-
-
-/* Grid version of Intro component */
-
-/* .intro-container {
-    box-sizing: border-box;
-    width: 100vw;
-    height: 80vh;
-    left: -576px;
-    top: 11px;
-    background: #232324;
-    margin: 0;
-    padding: 0 15%;
-}
-
-.intro-content {
-    box-sizing: border-box;
-    margin: 0;
-    padding-top: 10%;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr;
-    grid-gap: 5%;
-}
-
-.left-side {
-    box-sizing: border-box;
-    color: white;
-}
-
-.right-side {
-    box-sizing: border-box;
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    /* position: relative; */
-/* }
-
-.session {
-    position: absolute;
-    bottom: -210px;
-    left: 20px;
-}
-
-.ellipse {
-    width: 100%;
-    margin-top: -5%;
-    margin-left: -10%; 
-}
-
-.intro-title {
-    margin: 0;
-    font-size: 50px;
-    line-height: 70px;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
-.intro-description {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 40px;
-}
-
-.top-logo {
-    align-self: flex-start;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.lj-logo {
-    width: 20%;
-}
-
-.intro-image {
-    position: absolute;
-    width: 35px;
-    height: 36.23px;
-}  */
-
