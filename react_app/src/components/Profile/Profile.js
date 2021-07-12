@@ -4,6 +4,7 @@ import "./Profile.css";
  
 
 
+
 const Profile = ({
     title,
     content,
