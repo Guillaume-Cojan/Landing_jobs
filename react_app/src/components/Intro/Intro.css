@@ -4,25 +4,26 @@
     margin: 0;
     display: flex;
     flex-direction: column; 
-    padding-top: 1em; 
+    /* padding-top: 1em; 
+    padding-left: 5%;; */
     background: #000000;
     color: #ffffff;
 } 
 
 .top-logo {
-
+    margin-left: -2%;
     width: 100%;
 }
 
 .lj-logo {
-    width: 35%;
+    width: 25%;
 }
 
 .intro-content {
     margin: 0%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
    
 }
 
@@ -68,7 +69,8 @@
 }
 
 .ellipse {
-    height: 35em;
+    /* height: 35em; */
+    width: 30vw;
     /* margin-top: -5%; */
     /* margin-left: -10%;  */
 } 
@@ -77,21 +79,55 @@
     height: 5em;
 }
 
+@media screen and (max-width: 1280px) {
+    .intro-title {
+      font-size: 3rem;
+    }
+    .intro-app {
+        font-size: 1.2rem;
+    }
+    .intro-description{
+        font-size: 1rem;
+    }
+
+    .ellipse{
+        width: 25em;
+        position: relative;
+        bottom: 5%;
+        left: 5%;
+    }
+  }
+
+  @media screen and (max-width: 945px) {
+      .intro-content {
+          flex-direction: column-reverse;
+          align-items: center;
+      }
+      .intro-text{
+          width:100%;
+      }
+      /* .intro-title {
+        font-size: 2em;
+      } */
+  }
+
+  @media screen and (max-width: 767px) {
+    .intro-title {
+        font-size: 2em;
+    }
+  }
+
+
 /*Phone*/
-/* @media (max-width: 767px) {
+ @media (max-width: 767px) { 
     .intro-container {
         flex-direction: column;
         width: 100%;
         height: auto;
-        margin-right: 0px;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-bottom: 0%;
         border-bottom: 1px solid #000000;
     }
 
     .intro-content {
-        margin-right: 0px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -101,14 +137,12 @@
     }
 
     .intro-app {
-        font-family: "Rubik", sans-serif;
         font-size: 1em;
         margin-bottom: 5%;
         margin-top: 0;
     }
 
     .intro-text {
-        margin-left: 0;
         margin: 0px 10%;
         width: 90%;
     }
@@ -122,18 +156,13 @@
     }
 
     .intro-description {
-        font-size: 15px;
+        font-size: 1rem;
         max-width: 100%;
         margin-right: 0px;
     }
 
     .top-logo {
-        margin-top: 6.7%;
-        margin-left: 6.7%;
         width: 80%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
 
     .intro-image {
@@ -146,10 +175,8 @@
 
     .ellipse {
         width: 65%;
-        margin-right: 0px;
-        margin-left: 0%;
     }
-} */
+} 
 
 /*Tablet Portrait*/
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {

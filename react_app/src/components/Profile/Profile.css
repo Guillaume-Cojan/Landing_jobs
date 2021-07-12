@@ -1,94 +1,36 @@
-/* .profiles-container {
-    margin: 0;
-    text-align: left;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-}
-
-
-
-.profile-card {
-    box-sizing: border-box;
-    background-color: white;
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 1fr 0.2fr; */
-    /* grid-template-rows: 0.5fr 0.5fr 0.5fr 0.6fr; */
-    /* padding: 5% 5%;
-    justify-items: start;
-    grid-gap: 0.6em;
-    box-shadow: 0px 20px 20px -7px rgba(179, 179, 179, 0.35),
-    0px 10px 10px -7px rgba(179, 179, 179, 0.212),
-    0px 5px 5px -7px rgba(179, 179, 179, 0.26);
-}
-
-.profile-title,
-.profile-img {
-    margin: 0;
-}
-
-.profile-title {
-    color: #f53838;
-    font-size: 2rem;
-    font-weight: 600;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    text-align: left;
-}
-
-.profile-content {
-    grid-column: 1 / 2;
-    grid-row: 2 / span 2;
-    font-size: 18px;
-    line-height: 25px;
-}
-
-.profile-img {
-    grid-column: 2/ 3;
-    grid-row: 1/ -1;
-
-} */
-
-
-
 /*  Flex Version */
 
 
 .profiles-container {
-    position: relative;
-    top: -50px;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     border: none;
-    padding-left: 10%;
-    padding-right: 10%
-    /* padding-left: 8%; */
-    /* padding-bottom: 10%; */
-    /* padding-right: 15%; */
+    background-color: #e7f2f1;
+    padding-left: 7%;
+    padding-right: 7%
 }
 
 .profile-card {
+    position: relative;
+    top: -50px;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 30em;
-    padding: 1.5em;
+    width: 35em;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
     justify-content: space-between;
-    /* width: 460px; */
-    /* height: 316px; */
 }
 
 .profile-card-content {
     display: flex;
+    height: 15rem;
     align-items: center;
 }
 
@@ -97,7 +39,7 @@
     /* display: flex;
     flex-direction: column; */
     /* justify-content: space-around; */
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     /* width: 15em; */
     /* margin-left: 30px;
     margin-right: 35%;
@@ -115,13 +57,13 @@
 /* Typography */
 
 .profile-title-blue, .profile-title-purple {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .profile-content {
     font-size: 1.1rem;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
 }
 
 .profile-img {
@@ -129,19 +71,21 @@
     /* margin-left: -12vw;
     margin-top: 3vw; */
     width: 15em;
-    margin-left: 30%;
+    position: relative;
+    left: 30%;
+    /* margin-left: 30%; */
 } 
 
 .bttn-get-started-blue {
     margin-top: 0;
     box-sizing: border-box;
-    padding: 1em 6em;
-    border: 2px solid #4293ea;
+    padding: 1em 5em;
+    border: 3px solid #4293ea;
     background: #ffffff;
     border-radius: 39px;
     color: #4293ea;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 25px;
     white-space: nowrap;
     transition: 0.3s;
@@ -150,19 +94,19 @@
 .bttn-get-started-purple {
     margin-top: 0;
     box-sizing: border-box;
-    padding: 1em 6em;
-    border: 2px solid #a729d2;
+    padding: 1em 5em;
+    border: 3px solid #a729d2;
     background: #ffffff;
     border-radius: 39px;
     color: #a729d2;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 700;
     line-height: 25px;
     white-space: nowrap;
     transition: 0.3s;
 }
 
-.bttn-get-started:hover {
+.bttn-get-started-blue:hover {
     margin-top: 0;
     box-sizing: border-box;
     background-color: #4293ea;
@@ -172,12 +116,12 @@
     transition: 0.3s;
 }
 
-.bttn-get-started:focus {
+.bttn-get-started-blue:focus {
     background-color: #4293ea;
     color: white;
 }
 
-.bttn-get-started:active {
+.bttn-get-starte-blue:active {
     margin-top: 0;
     box-sizing: border-box;
     background-color: #4293ea;
@@ -186,22 +130,21 @@
     transition: 0.3s;
 }
 
-.bttn-get-started-cie:hover {
+.bttn-get-started-purple:hover {
     margin-top: 0;
     box-sizing: border-box;
     background-color: #a729d2;
     font-weight: bold;
     color: white;
-
     transition: 0.3s;
 }
 
-.bttn-get-started-cie:focus {
+.bttn-get-started-purple:focus {
     background-color: #a729d2;
     color: white;
 }
 
-.bttn-get-started-cie:active {
+.bttn-get-started-purple:active {
     margin-top: 0;
     box-sizing: border-box;
     background-color: #a729d2;
@@ -210,15 +153,74 @@
     transition: 0.3s;
 }
 
-/* Phone */
-/* @media (max-width: 767px) {
-    .profiles {
-        display: f;
-        background-color: #000000;
-        border: 1px solid #000000;
+@media screen and (max-width: 1500px) {
+    /* Typography */
+    .profile-content {
+        font-size: 1rem;
+    }
+    .profile-title-blue, .profile-title-purple {
+        font-size: 1.5rem;
     }
 
+    .profile-card {
+        width: 25em;
+    }
+
+    .bttn-get-started-purple, .bttn-get-started-blue {
+        font-size: 1rem;
+        padding: 1em 4em;
+        margin-left: -10%;
+    }
+
+    .profile-text {
+       width: 25em;
+       margin-bottom: 0em;
+      
+    }
+    /* .profile-content{
+        margin-left: 5%;
+    } */
+
+    .profile-img {
+        width: 110%;
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width: 1140px) {
+    .profile-img {
+        width:100%;
+
+    }
+
+    .profile-card {
+        height: 20em;
+
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .profile-card {
+       padding-top: 0;
+    }
+
+    .profile-img{
+        width: 80%;
+    }
+
+    .profile-text {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 945px) {
     .profiles-container {
+        position: relative;
+        width:110%;
+        /* left: -1.8px; */
+        top: -20%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -226,16 +228,17 @@
         margin: 10px 2px ;
         padding-top: 0;
         padding: 10% 7%;
+        background-color: black;
     }
 
     .profile-card {
         display: flex;
         justify-content: center;
-        margin-bottom: 7%;
+        align-items: center;
+        margin-bottom: 0;
         border-radius: 0px;
-        width: 0%;
-        height: 0%;
         box-shadow: none;
+        height: 5em;
         background-color: black;
     }
 
@@ -243,11 +246,71 @@
         display: none;
     }
 
-    .profile-title {
+    .profile-title-blue {
         display: none;
     }
 
-    .profile-title-cie {
+    .profile-title-purple {
+        display: none;
+    }
+
+    .profile-content {
+        display: none;
+    }
+
+    .profile-text {
+        margin: 0;
+    }
+     bttn-get-started-blue {
+
+
+    }
+
+    .bttn-get-started-purple {
+        width: 340px;
+    } 
+}
+
+/* Phone */
+ @media (max-width: 767px) {
+    /* .profiles {
+        background-color: #000000;
+        border: 1px solid #000000;
+    } */
+
+    .profiles-container { 
+        /* display: flex;
+        flex-direction: column-reverse;*/
+        justify-content: center;
+        align-items: center; 
+ width: 100%;
+        /* margin: 10px 2px ;
+        padding-top: 0;
+        padding: 10% 7%; */
+    } 
+
+    .profile-card {
+        display: flex;
+        justify-content: center; 
+        margin-bottom: 2%;
+        padding: 0;
+        width: 100%;
+        /* border-radius: 0px; */
+        /* width: 0%;
+        height: 0%; */
+        /* box-shadow: none; */
+        /* background-color: black; */
+    } 
+
+    .profile-img {
+        display: none;
+    }
+
+    .profile-title-blue {
+        display: none;
+    }
+
+    .profile-title-purple {
         display: none;
     }
 
@@ -259,16 +322,18 @@
         margin: 0;
     }
 
-    .bttn-get-started {
-        width: 300px;
-        height: 77px;
+    .bttn-get-started-blue {
+        /* width: 300px;
+        height: 77px; */
+        padding: 1em 4em;
     }
 
-    .bttn-get-started-cie {
-        width: 300px;
-        height: 77px;
+    .bttn-get-started-purple {
+        /* width: 300px;
+        height: 77px; */
+        padding: 1em 4em;
     }
-} */
+} 
 
 /*Tablet Portrait*/
 /* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {

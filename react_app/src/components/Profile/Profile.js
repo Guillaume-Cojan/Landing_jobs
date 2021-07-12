@@ -21,17 +21,17 @@ const Profile = ({
     return (
         <div className="profile-card">
             <div className="profile-card-content"> 
-                <div className="profile-text">
-                    <h2
-                        className={id === 1 ? "profile-title-purple" : "profile-title-blue"}
-                    >
-                        {title}
-                    </h2>
-                    <p className="profile-content"> {content} </p>
-                </div>
-                <div className="profile-right-side">
-                    <img className="profile-img" src={image} alt="worker" />
-                </div>
+            <div className="profile-text">
+                <h2
+                    className={id === 1 ? "profile-title-purple" : "profile-title-blue"}
+                >
+                    {title}
+                </h2>
+                <p className="profile-content"> {content} </p>
+            </div>
+            <div className="profile-right-side">
+                <img className="profile-img" src={image} alt="worker" />
+            </div>
             </div>
             <button
                     className={

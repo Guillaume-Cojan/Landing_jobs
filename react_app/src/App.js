@@ -14,12 +14,17 @@ function App() {
 
     return (
         <div className={showLJ ? (showJobs ? "App-company" : "App-talent") : "App"}>
+            <div className="intro-component">
             <Intro />
-            <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
+            </div>
+            <div className="profiles-component">
+                <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
+            </div>
+            {/* 
             <Benchmark showLJ={showLJ} showJobs={showJobs} />
             <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
             <Subscribe />
-            <Footer showLJ={showLJ} />
+            <Footer showLJ={showLJ} /> */}
         </div>
     );
 }
