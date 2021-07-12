@@ -1,4 +1,8 @@
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 import "./Profile.css";
+ 
+
 
 const Profile = ({
     title,
@@ -35,7 +39,7 @@ const Profile = ({
                 >
                     {id === 1
                         ? ("gain_salary_insights")
-                        :("get_my_salary_stimates")}
+                        :("get_my_salary_estimates")}
                 </button>
             </div>
             <div className="profile-right-side">

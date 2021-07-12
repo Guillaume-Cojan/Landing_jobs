@@ -51,7 +51,7 @@ const location = [
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     const [userSelection, setUserSelection] = useState({});
-    const { t } = useTranslation()
+    const { t, i18next } = useTranslation()
     
 
     console.log("Right now selection is : ", userSelection);
@@ -94,23 +94,23 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                         : "survey-title"
                 }
             >
-                Salary Benchmarking
+                {t("survey_title")}
             </h2>
-            <p className="survey-p">{t("Put the power of 'pay' into your hands.")}</p>
+            <p className="survey-p">{t("survey_p")}</p>
             <SurveyList
-                title={"Category"}
+                title={t("Category")}
                 list={category}
                 setUserSelection={setUserSelection}
                 userSelection={userSelection}
             />
             <SurveyList
-                title={"Experience"}
+                title={t("Experience")}
                 list={experience}
                 setUserSelection={setUserSelection}
                 userSelection={userSelection}
             />
             <SurveyList
-                title={"Location"}
+                title={t("Location")}
                 list={location}
                 setUserSelection={setUserSelection}
                 userSelection={userSelection}
@@ -125,7 +125,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 }
                 onClick={handleCalculateClick}
             >
-                Calculate
+                {t("Calculate")}
             </button>
         </div>
     );

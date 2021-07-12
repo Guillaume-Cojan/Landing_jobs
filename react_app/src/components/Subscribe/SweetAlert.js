@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import Swal from "sweetalert2";
+import { withTranslation } from "react-i18next";
 import "./Subscribe.css";
 
-export default class Sweetalertdemo extends Component {
+class Sweetalertdemo extends React.Component {
     constructor() {
         super();
         this.HandleClick = this.HandleClick.bind(this);
     }
-
+    
     HandleClickAutoclose() {
         let timerInterval;
         Swal.fire({
@@ -39,7 +40,7 @@ export default class Sweetalertdemo extends Component {
 
     HandleClick() {
         Swal.fire({
-            title: "Enter your email address",
+            title: "Enter email",
             input: "email",
             inputAttributes: {
                 autocapitalize: "off",
@@ -61,9 +62,7 @@ export default class Sweetalertdemo extends Component {
                     requestOptions
                 ).catch((error) => {
                     console.log(error);
-                    Swal.showValidationMessage(
-                        `Unable to subscribe now. Please try again later.`
-                    );
+                    Swal.showValidationMessage(`{t("validation_error_message")}`);
                 });
             },
             allowOutsideClick: () => !Swal.isLoading(),
@@ -78,9 +77,11 @@ export default class Sweetalertdemo extends Component {
         return (
             <div>
                 <button className="subscribe-btn" onClick={this.HandleClick}>
-                    Subscribe Now
+                    {this.props.t("subscribe-btn")}
                 </button>
             </div>
         );
     }
 }
+
+export default withTranslation()(Sweetalertdemo);

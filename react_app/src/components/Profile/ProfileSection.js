@@ -2,17 +2,19 @@ import Profile from "./Profile";
 import ProfileCompany from "../../assets/profile_company.svg";
 import ProfileTalent from "../../assets/profile_talent.svg";
 import "./Profile.css";
+import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
-    const { t } = useTranslation()
+    const { t, i18n } = useTranslation(); 
+ 
     return (
         <div className="profiles">
             <div className="profiles-container">
                 <Profile
-                    title={"Company"}
+                    title={t("company_title")}
                     content={t(
-                        "Pay what your talent deserves. Make confident decisions with transparent salary data."
+                        "company"
                     )}
                     image={ProfileCompany}
                     setShowLJ={setShowLJ}
@@ -21,9 +23,9 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                 />
                 <div>{""}</div>
                 <Profile
-                    title={"Talent"}
+                    title={t("talent_title")}
                     content={t(
-                        "Stop guessing what you are worth. Gain the insights needed to make the smartest career move decision.")}
+                        "talent")}
                     image={ProfileTalent}
                     setShowLJ={setShowLJ}
                     id={2}
