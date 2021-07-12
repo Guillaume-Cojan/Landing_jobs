@@ -1,3 +1,9 @@
+.logo-languages{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
 .intro-container {
     display: flex;
     flex-direction: column;
@@ -45,7 +51,7 @@
     margin-top: 8%;
 }
 
-.intro-title {
+.intro-title .intro-title2{
     font-family: "Montserrat", sans-serif;
     font-size: 3.3em;
     font-weight: 300;

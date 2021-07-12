@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SurveyList from "./SurveyList";
+import { useTranslation } from "react-i18next";
 
 const category = [
     "Back-End Developer",
@@ -50,6 +51,8 @@ const location = [
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     const [userSelection, setUserSelection] = useState({});
+    const { t } = useTranslation()
+    
 
     console.log("Right now selection is : ", userSelection);
 
@@ -93,7 +96,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             >
                 Salary Benchmarking
             </h2>
-            <p className="survey-p">Put the power of "pay" into your hands.</p>
+            <p className="survey-p">{t("Put the power of 'pay' into your hands.")}</p>
             <SurveyList
                 title={"Category"}
                 list={category}

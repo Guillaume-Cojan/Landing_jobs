@@ -34,8 +34,8 @@ const Profile = ({
                     onClick={() => handleShowLJ()}
                 >
                     {id === 1
-                        ? "Gain Salary Insights"
-                        : "Get my Salary Estimates"}
+                        ? ("gain_salary_insights")
+                        :("get_my_salary_stimates")}
                 </button>
             </div>
             <div className="profile-right-side">
