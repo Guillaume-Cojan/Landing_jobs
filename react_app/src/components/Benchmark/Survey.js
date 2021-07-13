@@ -99,7 +99,9 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
         if (
             userSelection.category &&
             userSelection.experience &&
-            userSelection.location
+            userSelection.location &&
+            userSelection.industry &&
+            userSelection.company_type
         ) {
             fetch("http://localhost:5000/salarybenchmark/", {
                 method: "POST",

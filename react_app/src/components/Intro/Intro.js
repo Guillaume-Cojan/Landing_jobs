@@ -19,7 +19,9 @@ function Intro() {
                     <h2 className="intro-title">Salary Benchmarking</h2>
                     <p className="intro-description">
                         Trusted data that you need to land a new job or make the
-                        right compensation decision with confidence.
+                        right compensation decision with confidence. data that
+                        you need to land a new job or make the right
+                        compensation decision with confidence.
                     </p>
                 </div>
                 <div className="intro-image">
