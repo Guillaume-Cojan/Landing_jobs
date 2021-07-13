@@ -1,300 +1,304 @@
 .benchmark-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100%;
-    padding-bottom: 10%;
-    padding-top: 25%;
-    transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 10%;
+  padding-top: 25%;
+  transition: 0.3s;
 }
 
 .benchmark-container-cie {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100%;
-    padding-bottom: 10%;
-    padding-top: 25%;
-    transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 10%;
+  padding-top: 25%;
+  transition: 0.3s;
 }
 
 .benchmark-container-talent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100%;
-    padding-bottom: 10%;
-    padding-top: 25%;
-    transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 10%;
+  padding-top: 25%;
+  transition: 0.3s;
 }
 
 .survey-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: top;
-    margin-right: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  margin-right: 12%;
 }
 
 .survey-p {
-    text-align: justify;
-    font-size: 16px;
-    color: #4f5665;
-    max-width: 360px;
+  text-align: justify;
+  font-size: 16px;
+  color: #4f5665;
+  max-width: 360px;
 }
 
 .survey-container h3 {
-    max-width: 400px;
-    margin-bottom: 5px;
+  max-width: 400px;
+  margin-bottom: 5px;
 }
 
 .select {
-    width: 400px;
-    margin-bottom: 10px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+  width: 400px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
 }
 
 .survey-title {
-    color: #3bbcb0;
-    font-size: 2.7rem;
-    font-weight: 600;
-    text-align: left;
-    transition: 0.3s;
+  color: #3bbcb0;
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
 }
 
 .survey-title-cie {
-    color: #a729d2;
-    font-size: 2.7rem;
-    font-weight: 600;
-    text-align: left;
-    transition: 0.3s;
+  color: #a729d2;
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
 }
 
 .survey-title-talent {
-    color: #007eff;
-    font-size: 2.7rem;
-    font-weight: 600;
-    text-align: left;
-    transition: 0.3s;
+  color: #007eff;
+  font-size: 2.7rem;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
 }
 
 .calculate-btn {
-    box-sizing: border-box;
-    padding: 1em 4.5em;
-    background: #3bbcb0;
-    border: 2px solid #3bbcb0;
-    border-radius: 39px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: #3bbcb0;
+  border: 2px solid #3bbcb0;
+  border-radius: 39px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn:hover {
-    background-color: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
+  background-color: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
 }
 
 .calculate-btn:active {
-    background-color: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
+  transform: translateY(4px);
 }
 
 .calculate-btn-cie {
-    box-sizing: border-box;
-    padding: 1em 4.5em;
-    background: #a729d2;
-    border: 2px solid #a729d2;
-    border-radius: 39px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: #a729d2;
+  border: 2px solid #a729d2;
+  border-radius: 39px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn-cie:hover {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
 }
 
 .calculate-btn-cie:active {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
+  transform: translateY(4px);
 }
 
 .calculate-btn-talent {
-    box-sizing: border-box;
-    padding: 1em 4.5em;
-    background: #007eff;
-    border: 2px solid #007eff;
-    border-radius: 39px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: #007eff;
+  border: 2px solid #007eff;
+  border-radius: 39px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn-talent:hover {
-    background-color: white;
-    border: 2px solid #007eff;
-    color: #007eff;
+  background-color: white;
+  border: 2px solid #007eff;
+  color: #007eff;
 }
 
 .calculate-btn-talent:active {
-    background-color: white;
-    border: 2px solid #007eff;
-    color: #007eff;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #007eff;
+  color: #007eff;
+  transform: translateY(4px);
 }
 
 .no-result-img {
-    margin-right: 5%;
-    margin-top: 0;
-    transition: 0.3s;
-    width: 25%;
+  margin-right: 5%;
+  margin-top: 0;
+  transition: 0.3s;
+  width: 25%;
+}
+
+.no-result {
+  font-size: 25px;
 }
 
 /*Phone*/
 @media (max-width: 767px) {
-    .benchmark-container,
-    .benchmark-container-cie,
-    .benchmark-container-talent {
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        margin-top: -1%;
-        margin-bottom: 20px;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 0px;
-        height: 100%;
-        margin-right: 0px;
-    }
-    .survey-container {
-        margin-right: 0px;
-        align-items: center;
-        padding-top: 10%;
-    }
-    .no-result-img {
-        margin-left: 0px;
-        width: 220px;
-    }
-    .survey-title,
-    .survey-title-cie,
-    .survey-title-talent {
-        font-size: 1.5rem;
-        max-width: 70%;
-    }
-    .survey-p {
-        font-size: 13px;
-        max-width: 70%;
-        margin: 0;
-        margin-bottom: 5%;
-    }
-    .select {
-        width: 220px;
-        margin-bottom: 0px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .survey-container h3 {
-        font-size: 16px;
-        max-width: 400px;
-        margin-bottom: 5px;
-    }
-    .calculate-btn,
-    .calculate-btn-cie,
-    .calculate-btn-talent {
-        width: 270px;
-        height: 57px;
-        margin: 40px 0px;
-    }
+  .benchmark-container,
+  .benchmark-container-cie,
+  .benchmark-container-talent {
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-top: -1%;
+    margin-bottom: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    height: 100%;
+    margin-right: 0px;
+  }
+  .survey-container {
+    margin-right: 0px;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .no-result-img {
+    margin-left: 0px;
+    width: 220px;
+  }
+  .survey-title,
+  .survey-title-cie,
+  .survey-title-talent {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
+  .survey-p {
+    font-size: 13px;
+    max-width: 70%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .select {
+    width: 220px;
+    margin-bottom: 0px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .survey-container h3 {
+    font-size: 16px;
+    max-width: 400px;
+    margin-bottom: 5px;
+  }
+  .calculate-btn,
+  .calculate-btn-cie,
+  .calculate-btn-talent {
+    width: 270px;
+    height: 57px;
+    margin: 40px 0px;
+  }
 }
 
 /*Tablet Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
-    .benchmark-container,
-    .benchmark-container-cie,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
-        margin-top: -37%;
-        padding-top: 25%;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .benchmark-container,
+  .benchmark-container-cie,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
+    margin-top: -37%;
+    padding-top: 25%;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .survey-container {
-        margin-right: 0%;
-        align-items: center;
-    }
+  .survey-container {
+    margin-right: 0%;
+    align-items: center;
+  }
 
-    .no-result-img {
-        margin-right: 0%;
-        transition: 0.3s;
-        width: 45%;
-    }
+  .no-result-img {
+    margin-right: 0%;
+    transition: 0.3s;
+    width: 45%;
+  }
 
-    .calculate-btn,
-    .calculate-btn-cie,
-    .calculate-btn-talent {
-        width: 300px;
-    }
+  .calculate-btn,
+  .calculate-btn-cie,
+  .calculate-btn-talent {
+    width: 300px;
+  }
 }
 
 /*Tablet Landscape*/
 @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
-    .benchmark-container,
-    .benchmark-container-cie,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
-        margin-top: -33%;
-        padding-top: 25%;
-    }
+  .benchmark-container,
+  .benchmark-container-cie,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
+    margin-top: -33%;
+    padding-top: 25%;
+  }
 
-    .survey-container {
-        margin-right: 3%;
-        align-items: center;
-    }
+  .survey-container {
+    margin-right: 3%;
+    align-items: center;
+  }
 
-    .no-result-img {
-        margin: 0% 3%;
-        transition: 0.3s;
-    }
+  .no-result-img {
+    margin: 0% 3%;
+    transition: 0.3s;
+  }
 
-    .survey-title,
-    .survey-title-cie,
-    .survey-title-talent {
-        font-size: 2.2rem;
-    }
+  .survey-title,
+  .survey-title-cie,
+  .survey-title-talent {
+    font-size: 2.2rem;
+  }
 }
 
 /*Big desktop*/
 @media (min-width: 1550px) {
-    .benchmark-container,
-    .benchmark-container-cie,
-    .benchmark-container-talent {
-        padding-top: 23%;
-    }
+  .benchmark-container,
+  .benchmark-container-cie,
+  .benchmark-container-talent {
+    padding-top: 23%;
+  }
 }

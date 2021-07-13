@@ -49,7 +49,7 @@ const VerticalBar = ({graphData}) => {
     </div>
     <Bar data={data} options={options} />
     <p align="center" > * based on the answers of our survey respondents </p>
-    {graphData.average_salary == null ? <p align="center"> Unfortunately, we don't have enough data for your selection. </p> : null}
+    {graphData.average_salary == null ? <p className="no-result" align="center"> Unfortunately, we don't have enough data for your selection. </p> : null}
   </div>)
 };
 
