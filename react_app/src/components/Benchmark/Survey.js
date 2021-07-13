@@ -95,6 +95,10 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     sendSelectionToBE();
   };
 
+  const handleResetClick = () => {
+    window.location.reload(false);
+  };
+
   const sendSelectionToBE = () => {
     if (
       userSelection.category &&
@@ -163,18 +167,23 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
         setUserSelection={setUserSelection}
         userSelection={userSelection}
       />
-      <button
-        className={
-          showLJ
-            ? showJobs
-              ? "calculate-btn-cie"
-              : "calculate-btn-talent"
-            : "calculate-btn"
-        }
-        onClick={handleCalculateClick}
-      >
-        Calculate
-      </button>
+      <div className="calculate-button-container">
+        <button
+          className={
+            showLJ
+              ? showJobs
+                ? "calculate-btn-cie"
+                : "calculate-btn-talent"
+              : "calculate-btn"
+          }
+          onClick={handleCalculateClick}
+        >
+          Calculate
+        </button>
+        <button className="btn-reset" onClick={handleResetClick}>
+          Reset
+        </button>
+      </div>
     </div>
   );
 }

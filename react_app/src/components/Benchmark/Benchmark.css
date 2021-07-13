@@ -110,6 +110,33 @@
   color: #3bbcb0;
   transform: translateY(4px);
 }
+.btn-reset {
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: white;
+  border: 2px solid #3bbcb0;
+  border-radius: 39px;
+  color: #3bbcb0;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
+}
+
+.btn-reset:hover {
+  background-color: #3bbcb0;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-reset:active {
+  background-color: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
+  transform: translateY(4px);
+}
 
 .calculate-btn-cie {
   box-sizing: border-box;
