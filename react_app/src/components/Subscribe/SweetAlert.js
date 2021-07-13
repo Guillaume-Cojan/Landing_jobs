@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import Swal from "sweetalert2";
-import { withTranslation } from "react-i18next";
+import { withTranslation, Trans } from "react-i18next";
 import "./Subscribe.css";
 
 class Sweetalertdemo extends React.Component {
-    constructor() {
+    constructor() { 
         super();
         this.HandleClick = this.HandleClick.bind(this);
     }

@@ -3,11 +3,11 @@
     "intro_app":"SALAIRES",
     "intro_title": "Analyse comparative des salaires",
     "intro_title_2": "dans la Tech",
-    "intro_description": "Des données de confiance essentielles pour obtenir un nouveau poste ou pour prendre un décision de rémunération avec confiance",
-    "company": "Rémunérez vos talents à leur juste valeur.  Prenez des décisions en toute confiance grâce des données sur les salaries fiables",
+    "intro_description": "Des données de confiance essentielles pour obtenir un nouveau poste ou pour prendre un décision de rémunération avec confiance.",
+    "company": "Rémunérez vos talents à leur juste valeur.  <br/>  Prenez des décisions en toute confiance grâce des données sur les salaries fiables.",
     "talent_title": "Talent",
     "company_title": "Entreprise",
-    "talent": "Arrêtez de deviner votre valeur sur le marché. Obtenez les informations nécessaires pour prendre les meilleures décisions de progression dans votre carrière",
+    "talent": "Arrêtez de deviner votre valeur sur le marché. <br/> Obtenez les informations nécessaires pour prendre les meilleures décisions de progression dans votre carrière.",
     "gain_salary_insights": "Obtenir des informations sur les rémunérations",
     "get_my_salary_estimates": "Obtenir mon estimation de salaire",
     "survey_title": "Analyse comparative des salaires",
@@ -20,5 +20,6 @@
     "subscribe_para": "Abonnez-vous à la newsletter en entrant votre email",
     "subscribe-btn": "Abonnez-moi",
     "validation_error_message": "Erreur dans l'enregistrement de votre email, veuillez réessayer plus tard",
-    "enter_email": "Entrez votre addresse email"
+    "enter_email": "Entrez votre addresse email",
+    "Subscribe": "Confirmer"
 }
