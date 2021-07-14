@@ -27,7 +27,7 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
     return (
         <div className={showLJ ? "landingjobs-list-container " : "hidden"}>
             <h1 className="landingjobs-list-title">
-                {showJobs ? "Find the perfect candidates" : "Latest Job Offers"}
+                {showJobs ? "Find the right candidates" : "Latest Job Offers"}
             </h1>
             <div className="landingjobs-items">
                 {showJobs ? (

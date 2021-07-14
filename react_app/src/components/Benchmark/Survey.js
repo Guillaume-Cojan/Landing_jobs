@@ -25,7 +25,7 @@ const category = [
 const experience = ["0 Years", "0 - 3 years", "3 - 6 years", "6+ years"];
 
 const location = [
-    "All",
+    "Unspecified...",
     "Lisboa",
     "Coimbra",
     "Açores",
@@ -47,7 +47,7 @@ const location = [
 ];
 
 const industry = [
-    "All",
+    "Unspecified...",
     "Financial and banking",
     "Software development - other",
     "Web development or design",
@@ -75,7 +75,7 @@ const industry = [
 ];
 
 const organisation = [
-    "All",
+    "Unspecified...",
     "Corporate",
     "SME - Small or Medium Enterprise (personnel <250)",
     "Startup (new business venture)",
