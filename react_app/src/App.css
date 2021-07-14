@@ -1,5 +1,6 @@
 .App {
     background-color: black;
+    /* background-color:#e7f2f1; */
 }
 
 .App, .App-company, .App-talent {
@@ -7,7 +8,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1rem 1fr 1fr 1rem;
+    grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1fr 1rem;
     grid-template-areas: 
         "margin margin margin"
         "intro intro intro"
@@ -24,7 +25,12 @@
     grid-column: 1/4;
     grid-row: 3/4;
 }
-
+@media screen and (max-width: 945px) {
+    .App {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1rem 1fr 1fr 1fr 1fr 1fr 1rem;
+    }
+}
 
 .App-company {
     background-color: #efe6ed;

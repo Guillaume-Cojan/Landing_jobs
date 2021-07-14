@@ -7,7 +7,7 @@
 
 html,
 body {
-    background-color:#e7f2f1;
+    /* background-color:#e7f2f1; */
     font-size: 16px;
     margin: 0;
     overscroll-behavior: none;
@@ -36,4 +36,4 @@ button:focus {
 
  /* * {
     border: 1px solid rebeccapurple;
-}     */
+}   */

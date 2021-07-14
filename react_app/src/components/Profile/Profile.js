@@ -43,8 +43,11 @@ const Profile = ({
                         ? "Gain Salary Insights"
                         : "Get my Salary Estimates"}
                 </button>
+        
         </div>
     );
+
 };
+
 
 export default Profile;
