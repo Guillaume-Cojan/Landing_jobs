@@ -25,6 +25,7 @@ const category = [
 const experience = ["0 Years", "0 - 3 years", "3 - 6 years", "6+ years"];
 
 const location = [
+    "All",
     "Lisboa",
     "Coimbra",
     "Açores",
@@ -39,9 +40,6 @@ const location = [
     "Other",
     "Faro",
     "Vila Real",
-    "Setúbal",
-    "Évora",
-    "Bragança",
     "Guarda",
     "Portalegre",
     "Santarém",
@@ -49,6 +47,7 @@ const location = [
 ];
 
 const industry = [
+    "All",
     "Financial and banking",
     "Software development - other",
     "Web development or design",
@@ -75,7 +74,8 @@ const industry = [
     "Nonprofit",
 ];
 
-const company_type = [
+const organisation = [
+    "All",
     "Corporate",
     "SME - Small or Medium Enterprise (personnel <250)",
     "Startup (new business venture)",
@@ -86,13 +86,33 @@ const company_type = [
 ];
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
-    const [userSelection, setUserSelection] = useState({});
+    const [userSelection, setUserSelection] = useState({
+        category: "notSelected",
+        experience: "notSelected",
+        location: "notSelected",
+        industry: "notSelected",
+        organisation: "notSelected",
+    });
 
     console.log("Right now selection is : ", userSelection);
 
     const handleCalculateClick = () => {
-        setShowResult(true);
-        sendSelectionToBE();
+        const Swal = require("sweetalert2");
+        if (
+            (userSelection.category === "notSelected" &&
+                userSelection.experience === "notSelected") ||
+            userSelection.category === "notSelected" ||
+            userSelection.experience === "notSelected"
+        ) {
+            setShowResult(false);
+            Swal.fire({
+                title: "Please select at least a Category and Experience!",
+                confirmButtonColor: "#3bbcb0",
+            });
+        } else {
+            setShowResult(true);
+            sendSelectionToBE();
+        }
     };
 
     const sendSelectionToBE = () => {
@@ -101,7 +121,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             userSelection.experience &&
             userSelection.location &&
             userSelection.industry &&
-            userSelection.company_type
+            userSelection.organisation
         ) {
             fetch("http://localhost:5000/salarybenchmark/", {
                 method: "POST",
@@ -158,8 +178,8 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 userSelection={userSelection}
             />
             <SurveyList
-                title={"Company type"}
-                list={company_type}
+                title={"Organisation"}
+                list={organisation}
                 setUserSelection={setUserSelection}
                 userSelection={userSelection}
             />
