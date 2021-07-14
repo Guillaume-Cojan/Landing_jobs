@@ -27,10 +27,11 @@ Salary.getDataSalary = (formInput, callback) => {
     console.log(formInput);
     if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
+            formInput.location === "Unspecified...") &&
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? ",
@@ -42,8 +43,9 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ",
@@ -55,8 +57,9 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.location === "notSelected" || formInput.location === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.location === "notSelected" ||
+            formInput.location === "Unspecified...")
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? ",
@@ -68,8 +71,9 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.location === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Org_Type = ? ",
@@ -81,7 +85,7 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         formInput.organisation === "notSelected" ||
-        formInput.organisation === "All"
+        formInput.organisation === "Unspecified..."
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? ",
@@ -98,7 +102,7 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         formInput.industry === "notSelected" ||
-        formInput.industry === "All"
+        formInput.industry === "Unspecified..."
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Org_Type = ?",
@@ -115,7 +119,7 @@ Salary.getDataSalary = (formInput, callback) => {
         );
     } else if (
         formInput.location === "notSelected" ||
-        formInput.location === "All"
+        formInput.location === "Unspecified..."
     ) {
         connection.query(
             "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? AND Employer_Org_Type = ?",
@@ -151,10 +155,11 @@ Salary.getDataSalary = (formInput, callback) => {
 Salary.getDataMinimumSalary = (formInput, callback) => {
     if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
+            formInput.location === "Unspecified...") &&
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -165,8 +170,9 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -177,8 +183,9 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.location === "notSelected" || formInput.location === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.location === "notSelected" ||
+            formInput.location === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -189,8 +196,9 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.location === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -201,7 +209,7 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.organisation === "notSelected" ||
-        formInput.organisation === "All"
+        formInput.organisation === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -217,7 +225,7 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.industry === "notSelected" ||
-        formInput.industry === "All"
+        formInput.industry === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -233,7 +241,7 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.location === "notSelected" ||
-        formInput.location === "All"
+        formInput.location === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS minimum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary ASC LIMIT 1",
@@ -268,10 +276,11 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
 Salary.getDataMaximumSalary = (formInput, callback) => {
     if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
+            formInput.location === "Unspecified...") &&
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -282,8 +291,9 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -294,8 +304,9 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.organisation === "notSelected" ||
-            formInput.organisation === "All") &&
-        (formInput.location === "notSelected" || formInput.location === "All")
+            formInput.organisation === "Unspecified...") &&
+        (formInput.location === "notSelected" ||
+            formInput.location === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -306,8 +317,9 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         (formInput.location === "notSelected" ||
-            formInput.location === "All") &&
-        (formInput.industry === "notSelected" || formInput.industry === "All")
+            formInput.location === "Unspecified...") &&
+        (formInput.industry === "notSelected" ||
+            formInput.industry === "Unspecified...")
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -318,7 +330,7 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.organisation === "notSelected" ||
-        formInput.organisation === "All"
+        formInput.organisation === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -334,7 +346,7 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.industry === "notSelected" ||
-        formInput.industry === "All"
+        formInput.industry === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary DESC LIMIT 1",
@@ -350,7 +362,7 @@ Salary.getDataMaximumSalary = (formInput, callback) => {
         );
     } else if (
         formInput.location === "notSelected" ||
-        formInput.location === "All"
+        formInput.location === "Unspecified..."
     ) {
         connection.query(
             "SELECT Avg_Salary AS maximum_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? AND Employer_Org_Type = ? ORDER BY Avg_Salary DESC LIMIT 1",
