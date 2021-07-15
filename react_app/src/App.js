@@ -18,12 +18,9 @@ function App() {
             <Intro />
             <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
             <Benchmark showLJ={showLJ} showJobs={showJobs} />
-
-            {/* 
-            
             <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
             <Subscribe />
-            <Footer showLJ={showLJ} /> */}
+            <Footer showLJ={showLJ} /> 
         </div>
     );
 }

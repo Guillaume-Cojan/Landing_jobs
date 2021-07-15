@@ -1,13 +1,11 @@
 import "./Benchmark.css";
-import {useState} from "react";
+import { useState } from "react";
 import Survey from "./Survey";
 import Result from "./Result";
 
-
-
 function Benchmark({ showLJ, showJobs }) {
-    const [ showResult, setShowResult] = useState(false);
-    const [ graphData, setGraphData] = useState({})
+    const [showResult, setShowResult] = useState(false);
+    const [graphData, setGraphData] = useState({ average_salary: 0 });
 
     return (
         <div
@@ -20,12 +18,21 @@ function Benchmark({ showLJ, showJobs }) {
             }
         >
             <div className="benchmark-content">
-            <Survey showLJ={showLJ} showJobs={showJobs} setShowResult={setShowResult} setGraphData={setGraphData}/>
-            <Result showLJ={showLJ} showJobs={showJobs} showResult={showResult} graphData= {graphData}/>
+            <Survey
+                showLJ={showLJ}
+                showJobs={showJobs}
+                setShowResult={setShowResult}
+                setGraphData={setGraphData}
+            />
+            <Result
+                showLJ={showLJ}
+                showJobs={showJobs}
+                showResult={showResult}
+                graphData={graphData}
+            />
             </div>
-            
         </div>
-    )
+    );
 }
 
 export default Benchmark;

@@ -8,7 +8,7 @@ function Result({ showLJ, showJobs, showResult, graphData }) {
     return showLJ ? (
         showJobs ? (
             showResult ? (
-                <VerticalBar graphData={graphData} />
+                <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
             ) : (
                 <img
                     src={ResultNoshowCie}
@@ -17,7 +17,7 @@ function Result({ showLJ, showJobs, showResult, graphData }) {
                 />
             )
         ) : showResult ? (
-            <VerticalBar graphData={graphData} />
+            <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
         ) : (
             <img
                 src={ResultNoshowTalent}
@@ -26,7 +26,7 @@ function Result({ showLJ, showJobs, showResult, graphData }) {
             />
         )
     ) : showResult ? (
-        <VerticalBar graphData={graphData} />
+        <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
     ) : (
         <img src={ResultNoshow} alt="result-img" className="no-result-img" />
     );

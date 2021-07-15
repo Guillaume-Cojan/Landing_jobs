@@ -277,8 +277,6 @@
     .ellipse {
         margin: 0;
         margin-left: -10%;
-        /* position: relative; */
-        /* left: -10px; */
          width: 80%; 
     }
 } 
