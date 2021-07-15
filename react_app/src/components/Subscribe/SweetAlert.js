@@ -11,6 +11,7 @@ export default class Sweetalertdemo extends Component {
     HandleClickAutoclose() {
         let timerInterval;
         Swal.fire({
+            icon: "success",
             title: "Thank You!",
             html: "You were succesfully added to our mailing list.",
             timer: 2500,
