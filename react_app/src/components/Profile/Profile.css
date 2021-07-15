@@ -1,175 +1,353 @@
-.profiles {
-    position: relative;
-}
-
 .profiles-container {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     border: none;
-    margin-top: -15vh;
-    margin-bottom: -65vh;
-    padding-left: 8%;
-    padding-top: 0%;
-    padding-bottom: 10%;
-    padding-right: 15%;
+    padding-left: 7%;
+    padding-right: 7%
 }
 
 .profile-card {
+    position: relative;
+    top: -50px;
+    margin: 0;
     display: flex;
-    flex-direction: row;
-    top: -10%;
-    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
-    width: 460px;
-    height: 316px;
+    width: 35em;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+    padding-left: 3em;
+    justify-content: space-between;
+}
+
+.profile-card-content {
+    display: flex;
+    height: 15rem;
+    align-items: center;
 }
 
 .profile-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 35%;
-    margin-bottom: 7%;
+    margin: 0;
 }
 
-.profile-title {
+.profile-title-blue {
     color: #4293ea;
 }
 
-.profile-title-cie {
+.profile-title-purple {
     color: #a729d2;
+}
+
+/* Typography */
+
+.profile-title-blue, .profile-title-purple {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.profile-content {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
 }
 
 .profile-img {
-    position: absolute;
-    margin-left: -12vw;
-    margin-top: 3vw;
-    width: 13vw;
+
+    width: 15em;
+    position: relative;
+    left: 30%;
+ 
+} 
+
+.bttn-get-started-blue, .bttn-get-started-purple {
+    margin-top: 0;
+    margin-left: -3em;
+    box-sizing: border-box;
+    padding: 1em 5em;
+    border-radius: 39px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 25px;
+    white-space: nowrap;
+    transition: 0.3s;
 }
 
-.bttn-get-started {
-    margin-top: 0;
-    box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    width: 270px;
-    padding: 15px 30px;
+.bttn-get-started-blue {
     border: 3px solid #4293ea;
     background: #ffffff;
-    border-radius: 39px;
     color: #4293ea;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25px;
-    white-space: nowrap;
-    transition: 0.3s;
 }
 
-.bttn-get-started-cie {
-    margin-top: 0;
-    box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
-    width: 270px;
-    padding: 15px 30px;
+.bttn-get-started-purple {
     border: 3px solid #a729d2;
     background: #ffffff;
-    border-radius: 39px;
     color: #a729d2;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25px;
-    white-space: nowrap;
-    transition: 0.3s;
 }
 
-.bttn-get-started:hover {
-    margin-top: 0;
-    box-sizing: border-box;
+.bttn-get-started-blue:hover {
     background-color: #4293ea;
-    font-weight: bold;
     color: white;
-
     transition: 0.3s;
 }
 
-.bttn-get-started:focus {
+.bttn-get-started-blue:focus {
     background-color: #4293ea;
     color: white;
 }
 
-.bttn-get-started:active {
-    margin-top: 0;
-    box-sizing: border-box;
+.bttn-get-starte-blue:active {
     background-color: #4293ea;
     color: white;
     transform: translateY(4px);
     transition: 0.3s;
 }
 
-.bttn-get-started-cie:hover {
-    margin-top: 0;
-    box-sizing: border-box;
+.bttn-get-started-purple:hover {
     background-color: #a729d2;
     font-weight: bold;
     color: white;
-
     transition: 0.3s;
 }
 
-.bttn-get-started-cie:focus {
+.bttn-get-started-purple:focus {
     background-color: #a729d2;
     color: white;
 }
 
-.bttn-get-started-cie:active {
-    margin-top: 0;
-    box-sizing: border-box;
+.bttn-get-started-purple:active {
     background-color: #a729d2;
     color: white;
     transform: translateY(4px);
     transition: 0.3s;
 }
 
-/*Phone*/
-@media (max-width: 767px) {
-    .profiles {
-        background-color: #000000;
-        border: 1px solid #000000;
+/* Media Queries */
+
+@media screen and (max-width: 1500px) {
+    .profile-content {
+        font-size: 1rem;
     }
-
-    .profiles-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        margin: 0px;
-        padding-top: 0;
-        padding: 10% 7%;
+    .profile-title-blue, .profile-title-purple {
+        font-size: 1.5rem;
     }
 
     .profile-card {
+        top: -40px;
+        width: 25em;
+    }
+
+    .bttn-get-started-purple, .bttn-get-started-blue {
+        font-size: 1rem;
+        padding: 1em 4em;
+        margin-left: -10%;
+    }
+
+    .profile-text {
+       width: 25em;
+       margin-bottom: 0em;
+      
+    }
+
+    .profile-img {
+        width: 110%;
+        left: 20%;
+    }
+
+    .bttn-get-started-purple, 
+    .bttn-get-started-blue, 
+    .bttn-get-started-blue:focus, 
+    .bttn-get-started-blue:hover, 
+    .bttn-get-started-purple:active,
+    .bttn-get-started-purple:focus,
+    .bttn-get-started-purple:hover {
+        margin-left: -3em;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .profiles-container {
+        padding: 1% 7%;
+        justify-content: space-between;
+    }
+
+    .profile-img {
+        width:100%;
+
+    }
+
+    .profile-card {
+
+        height: 20em;
+
+    }
+
+    
+}
+
+@media screen and (max-width: 1050px) {
+    .profiles-container {
+        padding: 2% 5%;
+        justify-content: space-between;
+    }
+
+    .profile-card {
+        top: -45px;
+       padding-top: 0;
+    }
+
+    .profile-img{
+        width: 80%;
+    }
+
+    .profile-text {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .profiles-container {
+        padding: 0 5%;
+        justify-content: space-between;
+    }
+    .profile-card {
+        top: -35px;
+        width: 25rem;
+    }
+    
+}
+
+@media screen and (max-width: 945px) {
+   html {
+       font-size: 14px;
+   }
+
+   .profiles-container {
+       padding: 0 6%;
+   }
+
+   .profile-card {
+       top: -20px;
+       height:100%;
+       padding-bottom: 1em;
+
+   }
+
+   .profile-text {
+       padding-left: 2.5em;
+   }
+
+
+} 
+
+@media screen and (max-width: 850px) {
+    .profiles-container {
+        position: relative;
+        width:100%;
+        top: -20%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0 1%;
+        background-color: black; 
+        padding-bottom: 3%;
+    } 
+
+    .profile-card {
+        top:0;
         display: flex;
         justify-content: center;
-        margin-bottom: 7%;
-        border-radius: 0px;
-        width: 0%;
-        height: 0%;
+        align-items: center;
+        margin-bottom: 0;
         box-shadow: none;
+        height: 5em;
+        background-color: black;
     }
 
     .profile-img {
         display: none;
     }
 
-    .profile-title {
+    .profile-title-blue {
         display: none;
     }
 
-    .profile-title-cie {
+    .profile-title-purple {
+        display: none;
+    }
+
+    .profile-content {
+        display: none;
+    }
+
+    .profile-text {
+       display: none;
+    }
+
+    .bttn-get-started-blue {
+        width: 300px;
+        height: 77px; 
+    }
+
+    .bttn-get-started-purple {
+        width: 300px;
+        height: 77px;
+    }
+
+    .bttn-get-started-purple, 
+    .bttn-get-started-blue, 
+    .bttn-get-started-blue:focus, 
+    .bttn-get-started-blue:hover, 
+    .bttn-get-started-purple:active,
+    .bttn-get-started-purple:focus,
+    .bttn-get-started-purple:hover {
+        margin-left: 0;
+    }
+ } 
+
+/* Phone */
+ @media (max-width: 767px) {
+    .profiles {
+        background-color: #000000;
+        border: 1px solid #000000;
+    }
+
+    .profiles-container { 
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        height: 50%;
+        margin: 0;
+        padding-bottom: 5%;
+   
+    } 
+
+    .profile-card {
+        top:0;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 0;
+        margin-bottom: 2%;
+        padding: 0;
+        width: 100vw;
+        border-radius: 0;
+
+    } 
+
+    .profile-img {
+        display: none;
+    }
+
+    .profile-title-blue {
+        display: none;
+    }
+
+    .profile-title-purple {
         display: none;
     }
 
@@ -181,85 +359,16 @@
         margin: 0;
     }
 
-    .bttn-get-started {
+    .bttn-get-started-blue {
+        width: 300px;
+        height: 77px; 
+    }
+
+    .bttn-get-started-purple {
         width: 300px;
         height: 77px;
     }
 
-    .bttn-get-started-cie {
-        width: 300px;
-        height: 77px;
-    }
-}
 
-/*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
-    .profiles-container {
-        margin-top: -9%;
-        margin-bottom: 0;
-        padding-left: 5%;
-        padding-top: 0;
-        padding-bottom: 10%;
-        padding-right: 5%;
-    }
 
-    .profile-card {
-        flex-direction: column-reverse;
-        width: 320px;
-        height: 250px;
-    }
-
-    .profile-img {
-        margin-left: 27vw;
-        margin-top: 1.5vw;
-        width: 13vw;
-    }
-
-    .profile-text {
-        justify-content: space-around;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-}
-
-/*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .profiles-container {
-        margin-top: -5%;
-        margin-bottom: 0;
-        padding-left: 5%;
-        padding-top: 0;
-        padding-bottom: 10%;
-        padding-right: 5%;
-    }
-
-    .profile-card {
-        flex-direction: column-reverse;
-        width: 320px;
-        height: 250px;
-    }
-
-    .profile-img {
-        margin-left: 21vw;
-        margin-top: 0vw;
-        width: 13vw;
-    }
-
-    .profile-text {
-        justify-content: space-around;
-        margin-left: 4%;
-        margin-right: 4%;
-    }
-}
-
-/*Big desktop*/
-@media (min-width: 1800px) {
-    .profiles-container {
-        margin-top: -7vh;
-    }
-    .profile-img {
-        margin-left: -7vw;
-        margin-top: 1vw;
-        height: 180px;
-    }
-}
+} 

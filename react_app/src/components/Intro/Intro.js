@@ -5,15 +5,16 @@ import "./Intro.css";
 function Intro() {
     return (
         <div className="intro-container">
-            <div className="top-logo">
-                <img
-                    className="lj-logo"
-                    src={LjLogo}
-                    alt="Landing.Jobs-logo"
-                ></img>
-            </div>
+                               <div className="top-logo">
+                        <img
+                            className="lj-logo"
+                            src={LjLogo}
+                            alt="Landing.Jobs-logo"
+                        ></img>
+                    </div>
             <div className="intro-content">
                 <div className="intro-text">
+ 
                     <h3 className="intro-app">SALARY</h3>
                     <h2 className="intro-title">Tech Professionals</h2>
                     <h2 className="intro-title">Salary Benchmarking</h2>
@@ -30,6 +31,7 @@ function Intro() {
                     />
                 </div>
             </div>
+            <div className="intro-bottom-section"> </div>
         </div>
     );
 }
