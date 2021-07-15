@@ -19,8 +19,11 @@ function Benchmark({ showLJ, showJobs }) {
                     : "benchmark-container"
             }
         >
+            <div className="benchmark-content">
             <Survey showLJ={showLJ} showJobs={showJobs} setShowResult={setShowResult} setGraphData={setGraphData}/>
             <Result showLJ={showLJ} showJobs={showJobs} showResult={showResult} graphData= {graphData}/>
+            </div>
+            
         </div>
     )
 }

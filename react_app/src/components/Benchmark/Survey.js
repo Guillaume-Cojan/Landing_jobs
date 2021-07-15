@@ -86,7 +86,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 className={
                     showLJ
                         ? showJobs
-                            ? "survey-title-cie"
+                            ? "survey-title-company"
                             : "survey-title-talent"
                         : "survey-title"
                 }
@@ -116,7 +116,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 className={
                     showLJ
                         ? showJobs
-                            ? "calculate-btn-cie"
+                            ? "calculate-btn-company"
                             : "calculate-btn-talent"
                         : "calculate-btn"
                 }
