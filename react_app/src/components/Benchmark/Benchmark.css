@@ -169,9 +169,14 @@
 
 .no-result-img {
     margin-right: 5%;
-    margin-top: 4%;
+    margin-top: 0;
     transition: 0.3s;
     width: 25%;
+}
+
+.mention {
+    font-style: italic;
+    color: #4f5665;
 }
 
 /*Phone*/
