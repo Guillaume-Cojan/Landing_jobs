@@ -106,7 +106,8 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
         ) {
             setShowResult(false);
             Swal.fire({
-                title: "Please select at least a Category and Experience!",
+                icon: "info",
+                html: "Please select at least a <b>Category</b> and <b>Experience</b>!",
                 confirmButtonColor: "#3bbcb0",
             });
         } else {

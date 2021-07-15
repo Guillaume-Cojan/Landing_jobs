@@ -52,7 +52,7 @@ const VerticalBar = ({ graphData }) => {
                     confirmButtonColor: "#3bbcb0",
                 });
             }
-        }, 200);
+        }, 100);
     };
 
     return (
