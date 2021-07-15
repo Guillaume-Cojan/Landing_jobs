@@ -1,16 +1,16 @@
 <br />
 <p align="center">
-  <a href="#">
-    <img src="src/assets/Landing-jobs-log.png" alt="Logo" width="90" height="90">
+  <a href="https://landingpay.netlify.app/">
+    <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="200">
   </a>
 
-  <h3 align="center">Landing Jobs Salaries</h3>
+  <h2 align="center">Landing Jobs Salaries</h3>
 
   <p align="center">
 Use our salary benchmark tool to check how your salary compares to that of your peers!
     <br />
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://landingpay.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Report Bug</a>
     ·
@@ -43,11 +43,12 @@ Use our salary benchmark tool to check how your salary compares to that of your 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![Image](src/assets/landing-jobs-tempscreenshot.png)
+<br>
 
 A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and education. 
+<br/>
 
-![Image](src/assets/techguy.png)
+![Image](react_app/src/assets/LJ_mainscreenshot.png)
 
 ### Built With
 
@@ -55,6 +56,11 @@ A benchmark tool that can be used by either employees or employers in order to g
 * [Node.js](https://nodejs.dev/)
 * [Express](https://expressjs.com/)
 * [mySQL](https://www.mysql.com/)
+
+
+![Image](react_app/src/assets/salarybenchmark_screenshot.png)
+
+![Image](react_app/src/assets/jobs_screenshot.png)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -89,7 +95,7 @@ Here is a list things you need in order to use the software and how to install t
 Distributed under the Landing.Jobs License.
 
 <p align="center">
-<img src="src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
+<img src="react_app/src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
 </p>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -98,7 +104,7 @@ Distributed under the Landing.Jobs License.
 Many thanks to our amazing client [Landing.Jobs](https://landing.jobs/) for offering us this opportunity to work on an exciting tool for both tech talents and companies! 
 
 <p align="center">
-<img src="src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
+<img src="react_app/src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
 </p>
 
 <!-- CONTACT -->
