@@ -180,7 +180,7 @@ Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.
 <!-- DEMO -->
 ## Demo
 
-Click the logo in order to view our app. Enjoy! 😊
+Click on the logo in order to view our app. Enjoy! 😊
 
 <p align="center">
   <a href="https://landingpay.netlify.app/">
