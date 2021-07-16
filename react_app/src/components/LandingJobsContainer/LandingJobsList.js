@@ -2,9 +2,7 @@ import JobCard from "./JobCard";
 import TalentCard from "./TalentCard";
 import "./LandingJobsList.css";
 import { useState, useEffect } from "react";
-import AvatarDev from "../../assets/talent_dev.svg";
-import AvatarPm from "../../assets/talent_pm.svg";
-import AvatarUx from "../../assets/talent_ux.svg";
+import { talentList } from "./TalentLists";
 
 const LandingJobsList = ({ showLJ, showJobs }) => {
     const [jobsList, setJobsList] = useState([]);
@@ -17,12 +15,19 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
     };
     useEffect(searchJob, []);
 
+   
+
     const searchCompany = () => {
-        fetch("https://landing.jobs/api/v1/companies")
+        let companyIds = jobsList.map(job => job.company_id)
+        companyIds.map(id => {
+            fetch("https://landing.jobs/api/v1/companies/" + id)
             .then((res) => res.json())
-            .then((data) => setCompaniesList(data));
+            .then((data) =>  setCompaniesList(prevState => [...prevState, data]))
+            return 1})
     };
-    useEffect(searchCompany, []);
+    useEffect(searchCompany, [jobsList]);
+
+    
 
     return (
         <div className={showLJ ? "landingjobs-list-container " : "hidden"}>
@@ -30,99 +35,30 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                 {showJobs ? "Find the right candidates" : "Latest Job Offers"}
             </h1>
             <div className="landingjobs-items">
-                {showJobs ? (
-                    <TalentCard
-                        avatar={AvatarDev}
-                        name={"Tomas SANCHEZ"}
-                        title={"Full-Stack Engineer"}
-                        experience={"6+ years"}
-                    />
-                ) : (
-                    <JobCard
-                        logo={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 1].company_id
-                            ).logo_url
-                        }
-                        title={jobsList[jobsList.length - 1].title}
-                        companyName={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 1].company_id
-                            ).name
-                        }
-                        city={jobsList[jobsList.length - 1].city}
-                        url={jobsList[jobsList.length - 1].url}
-                    />
-                )}
-                {showJobs ? (
-                    <TalentCard
-                        avatar={AvatarUx}
-                        name={"Julia ORTIZ"}
-                        title={"UX Designer"}
-                        experience={"6+ years"}
-                    />
-                ) : (
-                    <JobCard
-                        logo={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 2].company_id
-                            ).logo_url
-                        }
-                        title={jobsList[jobsList.length - 2].title}
-                        companyName={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 2].company_id
-                            ).name
-                        }
-                        city={jobsList[jobsList.length - 2].city}
-                        url={jobsList[jobsList.length - 2].url}
-                    />
-                )}
-                {showJobs ? (
-                    <TalentCard
-                        avatar={AvatarPm}
-                        name={"Alan MULLER"}
-                        title={"Application Product Manager"}
-                        experience={"3 years"}
-                    />
-                ) : (
-                    <JobCard
-                        logo={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 3].company_id
-                            ).logo_url
-                        }
-                        title={jobsList[jobsList.length - 3].title}
-                        companyName={
-                            companiesList.find(
-                                (x) =>
-                                    x.id ===
-                                    jobsList[jobsList.length - 3].company_id
-                            ).name
-                        }
-                        city={jobsList[jobsList.length - 3].city}
-                        url={jobsList[jobsList.length - 3].url}
-                    />
-                )}
+                {showJobs
+                    ? talentList.map((talent, index) => (  <TalentCard 
+                        key={index}
+                        avatar={talent.avatar}
+                        name={talent.name}
+                        title={talent.title}
+                        experience={talent.experience} />)) 
+                    : 
+                    jobsList.map((job, index) => ( <JobCard
+                        key={index}
+                        title={job.title}
+                        logo={ companiesList.find((x) => x.id === job.company_id).logo_url }
+                        companyName={companiesList.find((x) => x.id === job.company_id).name }
+                        city={job.city}
+                        url={job.url}/> 
+                    ))
+                }
             </div>
-            <p className="job-list-link">
-                View more on{" "}
+            <p className="job-list-link"> View more on{" "}
                 <a
                     className={showJobs ? "a-talent" : "a-job"}
                     href="https://landing.jobs/"
                     target="_blank"
-                    rel="noopener noreferrer"
-                >
+                    rel="noopener noreferrer">
                     {" "}
                     Landing.Jobs{" "}
                 </a>

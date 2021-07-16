@@ -13,13 +13,14 @@ function App() {
     const [showJobs, setShowJobs] = useState(true);
 
     return (
-        <div className={showLJ ? (showJobs ? "App-cie" : "App-talent") : "App"}>
+        <div className={showLJ ? (showJobs ? "App-company" : "App-talent") : "App"}>
+
             <Intro />
             <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
             <Benchmark showLJ={showLJ} showJobs={showJobs} />
             <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
             <Subscribe />
-            <Footer showLJ={showLJ} />
+            <Footer showLJ={showLJ} /> 
         </div>
     );
 }
