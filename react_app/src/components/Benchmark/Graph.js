@@ -1,6 +1,8 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import { useTranslation } from "react-i18next";
 import "./Benchmark.css"
+
 
 const VerticalBar = ({graphData, showLJ, showJobs}) => {
   console.log("I am the graph data on graph", graphData)
@@ -42,6 +44,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
         ],
       };
     
+      const { t } = useTranslation();
 
       const Swal = require("sweetalert2");
       const tryAgain = () => {
@@ -50,7 +53,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
                   Swal.fire({
                       icon: "warning",
                       title: "Oops...",
-                      text: "Unfortunately, we don't have enough data yet for your search. Please try again with another selection!",
+                      text: t("graph_not_enough_data"),
                       confirmButtonColor: "#3bbcb0",
                   });
               }
@@ -66,11 +69,11 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
                           ? "graph-title-company"
                           : "graph-title-normal"
                       : "graph-title-talent" 
-                }>Average Salary Calculation</h2>
+                }>{t("calculator_title")}</h2>
               </div>
               <Bar data={data} options={options} />
               <p align="center" className="mention">
-                  * based on the answers of our survey respondents
+                  {t("**_based_on_the_answers_of_our_survey_respondents")}
               </p>
               {tryAgain()}
           </div>
