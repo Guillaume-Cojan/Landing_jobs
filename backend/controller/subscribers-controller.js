@@ -1,6 +1,6 @@
 const Subscribers = require("../model/subscribers");
 
-const addSubscriber = (req, res, next) => {
+const addSubscriber = (req, res) => {
     Subscribers.addNewSubscriber(req.body.email, (err, result) => {
         if (err) {
             res.status(500).send("Error adding subscriber :(");
@@ -8,7 +8,6 @@ const addSubscriber = (req, res, next) => {
             const id = result.insertId;
             req.id = id;
             res.send("user added");
-            next();
         }
     });
 };
