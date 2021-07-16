@@ -181,7 +181,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
           Calculate
         </button>
         <button className="btn-reset" onClick={handleResetClick}>
-          Reset
+          Clear fields
         </button>
       </div>
     </div>
