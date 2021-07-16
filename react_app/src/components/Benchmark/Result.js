@@ -1,13 +1,14 @@
-import ResultNoshow from "../../assets/calculator_all.svg";
-import ResultNoshowTalent from "../../assets/calculator_talent.svg";
-import ResultNoshowCie from "../../assets/calculator_company.svg";
+// import ResultNoshow from "../../assets/calculator_all.svg";
+import ResultNoshow from "../../assets/BasicNoResult.svg";
+import ResultNoshowTalent from "../../assets/TalentNoResult.svg";
+import ResultNoshowCie from "../../assets/CompanyNoResult.svg";
 import VerticalBar from "./Graph";
 
 function Result({ showLJ, showJobs, showResult, graphData }) {
     return showLJ ? (
         showJobs ? (
             showResult ? (
-                <VerticalBar graphData={graphData} />
+                <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
             ) : (
                 <img
                     src={ResultNoshowCie}
@@ -16,7 +17,7 @@ function Result({ showLJ, showJobs, showResult, graphData }) {
                 />
             )
         ) : showResult ? (
-            <VerticalBar graphData={graphData} />
+            <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
         ) : (
             <img
                 src={ResultNoshowTalent}
@@ -25,7 +26,7 @@ function Result({ showLJ, showJobs, showResult, graphData }) {
             />
         )
     ) : showResult ? (
-        <VerticalBar graphData={graphData} />
+        <VerticalBar graphData={graphData} showJobs={showJobs} showLJ={showJobs}/>
     ) : (
         <img src={ResultNoshow} alt="result-img" className="no-result-img" />
     );

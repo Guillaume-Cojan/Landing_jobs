@@ -5,9 +5,9 @@ import "./Profile.css";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
     return (
-        <div className="profiles">
             <div className="profiles-container">
                 <Profile
+                    className="profile-company"
                     title={"Company"}
                     content={
                         "Pay what your talent deserves. Make confident decisions with transparent salary data."
@@ -17,8 +17,8 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                     id={1}
                     setShowJobs={setShowJobs}
                 />
-                <div>{""}</div>
                 <Profile
+                    className="profile-talent"
                     title={"Talent"}
                     content={
                         "Stop guessing what you are worth. Gain the insights needed to make the smartest career move decision."
@@ -29,7 +29,6 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                     setShowJobs={setShowJobs}
                 />
             </div>
-        </div>
     );
 }
 
