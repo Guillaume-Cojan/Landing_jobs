@@ -2,11 +2,10 @@ import Profile from "./Profile";
 import ProfileCompany from "../../assets/profile_company.svg";
 import ProfileTalent from "../../assets/profile_talent.svg";
 import "./Profile.css";
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
-    const { t, i18n } = useTranslation(); 
+    const { t } = useTranslation(); 
  
     return (
         <div className="profiles">

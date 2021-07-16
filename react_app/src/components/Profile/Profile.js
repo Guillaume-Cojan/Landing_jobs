@@ -1,4 +1,3 @@
-import i18next from "i18next";
 import { Trans } from "react-i18next";
 import "./Profile.css";
 import { useTranslation } from "react-i18next";
@@ -21,7 +20,7 @@ const Profile = ({
     }
   };
 
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Trans i18nKey="getStartedButton">

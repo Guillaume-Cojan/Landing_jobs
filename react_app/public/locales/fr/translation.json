@@ -18,9 +18,13 @@
     "Experience": "Expérience professionnelle",
     "Location": "Emplacement",
     "Calculate": "Calculer",
+    "please_select":"Veuillez sélectionner au moins une catégorie et une expérience !",
     "subscribe_para": "Abonnez-vous à la newsletter en entrant votre email",
     "subscribe-btn": "Abonnez-moi",
     "validation_error_message": "Erreur dans l'enregistrement de votre email, veuillez réessayer plus tard",
-    "enter_email": "Entrez votre addresse email",
-    "Subscribe": "Confirmer"
+    "Enter_email": "Entrez votre addresse email",
+    "sucess_add": "Vous avez été ajouté avec succès à notre liste de diffusion.",
+    "Subscribe": "Confirmer",
+    "Cancel": "Annuler",
+    "thank_you": "merci"
 }

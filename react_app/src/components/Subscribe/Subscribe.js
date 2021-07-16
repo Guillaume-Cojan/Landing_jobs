@@ -1,10 +1,9 @@
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 import "./Subscribe.css";
 import SweetAlert from "./SweetAlert";
 
 function Subscribe() {
-    const { t, i18n } = useTranslation(); 
+    const { t } = useTranslation(); 
 
     return (
         <div className="subscribe-container">

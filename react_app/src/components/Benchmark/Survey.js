@@ -87,19 +87,14 @@ const organisation = [
 ];
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
-<<<<<<< HEAD
-    const [userSelection, setUserSelection] = useState({});
-    const { t, i18next } = useTranslation()
-    
-=======
-    const [userSelection, setUserSelection] = useState({
+const { t } = useTranslation()    
+const [userSelection, setUserSelection] = useState({
         category: "notSelected",
         experience: "notSelected",
         location: "notSelected",
         industry: "notSelected",
         organisation: "notSelected",
     });
->>>>>>> 5cf75b41c9778def86988943493bcf6f5d502bc7
 
     console.log("Right now selection is : ", userSelection);
 
@@ -114,7 +109,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             setShowResult(false);
             Swal.fire({
                 icon: "info",
-                html: "Please select at least a <b>Category</b> and <b>Experience</b>!",
+                html: t("please_select"),
                 confirmButtonColor: "#3bbcb0",
             });
         } else {

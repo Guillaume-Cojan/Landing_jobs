@@ -1,15 +1,11 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
 import IntroImg from "./../../assets/intro.svg";
 import "./Intro.css";
-import i18next from "i18next";
 import { useTranslation } from "react-i18next";
-import cookies from "js-cookie";
 import LanguageSwitcher from "../LanguageSwitcher";
 
-function Intro({}) {
-  const currentLanguageCode = cookies.get("i18next") || "en";
-  const { t, i18n } = useTranslation();
-  // i18next.options.supportedLngs
+function Intro() {
+  const { t } = useTranslation();
 
   return (
     <div className="intro-container">

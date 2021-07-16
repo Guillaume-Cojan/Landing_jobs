@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Intro from "./components/Intro/Intro";
 import ProfileSection from "./components/Profile/ProfileSection";
 import Benchmark from "./components/Benchmark/Benchmark";
@@ -8,7 +8,6 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 
 import { useTranslation } from "react-i18next";
-import cookies from "js-cookie";
 
 const languages = [
   {
@@ -29,21 +28,11 @@ const languages = [
 ];
 
 function App() {
-  const currentLanguageCode = cookies.get("i18next") || "en";
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation();
 
   const [showLJ, setShowLJ] = useState(false);
   const [showJobs, setShowJobs] = useState(true);
-  const [talentButtonText, setTalentButtonText] = useState("");
-  const [companyButtonText, setCompanyButtonText] = useState("");
 
-  useEffect(() => {
-    console.log("Setting page");
-    document.title = t("app_title");
-    setTalentButtonText(t(""));
-    setCompanyButtonText(t(""));
-  }, [currentLanguage, t]);
 
   return (
     <div>
