@@ -70,7 +70,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
               </div>
               <Bar data={data} options={options} />
               <p align="center" className="mention">
-                  * based on the answers of our survey respondents
+                  ** based on the answers of our survey respondents
               </p>
               {tryAgain()}
           </div>

@@ -72,6 +72,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
         <SurveyList
           key={index}
           title={field.title}
+          obligatory={field.obligatory}
           list={field.list}
           setUserSelection={setUserSelection}
           userSelection={userSelection}

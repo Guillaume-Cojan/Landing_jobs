@@ -1,26 +1,37 @@
 import React from "react";
 import Select from "react-select";
 
+function SurveyList({
+  title,
+  obligatory,
+  list,
+  setUserSelection,
+  userSelection,
+}) {
+  const options = [];
 
+  list.forEach(function (element) {
+    options.push({ label: element, value: element });
+  });
 
-function SurveyList({ title, list, setUserSelection, userSelection }) {
-    
-    const options = [];
+  const handleSelectChanges = (e, name) => {
+    setUserSelection({ ...userSelection, [name.name]: e.value });
+  };
 
-    list.forEach(function (element) {
-        options.push({ label: element, value: element });
-    });
+  return (
+    <div className="survey-list-container">
+      <h3>
+        {title} {obligatory}
+      </h3>
 
-    const handleSelectChanges = (e, name) => {
-        setUserSelection({...userSelection, [name.name] : e.value})
-    }
-
-    return (
-        <div className="survey-list-container">
-            <h3>{title}</h3>
-            <Select name={title.toLowerCase()} options={options} className="select" onChange={handleSelectChanges}/>
-        </div>
-    );
+      <Select
+        name={title.toLowerCase()}
+        options={options}
+        className="select"
+        onChange={handleSelectChanges}
+      />
+    </div>
+  );
 }
 
 export default SurveyList;
