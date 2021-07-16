@@ -1,5 +1,18 @@
 .subscribe-container {
     position: relative;
+    top: -1rem;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.subscribe-container-lj {
+    position: relative;
+    top: -7rem;
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
