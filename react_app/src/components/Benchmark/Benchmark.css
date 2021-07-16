@@ -94,6 +94,27 @@
     color: #007eff;
 }
 
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-reset {
+  box-sizing: border-box;
+    padding: 1em 4.5em;
+    border-radius: 39px;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.3s;
+    max-width: 400px;
+    margin: 5% 0;
+
+    background: white;
+    border: 2px solid #3bbcb0;
+    color: #3bbcb0;
+}
+
 .calculate-btn, 
 .calculate-btn-company,
 .calculate-btn-talent {

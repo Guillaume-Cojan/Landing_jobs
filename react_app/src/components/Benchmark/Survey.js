@@ -81,7 +81,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                     userSelection={userSelection}
                 />
             ))}
-
+            <div className="btn-container">
             <button
                 className={
                     showLJ
@@ -97,6 +97,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             <button className="btn-reset" onClick={handleResetClick}>
           Clear fields
         </button>
+        </div>
         </div>
     );
 }
