@@ -58,7 +58,7 @@ export default class Sweetalertdemo extends Component {
                     }),
                 };
                 return fetch(
-                    `http://localhost:3000/subscribe`,
+                    `https://landing-pay-server.herokuapp.com/subscribe`,
                     requestOptions
                 ).catch((error) => {
                     console.log(error);
