@@ -1,9 +1,9 @@
 import "./Subscribe.css";
 import SweetAlert from "./SweetAlert";
 
-function Subscribe() {
+function Subscribe({showLJ}) {
     return (
-        <div className="subscribe-container">
+        <div className={showLJ ? "subscribe-container-lj" : "subscribe-container"}>
             <div className="subscribe-text">
                 <h1>
                     Do you want to receive regular information about salary and
