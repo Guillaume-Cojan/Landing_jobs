@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SurveyList from "./SurveyList";
 import surveyFields from "./SurveyFields";
 
-
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
     const [userSelection, setUserSelection] = useState({
         category: "notSelected",
@@ -40,7 +39,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             userSelection.industry &&
             userSelection.organisation
         ) {
-            fetch("https://git.heroku.com/landing-pay-server.git", {
+            fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
                 // mode: 'no-cors',
                 method: "POST",
                 headers: {
@@ -69,16 +68,15 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 Salary Benchmarking
             </h2>
             <p className="survey-p">Put the power of "pay" into your hands.</p>
-                {
-                surveyFields.map((field, index) => (
-                    <SurveyList 
-                        key={index} 
-                        title={field.title} 
-                        list={field.list} 
-                        setUserSelection={setUserSelection}
-                        userSelection={userSelection} />
-                ))
-                }
+            {surveyFields.map((field, index) => (
+                <SurveyList
+                    key={index}
+                    title={field.title}
+                    list={field.list}
+                    setUserSelection={setUserSelection}
+                    userSelection={userSelection}
+                />
+            ))}
 
             <button
                 className={
