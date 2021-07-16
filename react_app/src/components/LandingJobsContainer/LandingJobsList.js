@@ -46,8 +46,8 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
                     jobsList.map((job, index) => ( <JobCard
                         key={index}
                         title={job.title}
-                        logo={ companiesList.length > 2 ? companiesList.find((x) => x.id === job.company_id).logo_url : null }
-                        companyName={ companiesList.length > 2 ?companiesList.find((x) => x.id === job.company_id).name : "Loading..."}
+                        logo={ companiesList.length > 1 ? companiesList.find((x) => x.id === job.company_id).logo_url : "logo" }
+                        companyName={ companiesList.length > 1 ?companiesList.find((x) => x.id === job.company_id).name : "Loading..."}
                         city={job.city}
                         url={job.url}/> 
                     ))
