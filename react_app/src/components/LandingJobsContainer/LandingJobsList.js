@@ -15,13 +15,15 @@ const LandingJobsList = ({ showLJ, showJobs }) => {
     };
     useEffect(searchJob, []);
 
-    let companyIds = jobsList.map(job => job.company_id)
+   
 
     const searchCompany = () => {
+        let companyIds = jobsList.map(job => job.company_id)
         companyIds.map(id => {
             fetch("https://landing.jobs/api/v1/companies/" + id)
             .then((res) => res.json())
-            .then((data) =>  setCompaniesList(prevState => [...prevState, data]))})
+            .then((data) =>  setCompaniesList(prevState => [...prevState, data]))
+            return 1})
     };
     useEffect(searchCompany, [jobsList]);
 
