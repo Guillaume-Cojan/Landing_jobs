@@ -135,6 +135,9 @@ To get a local copy up and running follow these simple example steps.
   POST /salarybenchmark
 ```
 
+ <img src="src/assets/graph-screenshot.png" align="center" alt="graph" width="300">
+
+
 ### Landing Jobs Container
 
 ---
