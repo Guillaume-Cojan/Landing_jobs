@@ -14,11 +14,12 @@ function Benchmark({ showLJ, showJobs }) {
             className={
                 showLJ
                     ? showJobs
-                        ? "benchmark-container-cie"
+                        ? "benchmark-container-company"
                         : "benchmark-container-talent"
                     : "benchmark-container"
             }
         >
+            <div className="benchmark-content">
             <Survey
                 showLJ={showLJ}
                 showJobs={showJobs}
@@ -32,6 +33,7 @@ function Benchmark({ showLJ, showJobs }) {
                 showResult={showResult}
                 graphData={graphData}
             />
+            </div>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: -14%;
+    margin-top: -11rem;
     padding-top: 11%;
     padding-bottom: 3%;
     padding-left: 13%;
@@ -18,7 +18,7 @@
     padding-bottom: 3%;
     padding-left: 13%;
     padding-right: 13%;
-    background-color: #26333c;
+    background-color: black;
     color: white;
 }
 

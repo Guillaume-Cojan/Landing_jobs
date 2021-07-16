@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 * {
     font-family: Montserrat;
+    box-sizing: border-box;
 }
 
 html,
 body {
+    font-size: 16px;
+    margin: 0;
     overscroll-behavior: none;
 }
 
 body {
-    margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -30,3 +32,7 @@ button:hover,
 button:focus {
     cursor: pointer;
 }
+
+ /* * {
+    border: 1px solid rebeccapurple;
+}      */

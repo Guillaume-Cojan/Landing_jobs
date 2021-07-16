@@ -2,11 +2,11 @@ import { useTranslation } from "react-i18next";
 import "./Subscribe.css";
 import SweetAlert from "./SweetAlert";
 
-function Subscribe() {
+function Subscribe({showLJ}) {
     const { t } = useTranslation(); 
 
     return (
-        <div className="subscribe-container">
+        <div className={showLJ ? "subscribe-container-lj" : "subscribe-container"}>
             <div className="subscribe-text">
                 <h1 className="subscribe-title">{t("subscribe-title")}
                 </h1>

@@ -20,31 +20,37 @@ const Profile = ({
     }
   };
 
-  const { t } = useTranslation();
-
-  return (
-    <Trans i18nKey="getStartedButton">
-      <div className="profile-card">
-        <div className="profile-text">
-          <h2 className={id === 1 ? "profile-title-cie" : "profile-title"}>
-            {title}
-          </h2>
-          <p className="profile-content"> {content} </p>
-          <button
-            className={id === 1 ? "bttn-get-started-cie" : "bttn-get-started"}
-            onClick={() => handleShowLJ()}
-          >
-            {id === 1
+const { t } = useTranslation();
+    return (
+        <div className="profile-card">
+            <div className="profile-card-content"> 
+            <div className="profile-text">
+                <h2
+                    className={id === 1 ? "profile-title-purple" : "profile-title-blue"}
+                >
+                    {title}
+                </h2>
+                <p className="profile-content"> {content} </p>
+            </div>
+            <div className="profile-right-side">
+                <img className="profile-img" src={image} alt="worker" />
+            </div>
+            </div>
+            <button
+                    className={
+                        id === 1 ? "bttn-get-started-purple" : "bttn-get-started-blue"
+                    }
+                    onClick={() => handleShowLJ()}
+                >
+                    {id === 1
               ? t("gain_salary_insights")
               : t("get_my_salary_estimates")}
-          </button>
+                </button>
+        
         </div>
-        <div className="profile-right-side">
-          <img className="profile-img" src={image} alt="worker" />
-        </div>
-      </div>
-    </Trans>
-  );
+    );
+
 };
+
 
 export default Profile;

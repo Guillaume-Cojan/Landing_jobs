@@ -8,10 +8,10 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
     const { t } = useTranslation(); 
  
     return (
-        <div className="profiles">
             <div className="profiles-container">
                 <Profile
-                    title={t("company_title")}
+className="profile-company"                    
+title={t("company_title")}
                     content={t(
                         "company"
                     )}
@@ -20,9 +20,9 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                     id={1}
                     setShowJobs={setShowJobs}
                 />
-                <div>{""}</div>
                 <Profile
-                    title={t("talent_title")}
+className="profile-talent"                    
+title={t("talent_title")}
                     content={t(
                         "talent")}
                     image={ProfileTalent}
@@ -31,7 +31,6 @@ function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
                     setShowJobs={setShowJobs}
                 />
             </div>
-        </div>
     );
 }
 

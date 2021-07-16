@@ -28,29 +28,20 @@ const languages = [
 ];
 
 function App() {
-  const { t } = useTranslation();
+    const [showLJ, setShowLJ] = useState(false);
+    const [showJobs, setShowJobs] = useState(true);
 
-  const [showLJ, setShowLJ] = useState(false);
-  const [showJobs, setShowJobs] = useState(true);
+    return (
+        <div className={showLJ ? (showJobs ? "App-company" : "App-talent") : "App"}>
 
-
-  return (
-    <div>
-      <div className={showLJ ? (showJobs ? "App-cie" : "App-talent") : "App"}>
-        <Intro languages={languages} />
-
-        <ProfileSection
-          setShowLJ={setShowLJ}
-          setShowJobs={setShowJobs}
-          translate={t}
-        />
-        <Benchmark showLJ={showLJ} showJobs={showJobs} translate={t} />
-        <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
-        <Subscribe translate={t} />
-        <Footer showLJ={showLJ} />
-      </div>
-    </div>
-  );
+            <Intro />
+            <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
+            <Benchmark showLJ={showLJ} showJobs={showJobs} />
+            <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
+            <Subscribe showLJ={showLJ}/>
+            <Footer showLJ={showLJ} /> 
+        </div>
+    );
 }
 
 export default App;
