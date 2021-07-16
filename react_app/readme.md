@@ -41,12 +41,13 @@
 
 ## About The Project
 
----
 <img src="src/assets/BasicNoResult.svg" align="right"
      alt="salary benchmark logo" width="200" height="178">
 
+<p align="left">
 <img alt="React" src="https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=61DAFB" />
 <img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+</p>
 
 A  salary benchmark tool with clean design and easy to use interface, created with React. When setting out to build our product, the vision was clear: an application that requires no unnecessary extra steps, no endless forms to fill-up and no restrictions!
 
@@ -55,7 +56,6 @@ A  salary benchmark tool with clean design and easy to use interface, created wi
 <!-- GETTING STARTED -->
 ## Getting Started
 
----
 To get a local copy up and running follow these simple example steps.
 
 1. Clone the project
@@ -88,7 +88,6 @@ To get a local copy up and running follow these simple example steps.
 <!-- ABOUT THE PROJECT -->
 ## Color Reference
 
----
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -102,23 +101,21 @@ To get a local copy up and running follow these simple example steps.
 <!-- ABOUT THE PROJECT -->
 ## Dependencies
 
----
 
 <!-- ABOUT THE PROJECT -->
 ## APIs
 
----
  
 ## Components
 
----
-
 ### Intro
 
+---
 * English / Portuguese / French option description
 
 ### Profile
 
+---
  * Selecting one of the profiles will trigger a separate component to appear on the page: Landing Jobs Container. The content of this latter component will depend on which profile you selected.
  * Your selection will also determine a new color scheme of the webpage.
 
@@ -127,6 +124,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Benchmark
 
+---
 * react-select 
 * react-chart - bar graph 
 * Only two fields are mandatory (Category and Experience) but you are welcome to explore the result for different selections
@@ -139,6 +137,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Landing Jobs Container
 
+---
 * API: "https://landing.jobs/api/v1/companies/[id]"
 * API: "https://landing.jobs/api/v1/jobs?limit=3&offset=47"
 * Explanation:
@@ -168,7 +167,6 @@ For more information:
 <!-- CONTACT -->
 ## Contact The Developers
 
----
 Anna Gosme - [Github](https://github.com/AnnaGosme) - [LinkedIn](https://www.linkedin.com/in/anna-gosme/)  
 
 Carmen Llamas - [Github](https://github.com/makrmeen) - [LinkedIn](https://www.linkedin.com/in/makarmeen/)
@@ -182,11 +180,11 @@ Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.
 <!-- DEMO -->
 ## Demo
 
----
 Click the logo in order to view our app. Enjoy! 😊
 
 <p align="center">
   <a href="https://landingpay.netlify.app/">
-    <img src="src/assets/LJ_Logo.svg" alt="Logo" >
+    <img src="src/assets/LJ_Logo.svg" alt="Logo" width="400">
   </a>
+</p>
 
