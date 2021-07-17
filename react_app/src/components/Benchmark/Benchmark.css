@@ -1,37 +1,35 @@
-.benchmark-container, 
-.benchmark-container-company, 
-.benchmark-container-talent  {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100vw; 
-    padding: 0 10%;
-    position: relative;
-    top: -20px;
-    /* align-items: center;  */
-    /* padding-bottom: 10%; */
-    /* margin-top: 50%; */
-    /* transition: 0.3s; */
+.benchmark-container,
+.benchmark-container-company,
+.benchmark-container-talent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 0 10%;
+  position: relative;
+  top: -20px;
+  /* align-items: center;  */
+  /* padding-bottom: 10%; */
+  /* margin-top: 50%; */
+  /* transition: 0.3s; */
 }
 
 .benchmark-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
-    /* margin: 0 5%; */
-
+  /* margin: 0 5%; */
 }
 
 .no-result-img {
-    /* margin-right: 5%; */
-    /* margin-top: 4%; */
-    /* transition: 0.3s; */
-    width: 25em;
+  /* margin-right: 5%; */
+  /* margin-top: 4%; */
+  /* transition: 0.3s; */
+  width: 25em;
 }
-
 
 /* .benchmark-container-company, .benchmark-container-talent {
     display: flex;
@@ -39,24 +37,23 @@
     align-items: center;
     width: 100vw;
     /* height: 100%; */
-    /* padding-bottom: 10%; */
-    /* padding-top: 25%; */
-    /* transition: 0.3s; 
+/* padding-bottom: 10%; */
+/* padding-top: 25%; */
+/* transition: 0.3s; 
     } 
 */
 
-
 .survey-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .survey-p {
-    text-align: justify;
-    font-size: 1em;
-    color: #4f5665;
-    max-width: 360px;
+  text-align: justify;
+  font-size: 1em;
+  color: #4f5665;
+  max-width: 360px;
 }
 
 .survey-container h3 {
@@ -72,26 +69,26 @@
   border: none;
 }
 
-.survey-title, 
+.survey-title,
 .survey-title-company,
 .survey-title-talent {
-    font-size: 2.7rem;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    text-align: left;
-    transition: 0.3s;
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
 }
 
 .survey-title {
-    color: #3bbcb0;
+  color: #3bbcb0;
 }
 
 .survey-title-company {
-    color: #a729d2;
+  color: #a729d2;
 }
 
 .survey-title-talent {
-    color: #007eff;
+  color: #007eff;
 }
 
 .btn-container {
@@ -99,46 +96,111 @@
   flex-direction: row;
 }
 
-.btn-reset {
+.cancel-btn,
+.cancel-btn-company,
+.cancel-btn-talent {
   box-sizing: border-box;
-    padding: 1em 4.5em;
-    border-radius: 39px;
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 5% 0;
-
-    background: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
+  padding: 1em 4.5em;
+  border-radius: 39px;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 5% 0;
 }
 
-.calculate-btn, 
+.cancel-btn {
+  background: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.cancel-btn-company {
+  background: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
+}
+
+.cancel-btn-company:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.cancel-btn-company:active {
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: white;
+  transform: translateY(4px);
+}
+
+.cancel-btn-talent {
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: white;
+  border: 2px solid #007eff;
+  border-radius: 39px;
+  color: #007eff;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
+}
+
+.cancel-btn-talent:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.cancel-btn-talent:active {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  transform: translateY(4px);
+}
+
+.calculate-btn,
 .calculate-btn-company,
 .calculate-btn-talent {
-    box-sizing: border-box;
-    padding: 1em 4.5em;
-    border-radius: 39px;
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 5% 0;
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  border-radius: 39px;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 5% 0;
 }
 
 .calculate-btn {
-    background: #3bbcb0;
-    border: 2px solid #3bbcb0;
-    color: white;
+  background: #3bbcb0;
+  border: 2px solid #3bbcb0;
+  color: white;
 }
 
-.calculate-btn:hover, .calculate-btn:focus {
-    background-color: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
+.calculate-btn:hover,
+.calculate-btn:focus {
+  background-color: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
 }
 
 /* .calculate-btn:active {
@@ -149,28 +211,28 @@
 } */
 
 .calculate-btn-company {
-    background: #a729d2;
-    border: 2px solid #a729d2;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  background: #a729d2;
+  border: 2px solid #a729d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn-company:hover {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
 }
 
 .calculate-btn-company:active {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
+  transform: translateY(4px);
 }
 
 .calculate-btn-talent {
@@ -201,164 +263,159 @@
   transform: translateY(4px);
 }
 
-
 .mention {
-    font-style: italic;
-    color: #4f5665;
+  font-style: italic;
+  color: #4f5665;
 }
 
-.graph-title, .graph-title-talent, .graph-title-company{
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 600;
+.graph-title,
+.graph-title-talent,
+.graph-title-company {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .graph-title-talent {
-    color: #007eff;
-
+  color: #007eff;
 }
 .graph-title-company {
-    color: #a729d2;
-
+  color: #a729d2;
 }
 .graph-title-normal {
-    color: #3bbcb0;
+  color: #3bbcb0;
 }
 
 @media screen and (max-width: 1140px) {
-    .benchmark-container, 
-    .benchmark-container-company, 
-    .benchmark-container-talent {
-        padding: 0 5%;
-    }
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    padding: 0 5%;
+  }
 }
 
 @media screen and (max-width: 1050px) {
-    .benchmark-container-talent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width:100%;
-    
-        /* margin: 0 5%; */
-    
-    }
+  .benchmark-container-talent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    /* margin: 0 5%; */
+  }
 }
 
 /*Phone*/
- @media (max-width: 767px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        margin-bottom: 20px;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 0px;
-        height: 100%;
-        margin-right: 0px;
-    }
-    .survey-container {
-        margin-right: 0px;
-        align-items: center;
-        padding-top: 10%;
-    }
-    .no-result-img {
-        margin-left: 0px;
-        width: 220px;
-    }
-    .survey-title,
-    .survey-title-company,
-    .survey-title-talent {
-        font-size: 1.5rem;
-        max-width: 70%;
-    }
-    .survey-p {
-        font-size: 13px;
-        max-width: 70%;
-        margin: 0;
-        margin-bottom: 5%;
-    }
-    .select {
-        width: 220px;
-        margin-bottom: 0px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .survey-container h3 {
-        font-size: 16px;
-        max-width: 400px;
-        margin-bottom: 5px;
-    }
-    .calculate-btn,
-    .calculate-btn-company,
-    .calculate-btn-talent {
-        width: 270px;
-        height: 57px;
-        margin: 40px 0px;
-    }
-}  
+@media (max-width: 767px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    height: 100%;
+    margin-right: 0px;
+  }
+  .survey-container {
+    margin-right: 0px;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .no-result-img {
+    margin-left: 0px;
+    width: 220px;
+  }
+  .survey-title,
+  .survey-title-company,
+  .survey-title-talent {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
+  .survey-p {
+    font-size: 13px;
+    max-width: 70%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .select {
+    width: 220px;
+    margin-bottom: 0px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .survey-container h3 {
+    font-size: 16px;
+    max-width: 400px;
+    margin-bottom: 5px;
+  }
+  .calculate-btn,
+  .calculate-btn-company,
+  .calculate-btn-talent {
+    width: 270px;
+    height: 57px;
+    margin: 40px 0px;
+  }
+}
 
 /*Tablet Portrait*/
- @media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
-        /* padding-top: 25%; */
-       flex-direction: column;
-        justify-content: center;
-    }
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
+    /* padding-top: 25%; */
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .survey-container {
-        margin-right: 0%;
-        align-items: center;
-    }
+  .survey-container {
+    margin-right: 0%;
+    align-items: center;
+  }
 
-    /* .no-result-img {
+  /* .no-result-img {
         margin-right: 0%;
         transition: 0.3s;
         width: 45%;
     } */
 
-    .calculate-btn,
-    .calculate-btn-company,
-    .calculate-btn-talent {
-        width: 300px;
-    }
-}  
+  .calculate-btn,
+  .calculate-btn-company,
+  .calculate-btn-talent {
+    width: 300px;
+  }
+}
 
 /*Tablet Landscape*/
- @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
 
-        /* padding-top: 25%; */
-     }  
-    
+    /* padding-top: 25%; */
+  }
 
+  .survey-container {
+    margin-right: 3%;
+    align-items: center;
+  }
 
-    .survey-container {
-        margin-right: 3%;
-        align-items: center;
-    }
+  .no-result-img {
+    margin: 0% 3%;
+    transition: 0.3s;
+  }
 
-    .no-result-img {
-        margin: 0% 3%;
-        transition: 0.3s;
-    }
-
-    .survey-title,
-    .survey-title-company,
-    .survey-title-talent {
-        font-size: 2.2rem;
-    }
-}  
-
+  .survey-title,
+  .survey-title-company,
+  .survey-title-talent {
+    font-size: 2.2rem;
+  }
+}
