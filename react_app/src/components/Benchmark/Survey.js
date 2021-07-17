@@ -3,7 +3,6 @@ import SurveyList from "./SurveyList";
 import { useTranslation } from "react-i18next";
 import surveyFields from "./SurveyFields";
 
-
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
 const { t } = useTranslation()    
 const [userSelection, setUserSelection] = useState({
@@ -42,7 +41,7 @@ const [userSelection, setUserSelection] = useState({
             userSelection.industry &&
             userSelection.organisation
         ) {
-            fetch("https://git.heroku.com/landing-pay-server.git", {
+            fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
                 // mode: 'no-cors',
                 method: "POST",
                 headers: {

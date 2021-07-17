@@ -6,7 +6,7 @@ const app = express();
 const cors = require("cors");
 
 //declare the port that the backend server will run on. This will be a different port than what the frontend server runs on
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 //Importing routes
 const subscribersRoute = require("./routes/route-subscribers");

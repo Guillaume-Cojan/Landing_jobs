@@ -14,3 +14,5 @@ const connection = mysql.createConnection({
 });
 
 module.exports = connection;
+
+//mysql://bda4e96307de82:f0ef2cb9@us-cdbr-east-04.cleardb.com/heroku_cb95d913c021053?reconnect=true
