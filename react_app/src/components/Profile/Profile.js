@@ -1,4 +1,3 @@
-import { Trans } from "react-i18next";
 import "./Profile.css";
 import { useTranslation } from "react-i18next";
 

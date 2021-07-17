@@ -81,7 +81,12 @@ const [userSelection, setUserSelection] = useState({
                         userSelection={userSelection} />
                 ))
                 }
-
+  <div className="btn-container">
+            <button className="btn-reset" 
+            // onClick={handleResetClick}
+            >
+          {t("clear_fields")}
+        </button>
             <button
                 className={
                     showLJ
@@ -94,6 +99,7 @@ const [userSelection, setUserSelection] = useState({
             >
                 {t("Calculate")}
             </button>
+        </div>
         </div>
     );
 }

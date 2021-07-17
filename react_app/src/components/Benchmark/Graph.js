@@ -22,9 +22,9 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
         },
       };
     
-
+      const { t } = useTranslation();
     const data = {
-        labels: ['Minimum Salary', 'Average Salary', 'Maximum Salary'],
+        labels: t("min_avg_max_salaries"),
         datasets: [
           {
             label: '€ per year',
@@ -44,7 +44,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
         ],
       };
     
-      const { t } = useTranslation();
+      
 
       const Swal = require("sweetalert2");
       const tryAgain = () => {
@@ -73,7 +73,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
               </div>
               <Bar data={data} options={options} />
               <p align="center" className="mention">
-                  {t("**_based_on_the_answers_of_our_survey_respondents")}
+                  {t("based_on_the_answers_of_our_survey_respondents")}
               </p>
               {tryAgain()}
           </div>

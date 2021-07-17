@@ -43,12 +43,14 @@ class Sweetalertdemo extends React.Component {
 
   HandleClick() {
     Swal.fire({
-      title: this.props.t("Enter_email"),
+      title: this.props.t("enter_email"),
       input: "email",
+      validationMessage : this.props.t("enter_valid_email"),
       inputAttributes: {
         autocapitalize: "off",
       },
       showCancelButton: true,
+      cancelButtonText: this.props.t("Cancel"),
       confirmButtonText: this.props.t("Subscribe"),
       confirmButtonColor: "#3bbcb0",
       showLoaderOnConfirm: false,

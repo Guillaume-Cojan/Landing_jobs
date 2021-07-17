@@ -7,25 +7,8 @@ import LandingJobsList from "./components/LandingJobsContainer/LandingJobsList";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 
-import { useTranslation } from "react-i18next";
 
-const languages = [
-  {
-    code: "en",
-    name: "English",
-    country_code: "gb",
-  },
-  {
-    code: "pt",
-    name: "português",
-    country_code: "pt",
-  },
-  {
-    code: "fr",
-    name: "Français",
-    country_code: "fr",
-  },
-];
+
 
 function App() {
     const [showLJ, setShowLJ] = useState(false);
