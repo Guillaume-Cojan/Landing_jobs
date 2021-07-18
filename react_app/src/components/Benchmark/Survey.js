@@ -41,7 +41,7 @@ const [userSelection, setUserSelection] = useState({
       userSelection.industry &&
       userSelection.organisation
     ) {
-      fetch("http://localhost:5000/salarybenchmark/", {
+        fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
         // mode: 'no-cors',
         method: "POST",
         headers: {
