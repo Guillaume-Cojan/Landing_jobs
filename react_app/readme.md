@@ -26,6 +26,12 @@
     <li><a href="#getting-started">Getting Started</a></li>
     <li><a href="#color-reference">Color Reference</a> </li>
     <li><a href="#dependencies">Dependencies</a> </li>
+    <ul>
+        <li><a href="#react-i18next">react-i18next</a></li>
+        <li><a href="#react-select">react-select</a></li>
+        <li><a href="#sweet-alert">sweet-alert</a></li>
+        <li><a href="#react-chartjs-2">react-chartjs-2</a></li>
+      </ul>
     <li><a href="#apis">APIs</a> </li>
     <li><a href="#components">Components</a></li>
         <ul>
