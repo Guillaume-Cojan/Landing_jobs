@@ -28,7 +28,7 @@ const [userSelection, setUserSelection] = useState({
                 confirmButtonColor: "#3bbcb0",
             });
         } else {
-            setShowResult(true);
+            setShowResult(true); 
             sendSelectionToBE();
         }
     };
@@ -41,7 +41,7 @@ const [userSelection, setUserSelection] = useState({
       userSelection.industry &&
       userSelection.organisation
     ) {
-      fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
+      fetch("http://localhost:5000/salarybenchmark/", {
         // mode: 'no-cors',
         method: "POST",
         headers: {
@@ -50,8 +50,9 @@ const [userSelection, setUserSelection] = useState({
         body: JSON.stringify({ formSelection: userSelection }),
       })
         .then((res) => res.json())
-        .then((data) => {
-          setGraphData(data);
+        .then((data) => {  
+            setGraphData(data);
+
         });
     }
   };
