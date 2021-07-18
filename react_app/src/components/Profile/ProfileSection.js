@@ -2,27 +2,29 @@ import Profile from "./Profile";
 import ProfileCompany from "../../assets/profile_company.svg";
 import ProfileTalent from "../../assets/profile_talent.svg";
 import "./Profile.css";
+import { useTranslation } from "react-i18next";
 
 function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
+    const { t } = useTranslation(); 
+ 
     return (
             <div className="profiles-container">
                 <Profile
-                    className="profile-company"
-                    title={"Company"}
-                    content={
-                        "Pay what your talent deserves. Make confident decisions with transparent salary data."
-                    }
+className="profile-company"                    
+title={t("company_title")}
+                    content={t(
+                        "company"
+                    )}
                     image={ProfileCompany}
                     setShowLJ={setShowLJ}
                     id={1}
                     setShowJobs={setShowJobs}
                 />
                 <Profile
-                    className="profile-talent"
-                    title={"Talent"}
-                    content={
-                        "Stop guessing what you are worth. Gain the insights needed to make the smartest career move decision."
-                    }
+className="profile-talent"                    
+title={t("talent_title")}
+                    content={t(
+                        "talent")}
                     image={ProfileTalent}
                     setShowLJ={setShowLJ}
                     id={2}

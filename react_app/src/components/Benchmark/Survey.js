@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import SurveyList from "./SurveyList";
+import { useTranslation } from "react-i18next";
 import surveyFields from "./SurveyFields";
 
 function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
-    const [userSelection, setUserSelection] = useState({
+const { t } = useTranslation()    
+const [userSelection, setUserSelection] = useState({
         category: "notSelected",
         experience: "notSelected",
         location: "notSelected",
@@ -22,7 +24,7 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             setShowResult(false);
             Swal.fire({
                 icon: "info",
-                html: "Please select the <b>Category</b> and <b>Experience</b> fields!",
+                html: t("please_select"),
                 confirmButtonColor: "#3bbcb0",
             });
         } else {
@@ -65,19 +67,25 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                         : "survey-title"
                 }
             >
-                Salary Benchmarking
+                {t("survey_title")}
             </h2>
-            <p className="survey-p">Put the power of "pay" into your hands.</p>
-            {surveyFields.map((field, index) => (
-                <SurveyList
-                    key={index}
-                    title={field.title}
-                    list={field.list}
-                    setUserSelection={setUserSelection}
-                    userSelection={userSelection}
-                />
-            ))}
-
+<p className="survey-p">{t("survey_p")}</p>
+                {
+                surveyFields.map((field, index) => (
+                    <SurveyList 
+                        key={index} 
+                        title={field.title} 
+                        list={field.list} 
+                        setUserSelection={setUserSelection}
+                        userSelection={userSelection} />
+                ))
+                }
+  <div className="btn-container">
+            <button className="btn-reset" 
+            // onClick={handleResetClick}
+            >
+          {t("clear_fields")}
+        </button>
             <button
                 className={
                     showLJ
@@ -88,8 +96,9 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
                 }
                 onClick={handleCalculateClick}
             >
-                Calculate
+                {t("Calculate")}
             </button>
+        </div>
         </div>
     );
 }

@@ -1,23 +1,25 @@
 import "./Profile.css";
+import { useTranslation } from "react-i18next";
 
 const Profile = ({
-    title,
-    content,
-    image,
-    showLJ,
-    setShowLJ,
-    id,
-    setShowJobs,
+  title,
+  content,
+  image,
+  showLJ,
+  setShowLJ,
+  id,
+  setShowJobs,
 }) => {
-    const handleShowLJ = () => {
-        setShowLJ(true);
-        if (id === 1) {
-            setShowJobs(true);
-        } else {
-            setShowJobs(false);
-        }
-    };
+  const handleShowLJ = () => {
+    setShowLJ(true);
+    if (id === 1) {
+      setShowJobs(true);
+    } else {
+      setShowJobs(false);
+    }
+  };
 
+const { t } = useTranslation();
     return (
         <div className="profile-card">
             <div className="profile-card-content"> 
@@ -40,8 +42,8 @@ const Profile = ({
                     onClick={() => handleShowLJ()}
                 >
                     {id === 1
-                        ? "Gain Salary Insights"
-                        : "Get my Salary Estimates"}
+              ? t("gain_salary_insights")
+              : t("get_my_salary_estimates")}
                 </button>
         
         </div>
