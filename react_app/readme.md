@@ -101,7 +101,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- ABOUT THE PROJECT -->
 ## Dependencies
 
-### > Languages library [Anna]
+### > react-i18next [Anna]
 ### > react-select [Guillaume]
 ### > sweet-alert [Guillaume]
 
@@ -116,21 +116,21 @@ yarn add react-chartjs-2 chart.js
 ```
 **Usage**
 
-For this project we used the library's "Vertical Bar Chart" but many more options are available at [React-chartjs-2 Demo](https://reactchartjs.github.io/react-chartjs-2/#/)
-
-Github Source: [React-chartjs-2](https://github.com/reactchartjs/react-chartjs-2)
+For this project we used the library's "Vertical Bar Chart" but many more options are available at [React-chartjs-2 Demo](https://reactchartjs.github.io/react-chartjs-2/#/) !
 
 ```react
   import { Doughnut } from 'react-chartjs-2';
 
   <Doughnut data={...} />
 ```
-
+_Github Source: [React-chartjs-2](https://github.com/reactchartjs/react-chartjs-2)_
 
 <!-- ABOUT THE PROJECT -->
 ## APIs
 
 Our web application makes use of two separate APIs. Firstly, in order to have relevant and up to date job postings on the JobCard components, we use the Landing.Jobs API with the following endpoints:
+
+URL: `https://landing.jobs/api/v1/jobs`
 
 ```http
   GET /api/v1/jobs?limit=3&offset=47
@@ -232,6 +232,8 @@ Example response:
 
 This GET request with pagination set to the last page will ensure that our website will display the most recent last 3 job postings. However, the object received only contains a company_id, so another fetch is necessary in order to display the company name and logo on our Job Cards.
 
+URL: `https://landing.jobs/api/v1/companies/[id]`
+
 ```http
   GET /api/v1/companies/[id]
 ```
@@ -254,7 +256,25 @@ Result:
   <img src="src/assets/jobcard-screenshot.png" alt="Logo" width="300" height="300"> 
 </p>
 
- 
+_For more information: [Landing.Jobs API Documentation](https://github.com/LandingJobs/LandingJobs-api)_
+
+Secondly, Landing.Jobs Salary uses an API developed by us which retrieves the salary data necessary in order to generate a result when the user presses the "Calculate" button.
+
+URL: `https://landing-pay-server.herokuapp.com/salarybenchmark/`
+
+```http
+  POST /salarybenchmark/
+```
+
+Example response:
+```JSON
+{
+    "average_salary": 32500.00,
+    "maximum_salary": 32500,
+    "minimum_salary": 32500
+}
+ ```
+
 ## Components
 
 ### Intro
@@ -294,18 +314,9 @@ Result:
 ---
 *  "https://landing.jobs/api/v1/companies/[id]"
 *  "https://landing.jobs/api/v1/jobs?limit=3&offset=47"
-* Explanation:
-    + for the jobs fetch parameters
 
-```http
-  GET /api/v1/companies/[id]
-```
+    
 
-```http
-  GET /api/v1/jobs?limit=3&offset=47
-```
-For more information: 
-[Landing.Jobs API Documentation](https://github.com/LandingJobs/LandingJobs-api)
 
 ### Subscribe
 

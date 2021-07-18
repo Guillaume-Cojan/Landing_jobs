@@ -25,6 +25,39 @@
     justify-content: space-between;
    
 }
+.top-grid {
+  /* align-self: flex-start; */
+  width: 100%;
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.lj-logo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  width: 25%;
+}
+
+.language-select {
+    grid-row-start: 1;
+    grid-column-end: 3;
+  justify-self: end;
+ 
+  background-color: black;
+
+
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 10%;
+  height: 35em;
+  background: #000000;
+  color: #ffffff;
+}
 
 .intro-text {
     width: 45%;
@@ -45,7 +78,7 @@
 
 .intro-title {
     font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 300;
     white-space: nowrap;
     margin: 2% 0;

@@ -6,7 +6,9 @@ import Benchmark from "./components/Benchmark/Benchmark";
 import LandingJobsList from "./components/LandingJobsContainer/LandingJobsList";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
-import React from "react";
+
+
+
 
 function App() {
     const [showLJ, setShowLJ] = useState(false);
