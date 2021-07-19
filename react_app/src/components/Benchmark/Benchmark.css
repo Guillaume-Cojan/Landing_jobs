@@ -91,16 +91,21 @@
   color: #007eff;
 }
 
+
 .btn-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  max-width: 400px;
 }
 
 .cancel-btn,
 .cancel-btn-company,
 .cancel-btn-talent {
   box-sizing: border-box;
-  padding: 1em 4.5em;
+  padding: 1em 1em 1em;
   border-radius: 39px;
   font-size: 1rem;
   font-weight: 700;
@@ -110,44 +115,83 @@
   margin: 5% 0;
 }
 
-.btn-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    max-width: 200px;
+.cancel-btn {
+  background: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
 }
-.btn-reset{
+
+.cancel-btn:hover,
+.cancel-btn:focus {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.cancel-btn-company {
+  background: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
+}
+
+.cancel-btn-company:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
+
+.cancel-btn-company:active {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  transform: translateY(4px);
+}
+
+.cancel-btn-talent {
   box-sizing: border-box;
-    padding: 1em 3em;
-    border-radius: 39px;
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 300px;
-    margin: 5% 0;
-    margin-right: 10px;
-
-    background: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
+  background: white;
+  border: 2px solid #007eff;
+  border-radius: 39px;
+  color: #007eff;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
+.cancel-btn-talent:hover {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+}
 
+.cancel-btn-talent:active {
+  background-color: white;
+  border: 2px solid red;
+  color: red;
+  transform: translateY(4px);
+}
 
-.calculate-btn, 
+.calculate-btn,
 .calculate-btn-company,
 .calculate-btn-talent {
-    box-sizing: border-box;
-    padding: 1em 3.2em;
-    border-radius: 39px;
-    font-size: 1rem;
-    font-weight: 700;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 5% 0;
+  box-sizing: border-box;
+  padding: 1em 3.2em;
+  border-radius: 39px;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 5% 0;
 }
 
 .calculate-btn {
@@ -264,72 +308,70 @@
         width:100%;
     
         /* margin: 0 5%; */
-    
+
 /*    }
 } */
 
 /*Phone*/
- @media (max-width: 767px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        flex-direction: column;
-        justify-content: center;
-        width: 100vw;
-        margin-bottom: 20px;
-        padding-left: 0%;
-        padding-right: 0%;
-        padding-top: 0px;
-        height: 100%;
-        margin-right: 0px;
-    }
-    .survey-container {
-        margin-right: 0px;
-        align-items: center;
-        padding-top: 10%;
-    }
-    .no-result-img {
-        margin-left: 0px;
-        width: 220px;
-    }
-    .survey-title,
-    .survey-title-company,
-    .survey-title-talent {
-        font-size: 1.5rem;
-        max-width: 70%;
-    }
-    .survey-p {
-        font-size: 13px;
-        max-width: 70%;
-        margin: 0;
-        margin-bottom: 5%;
-    }
-    .select {
-        width: 220px;
-        margin-bottom: 0px;
-        height: 35px;
-        font-size: 12px;
-    }
-    .survey-container h3 {
-        font-size: 16px;
-        max-width: 400px;
-        margin-bottom: 5px;
-    }
-    .calculate-btn,
-    .calculate-btn-company,
-    .calculate-btn-talent {
-        width: 270px;
-        height: 57px;
-        margin: 40px 0px;
-    }
+@media (max-width: 767px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 20px;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 0px;
+    height: 100%;
+    margin-right: 0px;
+  }
+  .survey-container {
+    margin-right: 0px;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .no-result-img {
+    margin-left: 0px;
+    width: 220px;
+  }
+  .survey-title,
+  .survey-title-company,
+  .survey-title-talent {
+    font-size: 1.5rem;
+    max-width: 70%;
+  }
+  .survey-p {
+    font-size: 13px;
+    max-width: 70%;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+  .select {
+    width: 220px;
+    margin-bottom: 0px;
+    height: 35px;
+    font-size: 12px;
+  }
+  .survey-container h3 {
+    font-size: 16px;
+    max-width: 400px;
+    margin-bottom: 5px;
+  }
+  .calculate-btn,
+  .calculate-btn-company,
+  .calculate-btn-talent {
+    width: 270px;
+    height: 57px;
+    margin: 40px 0px;
+  }
 
-    .btn-container {
-      display: flex;
-      flex-direction: row;
-    }
-    
-    
-}  
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+  }
+}
 
 /*Tablet Portrait*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
