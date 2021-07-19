@@ -21,24 +21,25 @@ app.use(cors());
 
 //Make sure that you are connected to the mysql database. If you get this error then go back to .env and the config files for debugging.
 connection.connect((err) => {
-  if (err) {
-    console.error(`Error connecting. Error: ${err.stack}`);
-    return;
-  }
-  console.log("connected to database with threadId :  " + connection.threadId);
+    if (err) {
+        console.error(`Error connecting. Error: ${err.stack}`);
+        return;
+    }
+    console.log(
+        "connected to database with threadId :  " + connection.threadId
+    );
 });
 
 //Middlewares:
 
-
 //Salarybenchmark middleware
-app.use("/salarybenchmark", salaryRoute, addSalaryRoute); 
+app.use("/salarybenchmark", salaryRoute, addSalaryRoute);
 
 //Subscribers middleware
 app.use("/subscribe", subscribersRoute);
 
 //Make sure that the server is actually running. If it's not, you will get this error (make sure you have all the modules imported correctly or installed with npm if you get an error here)
 app.listen(port, (err) => {
-  if (err) throw new Error("Server is not working!");
-  console.log(`Server is running on port: ${port}`);
+    if (err) throw new Error("Server is not working!");
+    console.log(`Server is running on port: ${port}`);
 });
