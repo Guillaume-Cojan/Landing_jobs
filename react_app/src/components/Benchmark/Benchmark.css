@@ -1,37 +1,35 @@
-.benchmark-container, 
-.benchmark-container-company, 
-.benchmark-container-talent  {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    width: 100vw; 
-    padding: 0 10%;
-    position: relative;
-    top: -20px;
-    /* align-items: center;  */
-    /* padding-bottom: 10%; */
-    /* margin-top: 50%; */
-    /* transition: 0.3s; */
+.benchmark-container,
+.benchmark-container-company,
+.benchmark-container-talent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 0 10%;
+  position: relative;
+  top: -20px;
+  /* align-items: center;  */
+  /* padding-bottom: 10%; */
+  /* margin-top: 50%; */
+  /* transition: 0.3s; */
 }
 
 .benchmark-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 
-    /* margin: 0 5%; */
-
+  /* margin: 0 5%; */
 }
 
 .no-result-img {
-    /* margin-right: 5%; */
-    /* margin-top: 4%; */
-    /* transition: 0.3s; */
-    width: 25em;
+  /* margin-right: 5%; */
+  /* margin-top: 4%; */
+  /* transition: 0.3s; */
+  width: 25em;
 }
-
 
 /* .benchmark-container-company, .benchmark-container-talent {
     display: flex;
@@ -39,59 +37,77 @@
     align-items: center;
     width: 100vw;
     /* height: 100%; */
-    /* padding-bottom: 10%; */
-    /* padding-top: 25%; */
-    /* transition: 0.3s; 
+/* padding-bottom: 10%; */
+/* padding-top: 25%; */
+/* transition: 0.3s; 
     } 
 */
 
-
 .survey-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .survey-p {
-    text-align: justify;
-    font-size: 1em;
-    color: #4f5665;
-    max-width: 360px;
+  text-align: justify;
+  font-size: 1em;
+  color: #4f5665;
+  max-width: 360px;
 }
 
 .survey-container h3 {
-    max-width: 400px;
-    margin-bottom: 5px;
+  max-width: 400px;
+  margin-bottom: 5px;
 }
 
 .select {
-    width: 400px;
-    margin-bottom: 10px;
-    height: 50px;
-    border-radius: 10px;
-    border: none;
+  width: 400px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
 }
 
-.survey-title, 
+.survey-title,
 .survey-title-company,
 .survey-title-talent {
-    font-size: 2.7rem;
-    margin-bottom: .5rem;
-    font-weight: 600;
-    text-align: left;
-    transition: 0.3s;
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+  transition: 0.3s;
 }
 
 .survey-title {
-    color: #3bbcb0;
+  color: #3bbcb0;
 }
 
 .survey-title-company {
-    color: #a729d2;
+  color: #a729d2;
 }
 
 .survey-title-talent {
-    color: #007eff;
+  color: #007eff;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cancel-btn,
+.cancel-btn-company,
+.cancel-btn-talent {
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  border-radius: 39px;
+  font-size: 1rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 5% 0;
 }
 
 .btn-container{
@@ -135,15 +151,16 @@
 }
 
 .calculate-btn {
-    background: #3bbcb0;
-    border: 2px solid #3bbcb0;
-    color: white;
+  background: #3bbcb0;
+  border: 2px solid #3bbcb0;
+  color: white;
 }
 
-.calculate-btn:hover, .calculate-btn:focus {
-    background-color: white;
-    border: 2px solid #3bbcb0;
-    color: #3bbcb0;
+.calculate-btn:hover,
+.calculate-btn:focus {
+  background-color: white;
+  border: 2px solid #3bbcb0;
+  color: #3bbcb0;
 }
 
 /* .calculate-btn:active {
@@ -154,88 +171,87 @@
 } */
 
 .calculate-btn-company {
-    background: #a729d2;
-    border: 2px solid #a729d2;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  background: #a729d2;
+  border: 2px solid #a729d2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn-company:hover {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
 }
 
 .calculate-btn-company:active {
-    background-color: white;
-    border: 2px solid #a729d2;
-    color: #a729d2;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #a729d2;
+  color: #a729d2;
+  transform: translateY(4px);
 }
 
 .calculate-btn-talent {
-    box-sizing: border-box;
-    padding: 1em 4.5em;
-    background: #007eff;
-    border: 2px solid #007eff;
-    border-radius: 39px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    white-space: nowrap;
-    transition: 0.3s;
-    max-width: 400px;
-    margin: 40px 0px;
+  box-sizing: border-box;
+  padding: 1em 4.5em;
+  background: #007eff;
+  border: 2px solid #007eff;
+  border-radius: 39px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: 0.3s;
+  max-width: 400px;
+  margin: 40px 0px;
 }
 
 .calculate-btn-talent:hover {
-    background-color: white;
-    border: 2px solid #007eff;
-    color: #007eff;
+  background-color: white;
+  border: 2px solid #007eff;
+  color: #007eff;
 }
 
 .calculate-btn-talent:active {
-    background-color: white;
-    border: 2px solid #007eff;
-    color: #007eff;
-    transform: translateY(4px);
+  background-color: white;
+  border: 2px solid #007eff;
+  color: #007eff;
+  transform: translateY(4px);
 }
-
 
 .mention {
-    font-style: italic;
-    color: #4f5665;
+  font-style: italic;
+  color: #4f5665;
 }
 
-.graph-title, .graph-title-talent, .graph-title-company{
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 600;
+.graph-title,
+.graph-title-talent,
+.graph-title-company {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 .graph-title-talent {
-    color: #007eff;
-
+  color: #007eff;
 }
 .graph-title-company {
-    color: #a729d2;
-
+  color: #a729d2;
 }
 .graph-title-normal {
-    color: #3bbcb0;
+  color: #3bbcb0;
 }
 
 @media screen and (max-width: 1140px) {
-    .benchmark-container, 
-    .benchmark-container-company, 
-    .benchmark-container-talent {
-        padding: 0 5%;
-    }
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    padding: 0 5%;
+  }
 }
 
 /* @media screen and (max-width: 1050px) {
@@ -316,62 +332,59 @@
 }  
 
 /*Tablet Portrait*/
- @media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
-        /* padding-top: 25%; */
-       flex-direction: column;
-        justify-content: center;
-    }
+@media only screen and (min-device-width: 768px) and (max-device-width: 900px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
+    /* padding-top: 25%; */
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .survey-container {
-        margin-right: 0%;
-        align-items: center;
-    }
+  .survey-container {
+    margin-right: 0%;
+    align-items: center;
+  }
 
-    /* .no-result-img {
+  /* .no-result-img {
         margin-right: 0%;
         transition: 0.3s;
         width: 45%;
     } */
 
-    .calculate-btn,
-    .calculate-btn-company,
-    .calculate-btn-talent {
-        width: 300px;
-    }
-}  
+  .calculate-btn,
+  .calculate-btn-company,
+  .calculate-btn-talent {
+    width: 300px;
+  }
+}
 
 /*Tablet Landscape*/
- @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
-    .benchmark-container,
-    .benchmark-container-company,
-    .benchmark-container-talent {
-        width: 100vw;
-        height: 100%;
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+  .benchmark-container,
+  .benchmark-container-company,
+  .benchmark-container-talent {
+    width: 100vw;
+    height: 100%;
 
-        /* padding-top: 25%; */
-     }  
-    
+    /* padding-top: 25%; */
+  }
 
+  .survey-container {
+    margin-right: 3%;
+    align-items: center;
+  }
 
-    .survey-container {
-        margin-right: 3%;
-        align-items: center;
-    }
+  .no-result-img {
+    margin: 0% 3%;
+    transition: 0.3s;
+  }
 
-    .no-result-img {
-        margin: 0% 3%;
-        transition: 0.3s;
-    }
-
-    .survey-title,
-    .survey-title-company,
-    .survey-title-talent {
-        font-size: 2.2rem;
-    }
-}  
-
+  .survey-title,
+  .survey-title-company,
+  .survey-title-talent {
+    font-size: 2.2rem;
+  }
+}
