@@ -28,33 +28,34 @@ const [userSelection, setUserSelection] = useState({
                 confirmButtonColor: "#3bbcb0",
             });
         } else {
-            setShowResult(true);
+            setShowResult(true); 
             sendSelectionToBE();
         }
     };
 
-    const sendSelectionToBE = () => {
-        if (
-            userSelection.category &&
-            userSelection.experience &&
-            userSelection.location &&
-            userSelection.industry &&
-            userSelection.organisation
-        ) {
-            fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
-                // mode: 'no-cors',
-                method: "POST",
-                headers: {
-                    "Content-type": "application/json",
-                },
-                body: JSON.stringify({ formSelection: userSelection }),
-            })
-                .then((res) => res.json())
-                .then((data) => {
-                    setGraphData(data);
-                });
-        }
-    };
+  const sendSelectionToBE = () => {
+    if (
+      userSelection.category &&
+      userSelection.experience &&
+      userSelection.location &&
+      userSelection.industry &&
+      userSelection.organisation
+    ) {
+        fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
+        // mode: 'no-cors',
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({ formSelection: userSelection }),
+      })
+        .then((res) => res.json())
+        .then((data) => {  
+            setGraphData(data);
+
+        });
+    }
+  };
 
     return (
         <div className="survey-container">
@@ -75,6 +76,7 @@ const [userSelection, setUserSelection] = useState({
                     <SurveyList 
                         key={index} 
                         title={field.title} 
+                        obligatory={field.obligatory}
                         list={field.list} 
                         setUserSelection={setUserSelection}
                         userSelection={userSelection} />
