@@ -108,6 +108,27 @@ To get a local copy up and running follow these simple example steps.
 ## Dependencies
 
 ### > react-i18next [Anna]
+
+```bash
+  npm install react-i18next i18next --save
+
+ # if you'd like to detect user language and load translation
+  npm install i18next-http-backend i18next-browser-languagedetector --save
+```
+
+_Learn more about react-i18next : [Documentation](https://react.i18next.com/)_
+
+**Usage**
+
+react-i18next is a powerful internationalization framework for React / React Native which is based on i18next.
+The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes.
+
+<img src="src/assets/en-intro.png" alt="English" width="200">
+
+<img src="src/assets/pt-intro.png" alt="Portugese" width="200">
+
+<img src="src/assets/fr-intro.png" alt="French" width="200">
+
 ### > react-select [Guillaume]
 ### > sweet-alert [Guillaume]
 
