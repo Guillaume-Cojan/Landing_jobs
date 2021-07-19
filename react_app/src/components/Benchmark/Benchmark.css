@@ -91,24 +91,21 @@
   color: #007eff;
 }
 
-.btn-container {
-  display: flex;
-  flex-direction: row;
-}
 
 .btn-container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
 
-  max-width: 200px;
+  max-width: 400px;
 }
 
 .cancel-btn,
 .cancel-btn-company,
 .cancel-btn-talent {
   box-sizing: border-box;
-  padding: 1em 4.5em;
+  padding: 1em 1em 1em;
   border-radius: 39px;
   font-size: 1rem;
   font-weight: 700;
@@ -158,7 +155,6 @@
 
 .cancel-btn-talent {
   box-sizing: border-box;
-  padding: 1em 4.5em;
   background: white;
   border: 2px solid #007eff;
   border-radius: 39px;
