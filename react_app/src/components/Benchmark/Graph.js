@@ -5,7 +5,6 @@ import "./Benchmark.css"
 
 
 const VerticalBar = ({graphData, showLJ, showJobs}) => {
-  console.log("I am the graph data on graph", graphData)
     const averageSalary = graphData.average_salary;
     const minimumSalary = graphData.minimum_salary;
     const maximumSalary = graphData.maximum_salary;
@@ -24,7 +23,7 @@ const VerticalBar = ({graphData, showLJ, showJobs}) => {
     
       const { t } = useTranslation();
     const data = {
-        labels: t("min_avg_max_salaries"),
+        labels: ['Minimum Salary', 'Average Salary', 'Maximum Salary'],
         datasets: [
           {
             label: '€ per year',
