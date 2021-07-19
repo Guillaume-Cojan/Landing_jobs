@@ -94,11 +94,37 @@
     color: #007eff;
 }
 
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: 200px;
+}
+.btn-reset{
+  box-sizing: border-box;
+    padding: 1em 3em;
+    border-radius: 39px;
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: 0.3s;
+    max-width: 300px;
+    margin: 5% 0;
+    margin-right: 10px;
+
+    background: white;
+    border: 2px solid #3bbcb0;
+    color: #3bbcb0;
+}
+
+
+
 .calculate-btn, 
 .calculate-btn-company,
 .calculate-btn-talent {
     box-sizing: border-box;
-    padding: 1em 4.5em;
+    padding: 1em 3.2em;
     border-radius: 39px;
     font-size: 1rem;
     font-weight: 700;
@@ -212,8 +238,9 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+/* @media screen and (max-width: 1050px) {
     .benchmark-container-talent {
+
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -222,8 +249,8 @@
     
         /* margin: 0 5%; */
     
-    }
-}
+/*    }
+} */
 
 /*Phone*/
  @media (max-width: 767px) {
@@ -279,6 +306,13 @@
         height: 57px;
         margin: 40px 0px;
     }
+
+    .btn-container {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    
 }  
 
 /*Tablet Portrait*/

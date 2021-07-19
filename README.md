@@ -4,7 +4,7 @@
     <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="200">
   </a>
 
-  <h2 align="center">Landing Jobs Salaries</h3>
+  <h2 align="center">Landing Jobs Salaries</h2>
 
   <p align="center">
 Use our salary benchmark tool to check how your salary compares to that of your peers!
@@ -37,7 +37,6 @@ Use our salary benchmark tool to check how your salary compares to that of your 
       <li><a href="#license">License</a></li>
       <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#contact">Contact the Developers</a></li>
-    
   </ol>
 </details>
 
@@ -74,7 +73,7 @@ Here is a list things you need in order to use the software and how to install t
   ```sh
   npm install npm@latest -g
   ```
-* [node.j](https://nodejs.org/en/download/)
+* [node.js](https://nodejs.org/en/download/)
 * [mySQL](https://dev.mysql.com/downloads/installer/)
 
 ### Installation
@@ -83,11 +82,11 @@ Here is a list things you need in order to use the software and how to install t
    ```sh
    git clone https://github.com/Guillaume-Cojan/Landing_jobs.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-4. Happy coding!
+3. Happy coding!
 
 <!-- LICENSE -->
 ## License
