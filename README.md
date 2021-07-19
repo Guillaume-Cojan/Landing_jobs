@@ -44,7 +44,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
 ## About The Project
 <br>
 
-A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and education. 
+A benchmark tool that can be used by talent or companies to estimate salaries for various tech job roles - depending of course on location, experience and education. 
 <br/>
 
 ![Image](react_app/src/assets/LJ_mainscreenshot.png)
@@ -64,7 +64,7 @@ A benchmark tool that can be used by either employees or employers in order to g
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
