@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 function JobCard({ logo, title, companyName, city, url }) {
+    const { t } = useTranslation();
+
     return (
         <div className="job-card">
             <h2 className="job-title">{title}</h2>
@@ -16,7 +20,7 @@ function JobCard({ logo, title, companyName, city, url }) {
                 target="_blank"
             >
                 <button className="details-btn" type="submit">
-                    View more details
+                    {t("view_more_details")}
                 </button>
             </form>
         </div>
