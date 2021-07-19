@@ -18,9 +18,7 @@ const getAverageSalary = (req, res, next) => {
       console.log(err);
       res.status(500).send("Error getting average salary");
     } else {
-      console.log("i'm from the response object", res.formInput);
       res.averageSalary = result[0];
-      console.log(`this is getAverageSalary ${JSON.stringify(result)}`);
       next();
     }
   });
