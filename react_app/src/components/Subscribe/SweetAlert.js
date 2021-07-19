@@ -60,7 +60,7 @@ class Sweetalertdemo extends React.Component {
                     }),
                 };
                 return fetch(
-                    `https://landing-pay-server.herokuapp.com/subscribers`,
+                    `https://landing-pay-server.herokuapp.com/subscribe`,
                     requestOptions
                 ).catch((error) => {
                     console.log(error);
