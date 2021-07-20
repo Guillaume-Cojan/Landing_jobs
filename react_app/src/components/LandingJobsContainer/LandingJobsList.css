@@ -352,14 +352,23 @@ h2.talent-title {
     }
 }
 
-@media screen and (max-width: 1205px) {
+@media screen and (max-width: 1206px) {
     .landingjobs-items {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     }
 
     .talent-card{
         margin-bottom: 1rem;
     }
+}
+
+@media screen and (max-width: 1030px) {
+    .landingjobs-items {
+        flex-wrap: wrap;
+        }
+    .job-card{
+        width: 10rem;
+ }
 }
 
 @media screen and (max-width: 1045px) {
