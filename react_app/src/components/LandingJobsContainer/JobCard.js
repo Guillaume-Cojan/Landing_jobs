@@ -12,8 +12,10 @@ function JobCard({ logo, title, companyName, city, url }) {
                 
                 <div className="job-details">
                     <h2 className="job-title">{title}</h2>
+                    <div className="job-details-smaller-section"> 
                     <h3 className="company-name">{companyName}</h3>
                     <h3 className="location">{city}</h3>
+                    </div>
                 </div>
             </div>
             <form
