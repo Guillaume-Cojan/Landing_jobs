@@ -187,11 +187,15 @@
     color: #007eff;
 }
 .graph-title-company {
-    color: #a729d2;
+    color: #382f3b;
 }
 
 .graph-container {
-    width: 28em;
+    width: 35em;
+    background-color: white;
+    border: 1.9px solid #c4c4c4;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -202,7 +206,7 @@
         margin-top: 5%;
     }
     .graph-container {
-        margin-top: 15%;
+        margin-top: 10%;
     }
 }
 
@@ -261,6 +265,7 @@
 
     .graph-container {
         width: 80%;
+        margin-top: 5%;
     }
     .survey-container {
         width: 100%;

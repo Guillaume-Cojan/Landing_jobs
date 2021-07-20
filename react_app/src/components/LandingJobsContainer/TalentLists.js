@@ -5,21 +5,21 @@ import AvatarUx from "../../assets/talent_ux.svg";
 export const talentList = [
     {
         avatar: AvatarDev,
-        name: "Tomas Sanchez",
-        title: "Full-Stack Engineer",
-        experience: "6+ years"
+        name: "David Ross",
+        title: "Back-End Developer",
+        experience: "4+ years of experience"
     },
     {
         avatar: AvatarUx,
-        name: "Julia ORTIZ",
-        title: "UX Designer",
-        experience: "6+ years"
+        name: "Maria Luisa Martins",
+        title: "Ux/Ui Designer",
+        experience: "6+ years of experience"
     },
     {
         avatar: AvatarPm,
-        name: "Alan MULLER",
-        title: "Application Product Manager",
-        experience: "3 years"
+        name: "Pedro Chaves",
+        title: "Project Management",
+        experience: "3 years of experience"
     },
 ];
 

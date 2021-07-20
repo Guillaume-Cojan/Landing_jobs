@@ -7,10 +7,24 @@ import VerticalBar from "./Graph";
 function Result({ showLJ, showJobs, showResult, graphData }) {
     return showLJ ? (
         showJobs ? (
-            <img
-                src={ResultNoshowCie}
-                alt="result-img"
-                className="no-result-img"
+            showResult ? (
+                <VerticalBar
+                    graphData={graphData}
+                    showJobs={showJobs}
+                    showLJ={showJobs}
+                />
+            ) : (
+                <img
+                    src={ResultNoshowCie}
+                    alt="result-img"
+                    className="no-result-img"
+                />
+            )
+        ) : showResult ? (
+            <VerticalBar
+                graphData={graphData}
+                showJobs={showJobs}
+                showLJ={showJobs}
             />
         ) : (
             <img

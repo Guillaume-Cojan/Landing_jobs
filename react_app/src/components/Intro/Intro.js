@@ -16,19 +16,25 @@ const { t } = useTranslation();
                     <div className="intro-text">
     
                         <h3 className="intro-app">{t("intro_app")}</h3>
+                        <div className = "title_image_container">
+                        <div className="title_container">
                         <h2 className="intro-title">{t("intro_title")}</h2>
                         <h2 className="intro-title">{t("intro_title_2")}</h2>
                         <p className="intro-description">
                         {t("intro_description")}
                         </p>
-                    </div>
-                    <div className="intro-image">
+                        </div>
+                        <div className="intro-image">
                         <img
                             className="ellipse"
                             src={IntroImg}
                             alt="intro-talents-companies"
                         />
                     </div>
+                    </div>
+                        
+                    </div>
+                    
             </div>
             <div className="intro-bottom-section"> </div>
         </div>
