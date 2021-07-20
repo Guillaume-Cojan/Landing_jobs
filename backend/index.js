@@ -1,5 +1,6 @@
 const express = require("express");
-const connection = require("./config");
+//const connection = require("./config");
+const pool = require("./config");
 const app = express();
 
 //npm install cors  (a module that helps avoid errors on frontend)
@@ -20,7 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 //Make sure that you are connected to the mysql database. If you get this error then go back to .env and the config files for debugging.
-connection.connect((err) => {
+/*pool.connect((err) => {
     if (err) {
         console.error(`Error connecting. Error: ${err.stack}`);
         return;
@@ -28,7 +29,7 @@ connection.connect((err) => {
     console.log(
         "connected to database with threadId :  " + connection.threadId
     );
-});
+});*/
 
 //Middlewares:
 

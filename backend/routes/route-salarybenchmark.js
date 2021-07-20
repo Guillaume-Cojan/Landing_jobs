@@ -1,5 +1,6 @@
 const express = require("express");
-const connection = require("../config");
+//const connection = require("../config");
+const pool = require("../config");
 const router = express.Router();
 const {
   getMinimumSalary,
