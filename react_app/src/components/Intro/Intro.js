@@ -15,12 +15,15 @@ const { t } = useTranslation();
             <div className="intro-content">
                     <div className="intro-text">
     
+                        <div className = "title_app_container">
                         <h3 className="intro-app">{t("intro_app")}</h3>
-                        <div className = "title_image_container">
                         <div className="title_container">
                         <h2 className="intro-title intro_title_1">{t("intro_title")}</h2>
+                        <div className="pt-title-align">
                         <h2 className="intro-title intro_title_2">{t("intro_title_2")}</h2>
                         <h2 className="intro-title intro_title_3">{t("intro_title_3")}</h2>
+                        </div>
+                        </div>
                         <p className="intro-description">
                         {t("intro_description")}
                         </p>
@@ -31,11 +34,8 @@ const { t } = useTranslation();
                             src={IntroImg}
                             alt="intro-talents-companies"
                         />
-                    </div>
-                    </div>
-                        
-                    </div>
-                    
+                    </div> 
+                    </div>     
             </div>
             <div className="intro-bottom-section"> </div>
         </div>
