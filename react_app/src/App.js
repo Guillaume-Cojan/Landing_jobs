@@ -19,7 +19,7 @@ function App() {
 
             <Intro />
             <ProfileSection setShowLJ={setShowLJ} setShowJobs={setShowJobs} />
-            {/* <Benchmark showLJ={showLJ} showJobs={showJobs} /> */}
+            <Benchmark showLJ={showLJ} showJobs={showJobs} />
             <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
             <Subscribe showLJ={showLJ}/>
             <Footer showLJ={showLJ} /> 

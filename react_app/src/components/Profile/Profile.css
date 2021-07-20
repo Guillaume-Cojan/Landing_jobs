@@ -66,7 +66,8 @@
     margin-top: 0;
     margin-left: -3em;
     box-sizing: border-box;
-    padding: 1em 5em;
+    width: 22em;
+    padding: 1em 0;
     border-radius: 39px;
     font-size: 1.2rem;
     font-weight: 700;
@@ -141,7 +142,7 @@
 
     .bttn-get-started-purple, .bttn-get-started-blue {
         font-size: 1rem;
-        padding: 1em 4em;
+        /* padding: 1em 4em; */
         margin-left: -10%;
     }
 
