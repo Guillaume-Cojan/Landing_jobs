@@ -37,6 +37,16 @@
     justify-content: flex-start;
 }
 
+.title_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_image_container {
+    display: flex;
+    flex-direction: row;
+}
+
 .intro-app {
     font-family: "Rubik", sans-serif;
     font-size: 2rem;
