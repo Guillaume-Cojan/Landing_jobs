@@ -24,7 +24,7 @@ function JobCard({ logo, title, companyName, city, url }) {
                 method="get"
                 target="_blank"
             >
-                <button className="details-btn" type="submit">
+                <button className="details-btn" type="submit" >
                     {t("view_more_details")}
                 </button>
             </form>
