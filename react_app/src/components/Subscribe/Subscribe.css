@@ -28,7 +28,10 @@
     justify-content: center;
     align-items: top;
     width: 70%;
-    padding: 30px 50px;
+    /* padding: 30px 50px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
 }
 
 .subscribe-text h1 {
@@ -39,7 +42,6 @@
     line-height: 45px;
     color: #0b132a;
     margin-top: 0;
-    max-width: 600px;
 }
 
 .subscribe-text p {
@@ -57,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 50px;
+
 }
 
 .subscribe-btn {
