@@ -18,8 +18,9 @@ const { t } = useTranslation();
                         <h3 className="intro-app">{t("intro_app")}</h3>
                         <div className = "title_image_container">
                         <div className="title_container">
-                        <h2 className="intro-title">{t("intro_title")}</h2>
-                        <h2 className="intro-title">{t("intro_title_2")}</h2>
+                        <h2 className="intro-title intro_title_1">{t("intro_title")}</h2>
+                        <h2 className="intro-title intro_title_2">{t("intro_title_2")}</h2>
+                        <h2 className="intro-title intro_title_3">{t("intro_title_3")}</h2>
                         <p className="intro-description">
                         {t("intro_description")}
                         </p>
