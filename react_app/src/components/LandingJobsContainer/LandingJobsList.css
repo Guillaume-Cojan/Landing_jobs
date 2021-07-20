@@ -6,8 +6,9 @@
     background-color: white;
     margin: 0;
     padding: 2%;
+    width: 100vw;
     text-align: center;
-    padding-bottom: 10%;
+    padding-bottom: 12rem;
 }
 
 .hidden {
@@ -18,41 +19,38 @@
 
 .landingjobs-list-title {
     margin: 0, auto;
+    font-weight: 600;
+}
+
+.job-list-link {
+    margin: 0 auto;
+    /* padding: 3% 2% 2% 2%; */
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .a-job,
-.a-job:focus {
-    color: #4293ea;
-    font-weight: 500;
-    font-size: 18px;
+.a-job:focus, 
+.a-talent,
+.a-talent:focus {
+    font-weight: 600;
+    font-size: 1.5rem;
     text-decoration: none;
     position: relative;
     transition: all 0.2s ease-in-out;
 }
 
-.a-job::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0.7px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    background-color: #4293ea;
+.a-job,
+.a-job:focus {
+    color: #4293ea; 
 }
 
 .a-talent,
 .a-talent:focus {
     color: #a729d2;
-    font-weight: 500;
-    font-size: 18px;
-    text-decoration: none;
-    position: relative;
-    transition: all 0.2s ease-in-out;
 }
 
-.a-talent::after {
+.a-job::after, .a-talent::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -61,39 +59,79 @@
     left: 0;
     right: 0;
     bottom: -5px;
+}
+
+.a-job::after {
+    background-color: #4293ea;
+}
+
+.a-talent::after {
     background-color: #a729d2;
 }
 
 .landingjobs-items {
     display: flex;
     justify-content: center;
-    padding: 3% 2%;
-    width: 80%;
+    flex-wrap: wrap;
+    padding: 1% 0 3% 0;
+    width: 100%;
 }
 
-.job-card {
-    width: 25%;
-    background-color: #ecf0f5;
+/*  Job Card is a column with the job-description box and the "view more details" button  */
+.job-card, div.talent-card {
+    width: 35rem;
     border-radius: 12px;
-    margin: 0 2%;
-    padding: 2% 2% 2% 2%;
+    margin: 1% 2%;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: space-between;
     box-shadow: 0px 10px 10px -7px rgba(90, 90, 90, 0.349),
         0px 10px 20px -7px rgba(145, 145, 145, 0.438),
         0px 5px 10px -7px rgba(145, 145, 145, 0.438);
 }
 
-.job-logo {
+.job-card {
+    background-color: #ecf0f5;
+}
+
+
+/* Job-description is a row with the job-logo and job-details */
+.job-description, .talent-description {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 1.5rem ;
+   
+    /* margin: 10% 5%; */
+}
+
+.job-description {
+    margin-bottom: 1rem;
+}
+
+.job-logo, .talent-avatar {
     border-radius: 50%;
     background-color: #322626;
-    width: 80px;
-    height: 80px;
-    place-content: center;
+    width: 10rem;
+    /* height: 80px; */
     color: white;
     font-size: 0.9rem;
+}
+
+/* Job-details is a column with job-title, company-name, and location */
+div.job-details {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
 }
 
 .job-title,
@@ -102,32 +140,16 @@
     margin: 0;
 }
 
-h2.job-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    height: 25%;
-    font-weight: bold;
+h2.job-title, h2.talent-title {
+    text-align: left;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-.job-description {
-    display: flex;
-    margin: 10% 5%;
-}
-
-div.company-location {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: top;
-    padding: 4%;
-}
-
-h3.company-name {
+h3.company-name, h2.talent-experience {
     text-align: left;
     margin-bottom: 2%;
-    font-size: 14px;
+    font-size: 1.2rem;
     font-weight: bold;
     width: 100%;
 }
@@ -135,15 +157,18 @@ h3.company-name {
 h3.location {
     display: flex;
     justify-content: left;
-    font-size: 13px;
+    font-size: 1.1rem;
     font-weight: 500;
     white-space: nowrap;
 }
 
+
+
 .bttn-job-details {
     /* margin-top: 3%; */
+    width: 90%;
     background: white;
-    border: 1px solid #4293ea;
+    border: 2px solid #4293ea;
     border-radius: 10px;
     color: #4293ea;
     font-size: 16px;
@@ -155,25 +180,22 @@ h3.location {
     align-items: center;
 }
 
-.bttn-job-details:hover,
+/* .bttn-job-details:hover,
 .bttn-job-details:focus {
     background-color: #4293ea;
     color: white;
-}
+} */
 
-.bttn-job-details:active {
-    background-color: #4293ea;
-    color: white;
-    transform: translateY(3px);
-}
+
 
 .details-btn {
-    background-color: white;
-    padding: 0.5em;
+    width:100%;
+    background-color: inherit;
+    padding: 1em;
     border: none;
-    border-radius: 10px;
-    color: #4293ea;
-    font-size: 16px;
+    border-radius: 7px;
+    color: inherit;
+    font-size: 1.1rem;
     font-weight: bold;
     white-space: nowrap;
     transition: 0.3s;
@@ -186,64 +208,43 @@ h3.location {
 }
 
 .details-btn:active {
-    background-color: #4293ea;
-    color: white;
+    background-color: inherit;
+    color: inherit;
 }
 
-.job-list-link {
-    margin: 0 auto;
-    padding: 3% 2% 2% 2%;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 /* Talents Container Display */
 
 div.talent-card {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #efe6ed;
-    border-radius: 12px;
-    margin: 0 5%;
-    padding: 2% 15% 2% 15%;
-    white-space: nowrap;
-    box-shadow: 0px 10px 10px -7px rgba(90, 90, 90, 0.349),
-        0px 10px 20px -7px rgba(145, 145, 145, 0.438),
-        0px 5px 10px -7px rgba(145, 145, 145, 0.438);
+    padding: 1rem;
+}
+div.talent-description {
+    justify-content: flex-start;
 }
 
-.talent-avatar {
-    background-color: white;
-    border-radius: 50%;
-    margin: 2%;
-    width: 100px;
-    height: 100px;
-}
 
-.talent-right-side {
+.talent-details {
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     justify-content: space-evenly;
     text-align: left;
-    margin: 0 2%;
+    margin-left: 2rem; 
 }
 
 .talent-name {
-    font-size: 14px;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
-.talent-title {
-    font-size: 18px;
-    font-weight: 700;
+h2.talent-title {
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .talent-experience {
-    font-size: 14px;
     font-weight: 600;
 }
 
@@ -253,78 +254,130 @@ div.talent-card {
     margin: 0;
 }
 
-/*Phone*/
-/* @media (max-width: 767px) {
-    .landingjobs-items {
-        flex-direction: column;
-        align-items: center;
+@media screen and (max-width: 1976px) {
+    .job-card, div.talent-card {
+        width:30rem;
     }
 
-    .landingjobs-list-title {
-        width: 90%;
+    h3.talent-name {
+        font-size: 1.2rem;
+    }
+
+    h2.talent-title {
+        font-size: 1.5rem;
+    }
+
+    h2.job-title{
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1710px){
+    div.job-card, div.talent-card {
+        width: 28rem;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+    .landingjobs-items {
+        padding: 1% 1.5rem 3% 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .job-card, div.talent-card {
+        width:24rem;
+        margin: 1% 1.5%;
+        
     }
 
     .job-card {
-        width: 90%;
-        margin: 5% 0%;
+        padding: 1rem;
     }
 
-    .job-title {
-        margin-top: 5%;
-    }
-
-    div.talent-card {
-        padding: 10px;
-        margin: 10px;
-        width: 200px;
-        display: flex;
-        flex-direction: column;
-        overflow-wrap: break-word;
-    }
-} */
-
-/*Tablet Portrait*/
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
-    .landingjobs-list-title {
-        width: 90%;
-    }
-    .landingjobs-items {
-        padding: 0;
-        width: 80%;
-        margin: 3% 0;
-    }
-    .job-card {
-        width: 30%;
-        margin: 0% 3%;
-    }
     .job-description {
-        flex-direction: column;
-        align-items: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
     }
 
-    div.talent-card {
-        width: 33%;
-        padding: 2% 5% 2% 5%;
+    div.job-details{
+        padding-top: 0.1rem;
+        justify-content: space-around;
     }
-} */
+     .talent-description{
+        padding: .5rem .5rem ;
+    }
 
-/*Tablet Landscape*/
-/* @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .landingjobs-list-title {
-        width: 90%;
+    .talent-details{
+        margin-left: 1rem;
+        align-items: stretch;
     }
+
+    .job-logo, .talent-avatar{
+        width:6rem;
+        height:6rem;
+    }
+
+    h2.job-title{
+        font-size: 1.15rem;
+    }
+
+    h3.company-name{
+        font-size: 0.9rem;
+    }
+
+    h3.location, h3.talent-name {
+        font-size: 0.9rem;
+    }
+    h2.talent-title {
+        font-size: 1.3rem;
+    }
+
+    h3.talent-experience{
+        font-size: 1rem;
+    }
+
+    .details-btn {
+        padding: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width: 1405px) {
+    .job-description{
+        padding:0;
+    }
+}
+
+@media screen and (max-width: 1206px) {
     .landingjobs-items {
-        padding: 0;
-        width: 80%;
-        margin: 3% 0;
-    }
-    .job-card {
-        width: 30%;
-        margin: 0% 3%;
+    flex-wrap: nowrap;
     }
 
-    div.talent-card {
-        width: 30%;
-        padding: 2% 7% 2% 7%;
+    .talent-card{
+        margin-bottom: 1rem;
     }
-} */
+}
+
+@media screen and (max-width: 1030px) {
+    .landingjobs-items {
+        flex-wrap: wrap;
+        }
+    .job-card{
+        width: 10rem;
+ }
+}
+
+@media screen and (max-width: 1045px) {
+    .job-card, .talent-card {
+        margin-bottom: 1rem;
+        box-shadow: 0px 7px 7px -7px rgba(90, 90, 90, 0.349);
+    }
+
+    div.talent-card{
+        margin-bottom: 1rem;
+    }
+}
