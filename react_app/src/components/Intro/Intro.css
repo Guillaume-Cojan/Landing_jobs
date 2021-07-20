@@ -327,6 +327,13 @@
   }
 }
 
+@media screen and (min-device-width: 946px) and (max-device-width: 1000px) {
+.ellipse {
+  margin-left: 1%;
+  width: 18em;
+}
+}
+
 @media screen and (max-width: 945px) {
   .intro-container {
     flex-direction: column;
