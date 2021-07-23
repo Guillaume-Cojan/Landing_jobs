@@ -2,6 +2,7 @@ const pool = require("../config");
 
 const Salary = {};
 
+//Sent user info to back
 Salary.addDataSalary = (userInput, callback) => {
     let sqlQuery =
         "SELECT Job_Role, Working_Experience_Aggregated, Work_Company_PT_District, Employer_Industry,  Employer_Org_Type FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? AND Employer_Org_Type = ? ";
@@ -24,6 +25,8 @@ Salary.addDataSalary = (userInput, callback) => {
     });
 };
 
+// backend returns average salary based on user input for user to compare
+
 Salary.getDataSalary = (formInput, callback) => {
     pool.getConnection((err, connection) => {
         if (err) throw err;
@@ -37,7 +40,7 @@ Salary.getDataSalary = (formInput, callback) => {
                 formInput.industry === "Unspecified...")
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? ",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? ",
                 [formInput.category, formInput.experience],
                 (err, result) => {
                     connection.release();
@@ -52,7 +55,7 @@ Salary.getDataSalary = (formInput, callback) => {
                 formInput.industry === "Unspecified...")
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? ",
                 [formInput.category, formInput.experience, formInput.location],
                 (err, result) => {
                     connection.release();
@@ -67,7 +70,7 @@ Salary.getDataSalary = (formInput, callback) => {
                 formInput.location === "Unspecified...")
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? ",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? ",
                 [formInput.category, formInput.experience, formInput.industry],
                 (err, result) => {
                     connection.release();
@@ -82,7 +85,7 @@ Salary.getDataSalary = (formInput, callback) => {
                 formInput.industry === "Unspecified...")
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Org_Type = ? ",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Org_Type = ? ",
                 [
                     formInput.category,
                     formInput.experience,
@@ -99,7 +102,7 @@ Salary.getDataSalary = (formInput, callback) => {
             formInput.organisation === "Unspecified..."
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? ",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? ",
                 [
                     formInput.category,
                     formInput.experience,
@@ -117,7 +120,7 @@ Salary.getDataSalary = (formInput, callback) => {
             formInput.industry === "Unspecified..."
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Org_Type = ?",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Org_Type = ?",
                 [
                     formInput.category,
                     formInput.experience,
@@ -135,7 +138,7 @@ Salary.getDataSalary = (formInput, callback) => {
             formInput.location === "Unspecified..."
         ) {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? AND Employer_Org_Type = ?",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Employer_Industry = ? AND Employer_Org_Type = ?",
                 [
                     formInput.category,
                     formInput.experience,
@@ -150,7 +153,7 @@ Salary.getDataSalary = (formInput, callback) => {
             );
         } else {
             connection.query(
-                "SELECT ROUND(AVG(Avg_Salary) ,0) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? AND Employer_Org_Type = ?",
+                "SELECT AVG(Avg_Salary) AS average_salary FROM salarybenchmark WHERE Job_Role = ? AND Working_Experience_Aggregated = ? AND Work_Company_PT_District = ? AND Employer_Industry = ? AND Employer_Org_Type = ?",
                 [
                     formInput.category,
                     formInput.experience,
@@ -167,7 +170,7 @@ Salary.getDataSalary = (formInput, callback) => {
         }
     });
 };
-
+//Min salary = blue column
 Salary.getDataMinimumSalary = (formInput, callback) => {
     pool.getConnection((err, connection) => {
         if (err) throw err;
@@ -311,6 +314,7 @@ Salary.getDataMinimumSalary = (formInput, callback) => {
     });
 };
 
+// Max salary = green column
 Salary.getDataMaximumSalary = (formInput, callback) => {
     pool.getConnection((err, connection) => {
         if (err) throw err;
