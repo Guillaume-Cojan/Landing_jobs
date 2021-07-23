@@ -27,6 +27,7 @@ Salary.addDataSalary = (userInput, callback) => {
 Salary.getDataSalary = (formInput, callback) => {
     pool.getConnection((err, connection) => {
         if (err) throw err;
+        console.log("I'm form input on gDS in models", formInput);
         if (
             (formInput.location === "notSelected" ||
                 formInput.location === "Unspecified...") &&
