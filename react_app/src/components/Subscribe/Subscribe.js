@@ -13,7 +13,7 @@ function Subscribe({showLJ}) {
                 <p className="subscribe-para">{t("subscribe_para")}</p>
             </div>
             <div className="subscribe-btn-container">
-                <SweetAlert />
+                <SweetAlert showLJ={showLJ}/>
             </div>
         </div>
     );
