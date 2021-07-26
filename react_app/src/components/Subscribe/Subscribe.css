@@ -1,3 +1,7 @@
+* { 
+    border: 2px solid red;
+}
+
 .subscribe-container {
     position: relative;
     top: -1rem;
