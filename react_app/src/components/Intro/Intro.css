@@ -102,12 +102,28 @@
 
 .ellipse {
   width: 26vw;
-  margin-left: 10%;
+  margin-left: 20%;
+  width: 24em;
 }
 
 .intro-bottom-section {
   height: 5em;
 }
+
+/* @media screen and (max-width: 1279px) {
+  .ellipse {
+    margin-left: 0%;
+    margin-right: 5%;
+    width: 15em;
+  }
+} */
+
+@media screen and (max-width: 1313px) {
+.ellipse {
+  margin-left:10%;
+}
+}
+
 
 @media screen and (max-width: 1280px) {
   .intro-container {
@@ -172,7 +188,7 @@
   }
 }
 
-@media screen and (max-width: 1202px) {
+@media screen and (max-width: 1012px) {
   .intro-container {
     flex-direction: column;
     width: 100%;
@@ -269,12 +285,6 @@
     margin-left: 10%;
   }
 }
-@media screen and (min-device-width: 941px) and (max-device-width: 1090px) {
-  .ellipse {
-    margin-left: 5%;
-    width: 18em;
-  }
-}
 
 @media screen and (max-width: 1000px) {
   .intro-container {
@@ -328,10 +338,10 @@
 }
 
 @media screen and (min-device-width: 946px) and (max-device-width: 1000px) {
-.ellipse {
-  margin-left: 1%;
-  width: 18em;
-}
+  .ellipse {
+    margin-left: 1%;
+    width: 22em;
+  }
 }
 
 @media screen and (max-width: 945px) {
