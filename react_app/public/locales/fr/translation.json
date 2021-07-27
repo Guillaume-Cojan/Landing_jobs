@@ -34,10 +34,10 @@
     "subscribe_para": "Abonnez-vous à notre newsletter",
     "subscribe-btn": "S'abonner",
     "validation_error_message": "Erreur dans l'enregistrement de votre email, veuillez réessayer plus tard",
-    "enter_email": "Entrez votre addresse email",
+    "enter_email": "Entrez votre addresse email.",
     "enter_valid_email": "Veuillez saisir une adresse email valide",
     "sucess_add": "Vous avez été ajouté avec succès à notre liste de diffusion.",
     "Subscribe": "Confirmer",
     "Cancel": "Annuler",
-    "thank_you": "Merci"
+    "thank_you": "Merci!"
 }

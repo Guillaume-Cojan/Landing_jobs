@@ -1,15 +1,17 @@
 
-/* * {
+ /* * {
     border: 1px solid rebeccapurple;
-} */
+}  */
 
 .subscribe-container, .subscribe-container-lj {
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
+    padding: 2em;
     margin: 0 auto;
 }
 
@@ -28,10 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: top;
-    width: 70%;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 3em;
+    width: 76%;
 }
 
 .subscribe-text h1 {
@@ -49,13 +48,6 @@
     margin: 0;
 }
 
-.subscribe-btn-container {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
 
 .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
     box-sizing: border-box;
@@ -87,12 +79,25 @@
     background-color: #3bbcb0;
     color: white;
 }
+.subscribe-btn-talent:hover, .subscribe-btn-talent:active{
+    background-color: #4293ea;
+    color: white;
+}
 
-.subscribe-btn:active {
-    background-color: #3bbcb0;
+.subscribe-btn-company:hover, .subscribe-btn-company:active {
+    background-color: #a729d2;
+    color: white;
+}
+
+.subscribe-btn:active, .subscribe-btn-company:active, .subscribe-btn-talent:active {
     color: white;
     transform: translateY(4px);
 }
+
+.subscribe-btn:active {
+    background-color: #3bbcb0;
+}
+
 
 /*Phone*/
 @media (max-width: 767px) {
@@ -114,6 +119,12 @@
         font-size: 14px;
         line-height: 20px;
         margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1457) {
+    .subscribe-text h1 {
+        font-size: ;
     }
 }
 
@@ -143,14 +154,4 @@
     }
 }
 
-/*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .subscribe-container {
-        top: -10vh;
-        margin-top: 5%;
-    }
-    .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
-    }
-}
+
