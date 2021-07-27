@@ -48,6 +48,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
      <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#getting-started-backend">Getting Started - Backend</a></li>
+        <li><a href="#api">API</a></li>
       </ul>
     </li>
       <li><a href="#license">License</a></li>
@@ -410,7 +411,7 @@ Example response:
 <!-- FOR BACKEND -->
 ### Prerequisites
 
-Here is a list things you need in order to use the web application and how to install them.
+Here is a list of things you need in order to use the web application and how to install them.
 * npm
   ```sh
   npm install npm@latest -g
@@ -445,6 +446,19 @@ Here is a list things you need in order to use the web application and how to in
       DB_NAME=
 ```
 4. Happy coding!
+
+### API
+
+URL: `https://landing-pay-server.herokuapp.com/salarybenchmark/`
+
+ ```http
+  POST /salarybenchmark/
+```
+
+ ```http
+  POST /subscribe/
+```
+
 
 <!-- LICENSE -->
 ## License
