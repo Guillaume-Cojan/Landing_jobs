@@ -22,7 +22,7 @@ function App() {
             <Benchmark showLJ={showLJ} showJobs={showJobs} />
             <LandingJobsList showLJ={showLJ} showJobs={showJobs} />
             <Subscribe showLJ={showLJ} showJobs={showJobs}/>
-            <Footer showLJ={showLJ} /> 
+            <Footer /> 
         </div>
     );
 }
