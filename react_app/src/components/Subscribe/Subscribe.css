@@ -1,6 +1,9 @@
-.subscribe-container {
-    position: relative;
-    top: -1rem;
+
+/* * {
+    border: 1px solid rebeccapurple;
+} */
+
+.subscribe-container, .subscribe-container-lj {
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -10,8 +13,14 @@
     margin: 0 auto;
 }
 
-.subscribe-container-lj {
+.subscribe-container {
+    position: relative;
+    top: 7rem;
+}
 
+.subscribe-container-lj{
+    position: relative;
+    top: -7rem;
 }
 
 .subscribe-text {
@@ -20,27 +29,21 @@
     justify-content: center;
     align-items: top;
     width: 70%;
-    /* padding: 30px 50px; */
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
 }
 
 .subscribe-text h1 {
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 2.4rem;
     line-height: 45px;
     color: #0b132a;
     margin-top: 0;
 }
 
 .subscribe-text p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     color: #4f5665;
     margin: 0;
@@ -54,19 +57,30 @@
 
 }
 
-.subscribe-btn {
+.subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
     box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
     padding: 1em 4.5em;
     background: white;
-    border: 3px solid #3bbcb0;
     border-radius: 39px;
-    color: #3bbcb0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
     transition: 0.3s;
+}
+
+.subscribe-btn {
+    border: 3px solid #3bbcb0;
+    color: #3bbcb0;
+}
+
+.subscribe-btn-talent {
+    border: 3px solid #4293ea;
+    color: #4293ea;
+}
+
+.subscribe-btn-company {
+    border: 3px solid #a729d2;
+    color: #a729d2;
 }
 
 .subscribe-btn:hover {

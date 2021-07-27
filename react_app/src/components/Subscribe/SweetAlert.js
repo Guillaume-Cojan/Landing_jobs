@@ -80,7 +80,7 @@ class Sweetalertdemo extends React.Component {
     render() {
         return (
             <div>
-                <button className={this.props.showLJ ? "subscribe-btn" : "subscribe-btn"} onClick={this.HandleClick}>
+                <button className={this.props.showLJ ? (this.props.showJobs ? "subscribe-btn-company" : "subscribe-btn-talent" ) : "subscribe-btn"} onClick={this.HandleClick}>
                     {this.props.t("subscribe-btn")}
                 </button>
             </div>

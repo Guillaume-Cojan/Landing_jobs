@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import "./Subscribe.css";
 import SweetAlert from "./SweetAlert";
 
-function Subscribe({showLJ}) {
+function Subscribe({showLJ, showJobs}) {
     const { t } = useTranslation(); 
 
     return (
@@ -13,7 +13,7 @@ function Subscribe({showLJ}) {
                 <p className="subscribe-para">{t("subscribe_para")}</p>
             </div>
             <div className="subscribe-btn-container">
-                <SweetAlert showLJ={showLJ}/>
+                <SweetAlert showLJ={showLJ} showJobs={showJobs}/>
             </div>
         </div>
     );

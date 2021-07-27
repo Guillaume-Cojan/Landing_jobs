@@ -2,6 +2,7 @@
 .benchmark-container-company,
 .benchmark-container-talent {
     width: 100%;
+    margin-bottom: -7rem;
 }
 
 .survey-title,
