@@ -1,7 +1,7 @@
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: -11rem;
+    /* margin-top: -11rem; */
     padding-top: 11%;
     padding-bottom: 3%;
     padding-left: 13%;
