@@ -1,5 +1,5 @@
- /* FLEX BOX VERSION  */
- .intro-container {
+/* FLEX BOX VERSION  */
+.intro-container {
     margin: 0;
     display: flex;
     flex-direction: column; 

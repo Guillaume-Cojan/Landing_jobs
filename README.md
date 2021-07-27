@@ -10,7 +10,7 @@
 Use our salary benchmark tool to check how your salary compares to that of your peers!
     <br />
     <br />
-    <a href="https://landingsalary.netlify.app/">View Demo</a>
+    <a href="https://landingpay.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Report Bug</a>
     ·
@@ -18,19 +18,12 @@ Use our salary benchmark tool to check how your salary compares to that of your 
   </p>
 </p>
 
-<p align="center">
-<img alt="React" src="https://img.shields.io/badge/React-white?style=for-the-badge&logo=react&logoColor=61DAFB" />
-<img alt="CSS" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-<img alt="Nodejs" src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" /> 
-<img alt="Express" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
-<img alt="MySQL" src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" />
-</p>
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li><a href="#frontend">Frontend</a>
+    <li>
+      <a href="#about-the-project">About The Project</a>
       <ul>
               <li><a href="#about-the-project">About The Project</a></li>
               <li><a href="#getting-started">Getting Started</a></li>
@@ -51,27 +44,26 @@ Use our salary benchmark tool to check how your salary compares to that of your 
         <li><a href="#api">API</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
       <li><a href="#license">License</a></li>
       <li><a href="#acknowledgements">Acknowledgements</a></li>
     <li><a href="#contact">Contact the Developers</a></li>
-     <li><a href="#demo">Demo</a></li>
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## Frontend
-
----
 ## About The Project
 <br>
 
-<img src="react_app/src/assets/BasicNoResult.svg" align="right"
-     alt="salary benchmark logo" width="200" height="178">
+A benchmark tool that can be used by either employees or employers in order to gauge how salaries vary for various tech job roles - depending of course on location, experience and education. 
+<br/>
 
-
-A  salary benchmark tool with clean design and easy to use interface, created with React. When setting out to build our product, the vision was clear: an application that requires no unnecessary extra steps, no endless forms to fill-up and no restrictions!
-
-<br />
+![Image](react_app/src/assets/LJ_mainscreenshot.png)
 
 ### Built With
 
@@ -386,9 +378,7 @@ Secondly, Landing.Jobs Salary uses an API developed by us which retrieves the sa
 
 URL: `https://landing-pay-server.herokuapp.com/salarybenchmark/`
 
-```http
-  POST /salarybenchmark/
-```
+![Image](react_app/src/assets/jobs_screenshot.png)
 
 Example response:
 ```JSON
@@ -407,8 +397,6 @@ Example response:
 
 <br/>
 
-## Backend
-<!-- FOR BACKEND -->
 ### Prerequisites
 
 Here is a list of things you need in order to use the web application and how to install them.
@@ -419,33 +407,17 @@ Here is a list of things you need in order to use the web application and how to
 * [node.js](https://nodejs.org/en/download/)
 * [mySQL](https://dev.mysql.com/downloads/installer/)
 
-### Getting Started - Backend
+### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/Guillaume-Cojan/Landing_jobs.git
    ```
-
-2. Go to the project directory
-```sh
-  cd Landing_jobs
-  cd backend
-```
-
-3. Install NPM packages
+2. Install NPM packages
    ```sh
    npm install
    ```
-
-4. Create your own .env file with your mySQL credentials
- ```javascript
-      DB_HOST= 
-      DB_PORT=
-      DB_USER=
-      DB_PASSWORD=
-      DB_NAME=
-```
-4. Happy coding!
+3. Happy coding!
 
 ### API
 
@@ -466,7 +438,7 @@ URL: `https://landing-pay-server.herokuapp.com/salarybenchmark/`
 Distributed under the Landing.Jobs License.
 
 <p align="center">
-<img src="react_app/src/assets/LJicon.png" alt="Logo" width="50" height="50"> 
+<img src="react_app/src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
 </p>
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -475,7 +447,7 @@ Distributed under the Landing.Jobs License.
 Many thanks to our amazing client [Landing.Jobs](https://landing.jobs/) for offering us this opportunity to work on an exciting tool for both tech talents and companies! 
 
 <p align="center">
-<img src="react_app/src/assets/LJicon.png" alt="Logo" width="50" height="50"> 
+<img src="react_app/src/assets/LJicon.png" alt="Logo" width="90" height="90"> 
 </p>
 
 <!-- CONTACT -->
