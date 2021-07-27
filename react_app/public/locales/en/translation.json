@@ -30,13 +30,13 @@
     "view_more_details": "View more details",
     "view_more_on": "View more job offers on",
     "subscribe-title": "Do you want to receive regular information about salary and career trends?",
-    "subscribe_para": "Enter your email to receive updates",
+    "subscribe_para": "Enter your email to receive updates.",
     "subscribe-btn": "Sign me up",
     "Subscribe": "Subscribe",
     "Cancel": "Cancel",
     "enter_email": "Enter your email address",
     "enter_valid_email": "Please enter a valid email address",
-    "thank_you": "Thank you",
+    "thank_you": "Thank you!",
     "sucess_add": "You were succesfully added to our mailing list.",
     "validation_error_message": "Unable to subscribe now. Please try again later."
 }

@@ -1,25 +1,24 @@
-.subscribe-container {
-    position: relative;
-    top: -1rem;
+
+.subscribe-container, .subscribe-container-lj {
     width: 80%;
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
+    justify-content: space-around;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-    margin: auto;
+    padding: 2em;
+    margin: 0 auto;
 }
 
-.subscribe-container-lj {
+.subscribe-container {
+    position: relative;
+    top: 7rem;
+}
+
+.subscribe-container-lj{
     position: relative;
     top: -7rem;
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    margin: auto;
 }
 
 .subscribe-text {
@@ -27,124 +26,110 @@
     flex-direction: column;
     justify-content: center;
     align-items: top;
-    width: 70%;
-    /* padding: 30px 50px; */
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
+    width: 76%;
 }
 
 .subscribe-text h1 {
-    font-family: "Montserrat";
-    font-style: normal;
     font-weight: 500;
-    font-size: 35px;
+    font-size: 2.4rem;
     line-height: 45px;
     color: #0b132a;
     margin-top: 0;
 }
 
 .subscribe-text p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     color: #4f5665;
     margin: 0;
 }
 
-.subscribe-btn-container {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.subscribe-btn {
+.subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
     box-sizing: border-box;
-    grid-column: 1 / 2;
-    grid-row: 4 / 5;
     padding: 1em 4.5em;
     background: white;
-    border: 3px solid #3bbcb0;
     border-radius: 39px;
-    color: #3bbcb0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     white-space: nowrap;
     transition: 0.3s;
+}
+
+.subscribe-btn {
+    border: 3px solid #3bbcb0;
+    color: #3bbcb0;
+}
+
+.subscribe-btn-talent {
+    border: 3px solid #4293ea;
+    color: #4293ea;
+}
+
+.subscribe-btn-company {
+    border: 3px solid #a729d2;
+    color: #a729d2;
 }
 
 .subscribe-btn:hover {
     background-color: #3bbcb0;
     color: white;
 }
+.subscribe-btn-talent:hover, .subscribe-btn-talent:active{
+    background-color: #4293ea;
+    color: white;
+}
 
-.subscribe-btn:active {
-    background-color: #3bbcb0;
+.subscribe-btn-company:hover, .subscribe-btn-company:active {
+    background-color: #a729d2;
+    color: white;
+}
+
+.subscribe-btn:active, .subscribe-btn-company:active, .subscribe-btn-talent:active {
     color: white;
     transform: translateY(4px);
 }
 
-/*Phone*/
-@media (max-width: 767px) {
-    .subscribe-container {
+.subscribe-btn:active {
+    background-color: #3bbcb0;
+}
+
+@media screen and (max-width: 1460px) {
+    .subscribe-text h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .subscribe-text h1 {
+        font-size: 2rem;
+    }
+    .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
+        padding: 1em 3em
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .subscribe-container, .subscribe-container-lj {
         flex-direction: column;
-        top: -6vh;
-        margin-top: 5%;
+        align-items: center;
+        padding: 2rem;
     }
-    .subscribe-text {
-        width: 85%;
-        padding-bottom: 0px;
+    .subscribe-container {
+        top: 5rem;
     }
-    .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
-        text-align: justify;
+
+    .subscribe-text{
+        width: 100%
     }
-    .subscribe-text p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 10px;
+
+    .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
+        margin-top: 1rem;
     }
 }
 
-/*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
-    .subscribe-container {
-        top: -6vh;
-        margin-top: 5%;
-    }
-
+@media screen and (max-width: 840px) {
     .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
-    }
-
-    .subscribe-text {
-        padding: 4%;
-    }
-    .subscribe-text p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 10px;
-    }
-    .subscribe-btn {
-        padding: 1em 4.3em;
-        margin-right: 15px;
-    }
-}
-
-/*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-    .subscribe-container {
-        top: -10vh;
-        margin-top: 5%;
-    }
-    .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
+        font-size: 1.7rem;
     }
 }

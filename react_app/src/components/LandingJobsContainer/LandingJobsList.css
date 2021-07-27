@@ -9,6 +9,7 @@
     width: 100vw;
     text-align: center;
     padding-bottom: 12rem;
+    /* margin-bottom: -6.5rem; */
 }
 
 .hidden {
@@ -24,7 +25,6 @@
 
 .job-list-link {
     margin: 0 auto;
-    /* padding: 3% 2% 2% 2%; */
     font-size: 1.5rem;
     font-weight: 600;
 }
@@ -366,9 +366,9 @@ h2.talent-title {
     .landingjobs-items {
         flex-wrap: wrap;
         }
-    .job-card{
+    /* .job-card{
         width: 10rem;
- }
+ } */
 }
 
 @media screen and (max-width: 1045px) {

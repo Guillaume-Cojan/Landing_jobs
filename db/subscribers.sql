@@ -1,5 +1,0 @@
-DROP TABLE IF EXISTS subscribers;
-CREATE TABLE subscribers (
-   id         INTEGER  NOT NULL PRIMARY KEY AUTO_INCREMENT
-  ,email      VARCHAR(225) NOT NULL
-);
