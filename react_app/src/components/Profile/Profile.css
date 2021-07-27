@@ -5,7 +5,7 @@
     justify-content: space-around;
     border: none;
     padding-left: 7%;
-    padding-right: 7%
+    padding-right: 7%;
 }
 
 .profile-card {
@@ -44,7 +44,8 @@
 
 /* Typography */
 
-.profile-title-blue, .profile-title-purple {
+.profile-title-blue,
+.profile-title-purple {
     font-size: 2rem;
     font-weight: 600;
 }
@@ -55,14 +56,13 @@
 }
 
 .profile-img {
-
     width: 15em;
     position: relative;
     left: 30%;
- 
-} 
+}
 
-.bttn-get-started-blue, .bttn-get-started-purple {
+.bttn-get-started-blue,
+.bttn-get-started-purple {
     margin-top: 0;
     margin-left: -3em;
     box-sizing: border-box;
@@ -131,7 +131,8 @@
     .profile-content {
         font-size: 1rem;
     }
-    .profile-title-blue, .profile-title-purple {
+    .profile-title-blue,
+    .profile-title-purple {
         font-size: 1.5rem;
     }
 
@@ -140,16 +141,16 @@
         width: 25em;
     }
 
-    .bttn-get-started-purple, .bttn-get-started-blue {
+    .bttn-get-started-purple,
+    .bttn-get-started-blue {
         font-size: 1rem;
         /* padding: 1em 4em; */
         margin-left: -10%;
     }
 
     .profile-text {
-       width: 25em;
-       margin-bottom: 0em;
-      
+        width: 25em;
+        margin-bottom: 0em;
     }
 
     .profile-img {
@@ -157,10 +158,10 @@
         left: 20%;
     }
 
-    .bttn-get-started-purple, 
-    .bttn-get-started-blue, 
-    .bttn-get-started-blue:focus, 
-    .bttn-get-started-blue:hover, 
+    .bttn-get-started-purple,
+    .bttn-get-started-blue,
+    .bttn-get-started-blue:focus,
+    .bttn-get-started-blue:hover,
     .bttn-get-started-purple:active,
     .bttn-get-started-purple:focus,
     .bttn-get-started-purple:hover {
@@ -175,17 +176,12 @@
     }
 
     .profile-img {
-        width:100%;
-
+        width: 100%;
     }
 
     .profile-card {
-
         height: 20em;
-
     }
-
-    
 }
 
 @media screen and (max-width: 1050px) {
@@ -196,10 +192,10 @@
 
     .profile-card {
         top: -45px;
-       padding-top: 0;
+        padding-top: 0;
     }
 
-    .profile-img{
+    .profile-img {
         width: 80%;
     }
 
@@ -217,36 +213,32 @@
         top: -35px;
         width: 25rem;
     }
-    
 }
 
 @media screen and (max-width: 945px) {
-   html {
-       font-size: 14px;
-   }
+    html {
+        font-size: 14px;
+    }
 
-   .profiles-container {
-       padding: 0 6%;
-   }
+    .profiles-container {
+        padding: 0 6%;
+    }
 
-   .profile-card {
-       top: -20px;
-       height:100%;
-       padding-bottom: 1em;
+    .profile-card {
+        top: -20px;
+        height: 100%;
+        padding-bottom: 1em;
+    }
 
-   }
-
-   .profile-text {
-       padding-left: 2.5em;
-   }
-
-
-} 
+    .profile-text {
+        padding-left: 2.5em;
+    }
+}
 
 @media screen and (max-width: 850px) {
     .profiles-container {
         position: relative;
-        width:100%;
+        width: 100%;
         top: -20%;
         display: flex;
         flex-direction: row-reverse;
@@ -254,19 +246,19 @@
         align-items: center;
         margin: 0;
         padding: 0 1%;
-        background-color: black; 
+        background-color: black;
         padding-bottom: 3%;
-    } 
+    }
 
     .profile-card {
-        top:0;
+        top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 0;
         box-shadow: none;
         height: 5em;
-        padding:0;
+        padding: 0;
         background-color: black;
     }
 
@@ -287,12 +279,12 @@
     }
 
     .profile-text {
-       display: none;
+        display: none;
     }
 
     .bttn-get-started-blue {
         width: 300px;
-        height: 77px; 
+        height: 77px;
     }
 
     .bttn-get-started-purple {
@@ -300,46 +292,44 @@
         height: 77px;
     }
 
-    .bttn-get-started-purple, 
-    .bttn-get-started-blue, 
-    .bttn-get-started-blue:focus, 
-    .bttn-get-started-blue:hover, 
+    .bttn-get-started-purple,
+    .bttn-get-started-blue,
+    .bttn-get-started-blue:focus,
+    .bttn-get-started-blue:hover,
     .bttn-get-started-purple:active,
     .bttn-get-started-purple:focus,
     .bttn-get-started-purple:hover {
         margin-left: 0;
     }
- } 
+}
 
 /* Phone */
- @media (max-width: 767px) {
+@media (max-width: 767px) {
     .profiles {
         background-color: #000000;
         border: 1px solid #000000;
     }
 
-    .profiles-container { 
+    .profiles-container {
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         width: 100%;
         height: 50%;
         margin: 0;
         padding-bottom: 5%;
-   
-    } 
+    }
 
     .profile-card {
-        top:0;
+        top: 0;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
         margin: 0;
         margin-bottom: 2%;
         padding: 0;
         width: 100vw;
         border-radius: 0;
-
-    } 
+    }
 
     .profile-img {
         display: none;
@@ -363,14 +353,23 @@
 
     .bttn-get-started-blue {
         width: 300px;
-        height: 77px; 
+        height: 77px;
     }
 
     .bttn-get-started-purple {
         width: 300px;
         height: 77px;
     }
+}
 
+@media screen and (min-width: 851px) {
+    .btn-text-mobile {
+        display: none;
+    }
+}
 
-
-} 
+@media screen and (max-width: 850px) {
+    .btn-text {
+        display: none;
+    }
+}
