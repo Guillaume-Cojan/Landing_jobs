@@ -98,9 +98,52 @@
     background-color: #3bbcb0;
 }
 
+@media screen and (max-width: 1460px) {
+    .subscribe-text h1 {
+        font-size: 2.2rem;
+    }
+}
 
+@media screen and (max-width: 1365px) {
+    .subscribe-text h1 {
+        font-size: 2rem;
+    }
+    .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
+        padding: 1em 3em
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .subscribe-container, .subscribe-container-lj {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .subscribe-container {
+        top: 5rem;
+    }
+
+    /* .subscribe-text h1 {
+        text-align: center;
+    } */
+
+    .subscribe-text{
+        width: 100%
+    }
+
+    .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
+        margin-top: 1rem;
+        /* padding: 1em 7em */
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .subscribe-text h1 {
+        font-size: 1.7rem;
+    }
+}
 /*Phone*/
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .subscribe-container {
         flex-direction: column;
         top: -6vh;
@@ -120,16 +163,12 @@
         line-height: 20px;
         margin-top: 10px;
     }
-}
+} */
 
-@media only screen and (max-width: 1457) {
-    .subscribe-text h1 {
-        font-size: ;
-    }
-}
+
 
 /*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .subscribe-container {
         top: -6vh;
         margin-top: 5%;
@@ -152,6 +191,6 @@
         padding: 1em 4.3em;
         margin-right: 15px;
     }
-}
+} */
 
 
