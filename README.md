@@ -377,7 +377,7 @@ Example response:
 Result:
 
 <p align="center">
-  <img src="react_app/src/assets/jobcard-screenshot.png" alt="Logo" width="300" > 
+  <img src="react_app/src/assets/job-card-screenshot.png" alt="Logo" width="300" > 
 </p>
 
 _For more information: [Landing.Jobs API Documentation](https://github.com/LandingJobs/LandingJobs-api)_
