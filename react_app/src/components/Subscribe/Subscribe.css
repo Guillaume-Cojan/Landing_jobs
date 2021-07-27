@@ -1,8 +1,4 @@
 
- /* * {
-    border: 1px solid rebeccapurple;
-}  */
-
 .subscribe-container, .subscribe-container-lj {
     width: 80%;
     background-color: rgb(255, 255, 255);
@@ -11,7 +7,6 @@
     justify-content: space-around;
     border: 1px solid #e0e0e0;
     border-radius: 10px;
-<<<<<<< HEAD
     padding: 2em;
     margin: 0 auto;
 }
@@ -24,21 +19,6 @@
 .subscribe-container-lj{
     position: relative;
     top: -7rem;
-=======
-    margin: auto;
-}
-
-.subscribe-container-lj {
-    position: relative;
-    top: -7rem;
-    width: 80%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    margin: auto;
->>>>>>> 8c974316390338a494233260dcfb96afbc82419b
 }
 
 .subscribe-text {
@@ -139,17 +119,12 @@
         top: 5rem;
     }
 
-    /* .subscribe-text h1 {
-        text-align: center;
-    } */
-
     .subscribe-text{
         width: 100%
     }
 
     .subscribe-btn, .subscribe-btn-talent, .subscribe-btn-company {
         margin-top: 1rem;
-        /* padding: 1em 7em */
     }
 }
 
@@ -158,55 +133,3 @@
         font-size: 1.7rem;
     }
 }
-/*Phone*/
-/* @media (max-width: 767px) {
-    .subscribe-container {
-        flex-direction: column;
-        top: -6vh;
-        margin-top: 5%;
-    }
-    .subscribe-text {
-        width: 85%;
-        padding-bottom: 0px;
-    }
-    .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
-        text-align: justify;
-    }
-    .subscribe-text p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 10px;
-    }
-} */
-
-
-
-/*Tablet Portrait*/
-/* @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
-    .subscribe-container {
-        top: -6vh;
-        margin-top: 5%;
-    }
-
-    .subscribe-text h1 {
-        font-size: 19px;
-        line-height: 25px;
-    }
-
-    .subscribe-text {
-        padding: 4%;
-    }
-    .subscribe-text p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-top: 10px;
-    }
-    .subscribe-btn {
-        padding: 1em 4.3em;
-        margin-right: 15px;
-    }
-} */
-
-
