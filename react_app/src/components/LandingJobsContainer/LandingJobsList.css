@@ -9,7 +9,7 @@
     width: 100vw;
     text-align: center;
     padding-bottom: 12rem;
-    /* margin-bottom: -6.5rem; */
+
 }
 
 .hidden {
@@ -106,7 +106,7 @@
     margin: 0;
     padding: 1rem 1.5rem ;
    
-    /* margin: 10% 5%; */
+ 
 }
 
 .job-description {
@@ -117,7 +117,7 @@
     border-radius: 50%;
     background-color: #322626;
     width: 10rem;
-    /* height: 80px; */
+
     color: white;
     font-size: 0.9rem;
 }
@@ -165,7 +165,7 @@ h3.location {
 
 
 .bttn-job-details {
-    /* margin-top: 3%; */
+ 
     width: 90%;
     background: white;
     border: 2px solid #4293ea;
@@ -179,12 +179,6 @@ h3.location {
     justify-content: center;
     align-items: center;
 }
-
-/* .bttn-job-details:hover,
-.bttn-job-details:focus {
-    background-color: #4293ea;
-    color: white;
-} */
 
 
 
@@ -366,9 +360,7 @@ h2.talent-title {
     .landingjobs-items {
         flex-wrap: wrap;
         }
-    /* .job-card{
-        width: 10rem;
- } */
+
 }
 
 @media screen and (max-width: 1045px) {
