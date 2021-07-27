@@ -1,3 +1,4 @@
+
  /* FLEX BOX VERSION  */
  .intro-container {
     margin: 0;
@@ -36,6 +37,16 @@
     justify-content: flex-start;
 }
 
+.title_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title_image_container {
+    display: flex;
+    flex-direction: row;
+}
+
 .intro-app {
     font-family: "Rubik", sans-serif;
     font-size: 2rem;
@@ -72,19 +83,9 @@
     height: 5em;
 }
 
-@media screen and (max-width: 1495px) {
-    .intro-title{
-        font-size:3rem;
-    }
-}
-
 @media screen and (max-width: 1280px) {
-        .intro-container{
-            padding: 1rem 5% 0 5%;
-        }
-
     .intro-title {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
 
     .lj-logo{
@@ -113,13 +114,12 @@
   }
 
 @media screen and (max-width: 1202px) {
-
     .lj-logo{
         width: 20%;
     }
     
     .intro-container{
-        padding: 0 5%;
+        padding: 0 10%;
     }
 
     .ellipse{
@@ -160,8 +160,8 @@
   }
 
 @media screen and (max-width: 945px) {
-    .intro-container{
-        padding: 0 5%;
+    .intro-container {
+        padding: 0 10%;
     }
     .top-logo {
         width: 100%;
@@ -177,7 +177,7 @@
     }
 
     .intro-title {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
     }
 
     .intro-description {
@@ -185,6 +185,76 @@
     }
 
   } 
+
+/*Phone*/
+@media (max-width: 820px) { 
+    .intro-container {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: auto; 
+        margin: 0 0;
+    }
+
+    .intro-content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .lj-logo {
+        margin-left: 5%;
+        width: 35%;
+    }
+
+    .intro-app {
+        font-size: 1em;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+
+    .intro-text {
+        margin: 0px 10%;
+        width: 90%;
+    }
+
+    .intro-title {
+        font-size: 1.55rem;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: left;
+        margin-bottom: 1.3rem;
+    }
+
+    .intro-description {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .top-logo {
+        margin-top: 1rem;
+        width: 110%;
+    }
+
+    .intro-image {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+    }
+
+    .ellipse {
+        margin: 0;
+        margin-left: -10%;
+         width: 80%; 
+    }
+} 
+
 
 @media screen and (max-width: 760px) {
     .intro-bottom-section{
@@ -194,11 +264,11 @@
   }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
-    .intro-container{
-        padding: 0 5%;
+    .intro-container {
+        padding: 0 10%;
     }
     .top-logo {
-        width: 100%;
+        width: 70%;
     }
     
 
@@ -207,7 +277,7 @@
     }
 
     .intro-title {
-        font-size: 2.4rem;
+        font-size: 2.6rem;
     }
 
     .intro-description {
@@ -226,76 +296,3 @@
 
 } 
 
-/*Phone*/
- @media (max-width: 820px) { 
-    .intro-container {
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        height: auto; 
-        margin: 0 0;
-    }
-
-    .intro-content {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lj-logo {
-        margin-left: -1%;
-        width: 35%;
-    }
-
-    .intro-app {
-        font-size: 1em;
-        margin-bottom: 5%;
-        margin-top: 0;
-    }
-
-    .intro-text {
-        margin: 0px 10%;
-        width: 90%;
-    }
-
-    .intro-title {
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 10px;
-        text-align: left;
-        margin-bottom: 1.3rem;
-    }
-
-    .intro-description {
-        font-size: 1.2rem;
-        max-width: 100%;
-        margin-right: 0px;
-    }
-
-    .top-logo {
-        margin-top: 1rem;
-        width: 100%;
-    }
-
-    .intro-image {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        width: 100%; 
-    }
-
-    .ellipse {
-        margin: 0;
-        margin-left: -10%;
-         width: 80%; 
-    }
-} 
-
-@media (max-width: 410px) {
-    .intro-title{
-        font-size: 1.55rem;
-    }
-}

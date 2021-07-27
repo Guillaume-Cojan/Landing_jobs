@@ -4,7 +4,7 @@ import { withTranslation } from "react-i18next";
 import "./Subscribe.css";
 
 class Sweetalertdemo extends React.Component {
-    constructor(props) {
+    constructor() {
         super();
         this.HandleClick = this.HandleClick.bind(this);
     }
@@ -80,7 +80,7 @@ class Sweetalertdemo extends React.Component {
     render() {
         return (
             <div>
-                <button className={this.props.showLJ ? "subscribe-btn" : "subscribe-btn"} onClick={this.HandleClick}>
+                <button className="subscribe-btn" onClick={this.HandleClick}>
                     {this.props.t("subscribe-btn")}
                 </button>
             </div>

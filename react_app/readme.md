@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://landingsalary.netlify.app/">
+  <a href="https://landingpay.netlify.app/">
     <img src="src/assets/LJ_Logo.svg" alt="Logo" width="200">
   </a>
 
@@ -374,7 +374,7 @@ Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.
 Click on the logo in order to view our app. Enjoy! 😊
 
 <p align="center">
-  <a href="https://landingsalary.netlify.app/">
+  <a href="https://landingpay.netlify.app/">
     <img src="src/assets/LJ_Logo.svg" alt="Logo" width="400">
   </a>
 </p>
