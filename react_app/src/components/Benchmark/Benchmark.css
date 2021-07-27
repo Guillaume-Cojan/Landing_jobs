@@ -4,8 +4,8 @@
     width: 100%;
 }
 
-.benchmark-container {
-    margin-bottom: -5rem;
+.benchmark-container-company, .benchmark-container-talent {
+    margin-bottom: -3rem;
 }
 
 .survey-title,
