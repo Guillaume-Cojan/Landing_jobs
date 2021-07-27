@@ -1,16 +1,18 @@
+* {
+    border: 1px solid rebeccapurple;
+}
+
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     margin-top: -11rem;
-    padding-top: 11%;
-    padding-bottom: 3%;
-    padding-left: 13%;
-    padding-right: 13%;
+    padding: 11rem 15% 3rem 15%;
     background-color: black;
     color: white;
 }
 
-.footer-wrapper-grey {
+.footer-wrapper-lj {
     display: flex;
     justify-content: space-between;
     margin-top: -14%;
@@ -26,10 +28,16 @@
     width: 30%;
 }
 
+.landing-jobs-details {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+
 .lj-logo-footer {
-    width: 60%;
-    margin-left: -5%;
-    margin-bottom: 5%;
+    width: 15.5rem;
+    margin-bottom: 1em;
 }
 
 .footer-text {
@@ -39,8 +47,9 @@
 .social-icons-desktop {
     margin-top: 10%;
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 50%;
 }
 
 .social-icons-mobile {
@@ -51,15 +60,15 @@
 }
 
 .copyright-desktop {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     color: #afb5c0;
 }
 
 .copyright-mobile {
     margin-top: 30%;
-    font-size: 16px;
-    line-height: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #afb5c0;
 }
 
