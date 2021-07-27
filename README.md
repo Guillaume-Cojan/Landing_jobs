@@ -1,10 +1,10 @@
 <br />
 <p align="center">
-  <a href="https://landingsalary.netlify.app/">
+  <a href="https://landingsalary.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="200">
   </a>
 
-  <h2 align="center">Landing Jobs Salaries</h2>
+  <h1 align="center">Landing Jobs Salaries</h1>
 
   <p align="center">
 Use our salary benchmark tool to check how your salary compares to that of your peers!
@@ -129,6 +129,9 @@ To get a local copy of the react app up and running follow these simple steps.
 
 ### > react-i18next
 
+React-i18next is a powerful internationalization framework for React / React Native which is based on i18next.
+The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes.
+
 ```bash
   npm install react-i18next i18next --save
 
@@ -140,9 +143,6 @@ _Learn more about react-i18next : [Documentation](https://react.i18next.com/)_
 
 **Usage**
 
-react-i18next is a powerful internationalization framework for React / React Native which is based on i18next.
-The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes.
-
 <p align="center">
 <img src="react_app/src/assets/en-intro.png" alt="English" width="400">
 <img src="react_app/src/assets/pt-intro.png" alt="Portugese" width="400">
@@ -150,9 +150,88 @@ The module provides multiple components eg. to assert that needed translations g
 </p>
 
 ### > react-select 
-### > sweet-alert 
+
+A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
+
+
+```bash
+npm install --save react-select
+
+  # or
+
+yarn add react-select
+```
+
+**Usage**
+
+```javascript
+import React from 'react';
+import Select from 'react-select';
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
+
+class App extends React.Component {
+  state = {
+    selectedOption: null,
+  };
+  handleChange = selectedOption => {
+    this.setState({ selectedOption });
+    console.log(`Option selected:`, selectedOption);
+  };
+  render() {
+    const { selectedOption } = this.state;
+
+    return (
+      <Select
+        value={selectedOption}
+        onChange={this.handleChange}
+        options={options}
+      />
+    );
+  }
+}
+```
+
+_For live demos and comprehensive documentation see : [Documentation](https://react-select.com/home)_
+
+
+### > sweetalert2
+
+A beautiful, responsive, customizable, accessible replacement for Javascript's pop-up boxes - with ZERO dependencies!
+
+```bash
+npm install --save sweetalert2
+
+  # or
+
+yarn add sweetalert2
+```
+
+**Usage**
+
+```javascript
+  // ES6 Modules or TypeScript
+  import Swal from 'sweetalert2'
+
+  // CommonJS
+  const Swal = require('sweetalert2')
+```
+
+_For live demos and comprehensive documentation see : [Documentation](https://sweetalert2.github.io/)_
+
 
 ### > react-chartjs-2
+
+For this project we used the library's "Vertical Bar Chart" but many more options are available at [React-chartjs-2 Demo](https://reactchartjs.github.io/react-chartjs-2/#/) !
+
+<p align="center">
+  <img src="react_app/src/assets/graphresult-screenshot.png" alt="Logo" width="300" > 
+</p>
+<br />
 
 ```bash
 npm install --save react-chartjs-2 chart.js
@@ -163,9 +242,7 @@ yarn add react-chartjs-2 chart.js
 ```
 **Usage**
 
-For this project we used the library's "Vertical Bar Chart" but many more options are available at [React-chartjs-2 Demo](https://reactchartjs.github.io/react-chartjs-2/#/) !
-
-```react
+```javascript
   import { Doughnut } from 'react-chartjs-2';
 
   <Doughnut data={...} />
@@ -299,7 +376,7 @@ Example response:
 Result:
 
 <p align="center">
-  <img src="react_app/src/assets/jobcard-screenshot.png" alt="Logo" width="300" height="300"> 
+  <img src="react_app/src/assets/jobcard-screenshot.png" alt="Logo" width="300" > 
 </p>
 
 _For more information: [Landing.Jobs API Documentation](https://github.com/LandingJobs/LandingJobs-api)_
@@ -321,9 +398,13 @@ Example response:
 }
  ```
 
+---
+
 <br/>
 
----
+<br/>
+
+<br/>
 
 ## Backend
 <!-- FOR BACKEND -->
@@ -386,13 +467,13 @@ Many thanks to our amazing client [Landing.Jobs](https://landing.jobs/) for offe
 <!-- CONTACT -->
 ## Contact The Developers
 
-Anna Gosme - [Github](https://github.com/AnnaGosme) - [LinkedIn](https://www.linkedin.com/in/anna-gosme/)  
-
-Carmen Llamas - [Github](https://github.com/makrmeen) - [LinkedIn](https://www.linkedin.com/in/makarmeen/)
-
 Guillaume Cojan - [Github](https://github.com/Guillaume-Cojan) - [LinkedIn](https://www.linkedin.com/in/guillaumecojan/)
 
 Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.linkedin.com/in/anca-laura-gheorghe/)
+
+Anna Gosme - [Github](https://github.com/AnnaGosme) - [LinkedIn](https://www.linkedin.com/in/anna-gosme/)  
+
+Carmen Llamas - [Github](https://github.com/makrmeen) - [LinkedIn](https://www.linkedin.com/in/makarmeen/)
 
 <p align="center">
 <img src="react_app/src/assets/LJicon.png" alt="Logo" width="50" height="50"> 
@@ -403,7 +484,7 @@ Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.
 Click on the logo in order to view our app. Enjoy! 😊
 
 <p align="center">
-  <a href="https://landingsalary.netlify.app/">
+  <a href="https://landingsalary.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="400">
   </a>
 </p>
