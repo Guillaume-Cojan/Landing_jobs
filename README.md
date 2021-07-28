@@ -524,3 +524,4 @@ Click on the logo in order to view our app. Enjoy! 😊
     <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="400">
   </a>
 </p>
+
