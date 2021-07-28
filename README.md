@@ -23,7 +23,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="frontend">Frontend</a>
       <ul>
               <li><a href="#about-the-project">About The Project</a></li>
               <li><a href="#getting-started">Getting Started</a></li>
@@ -53,7 +53,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
       </ul>
       <li><a href="#license">License</a></li>
       <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contact">Contact the Developers</a></li>
+    <li><a href="#contact-the-developers">Contact the Developers</a></li>
   </ol>
 </details>
 
