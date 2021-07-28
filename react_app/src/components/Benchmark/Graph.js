@@ -1,12 +1,25 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import { css } from "@emotion/react";
+import SyncLoader from "react-spinners/SyncLoader";
 import "./Benchmark.css";
+
+const override = css`
+    display: flex;
+    justify-content: center;
+    margin: 5;
+    border-color: #3bbcb0;
+    color: #3bbcb0;
+`;
 
 const VerticalBar = ({ graphData, showLJ, showJobs }) => {
     const averageSalary = graphData.average_salary;
     const minimumSalary = graphData.minimum_salary;
     const maximumSalary = graphData.maximum_salary;
+    let [loading] = useState(true);
+    let [color] = useState("#3bbcb0");
 
     const options = {
         scales: {
@@ -69,7 +82,19 @@ const VerticalBar = ({ graphData, showLJ, showJobs }) => {
             >
                 {t("calculator_title")}
             </h3>
-            <Bar data={data} options={options} />
+
+            {graphData.average_salary === 0 ? (
+                <div className="loader">
+                    <SyncLoader
+                        color={color}
+                        loading={loading}
+                        css={override}
+                        size={25}
+                    />
+                </div>
+            ) : (
+                <Bar data={data} options={options} />
+            )}
             <p align="center" className="mention">
                 {t("based_on_the_answers_of_our_survey_respondents")}
             </p>
