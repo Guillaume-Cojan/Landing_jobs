@@ -99,7 +99,7 @@
     background-color: #3bbcb0;
 }
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1475px) {
     .subscribe-text h1 {
         font-size: 2.2rem;
     }
@@ -132,7 +132,7 @@
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 850px) {
     .subscribe-text h1 {
         font-size: 1.7rem;
     }
