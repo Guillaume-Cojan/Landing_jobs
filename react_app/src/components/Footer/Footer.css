@@ -1,35 +1,48 @@
-.footer-wrapper {
+.footer-wrapper, .footer-wrapper-lj {
     display: flex;
     justify-content: space-between;
-    margin-top: -11rem;
-    padding-top: 11%;
-    padding-bottom: 3%;
-    padding-left: 13%;
-    padding-right: 13%;
+    align-items: flex-start;
     background-color: black;
     color: white;
 }
 
-.footer-wrapper-grey {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -14%;
-    padding-top: 11%;
+.footer-wrapper {
+    margin-top: -11rem;
+    padding: 11rem 15% 4rem 15%;
+}
+
+.footer-wrapper-lj {
+    margin-top: -15rem;
+    padding-top: 8rem;
     padding-bottom: 3%;
     padding-left: 13%;
     padding-right: 13%;
-    background-color: black;
-    color: white;
 }
+
+.end-footer-mobile {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
 
 .footer-left {
     width: 30%;
 }
 
+.landing-jobs-details {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-between;
+}
+
 .lj-logo-footer {
-    width: 60%;
-    margin-left: -5%;
-    margin-bottom: 5%;
+    width: 15.5rem;
+    margin-bottom: 1em;
 }
 
 .footer-text {
@@ -39,27 +52,28 @@
 .social-icons-desktop {
     margin-top: 10%;
     display: flex;
-    justify-content: space-between;
-    width: 40%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 10rem;
 }
 
 .social-icons-mobile {
-    margin-top: 15%;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
-    width: 55%;
+    width: 100%;
 }
 
 .copyright-desktop {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     color: #afb5c0;
 }
 
 .copyright-mobile {
-    margin-top: 30%;
-    font-size: 16px;
-    line-height: 10px;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #afb5c0;
 }
 
@@ -71,17 +85,62 @@
     color: white;
 }
 
+.footer-link:hover,
+.footer-link:focus,
+.footer-link:active {
+    text-decoration: underline;
+}
+@media screen and (max-width: 1241px){
+    .footer-wrapper-lj {
+        margin-top: -19rem;
+        padding-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .footer-wrapper {
+        margin-top: -11rem;
+        padding: 13rem 15% 4rem 15%;
+    }
+
+    .landing-jobs-details {
+        width: 40%
+    }
+}
+@media screen and (max-width: 970px){
+    .footer-wrapper-lj {
+        margin-top: -20rem;
+        padding-top: 13rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .landing-jobs-details {
+        width: 50%
+    }
+}
+
 @media (min-width: 768px) {
     .end-footer-mobile {
         display: none;
     }
+
 }
 
 @media (max-width: 767px) {
     .footer-wrapper,
-    .footer-wrapper-grey {
+    .footer-wrapper-lj {
         flex-direction: column;
     }
+
+    .landing-jobs-details{
+        flex-direction: column;
+        width: 65%;
+    }
+    .footer-center, .footer-right {
+        margin-top: -1.5rem;
+    }
+
 
     .footer-left {
         width: 100%;
@@ -97,22 +156,50 @@
         margin-top: 20%;
     }
 }
+@media (max-width: 740px) {
+    .footer-wrapper-lj {
+        margin-top: -22rem;
+        padding-top: 15rem;
+    }
+}
+@media (max-width: 726px) {
+    .footer-wrapper-lj {
+        margin-top: -24rem;
+        padding-top: 19rem;
+    }
+}
 
-/*Tablet Portrait*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (max-width: 537px) {
+    .footer-wrapper-lj {
+        margin-top: -27rem;
+        padding-top: 21rem;
+    }
+
+}
+
+@media (max-width: 415px) {
+    .footer-wrapper-lj {
+        margin-top: -35rem;
+        padding-top: 28rem;
+    }
+
+}
+    /*Tablet Portrait*/
+ @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .lj-logo-footer {
         width: 90%;
     }
+
     .social-icons-desktop {
         margin-top: 10%;
         display: flex;
         justify-content: space-between;
         width: 80%;
     }
-}
+} 
 
 /*Tablet Landscape*/
-@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+ @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     .lj-logo-footer {
         width: 70%;
     }
@@ -122,4 +209,4 @@
         justify-content: space-between;
         width: 60%;
     }
-}
+} 

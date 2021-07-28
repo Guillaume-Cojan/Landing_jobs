@@ -1,180 +1,87 @@
 import LjLogo from "./../../assets/LJ_Logo.svg";
-import Linkedin from "./../../assets/social-linkedin-md.svg";
-import Instagram from "./../../assets/social-instagram-md.svg";
-import Github from "./../../assets/social-github-md.svg";
 import "./Footer.css";
+import { socialsList, LandingJobsLinks } from "./LinksList"
 
-function Footer({ showLJ }) {
+
+
+function Footer({showLJ}) {
     return (
-        <div className={showLJ ? "footer-wrapper-grey" : "footer-wrapper"}>
+        <div className={ showLJ ? "footer-wrapper-lj" : "footer-wrapper"}>
             <div className="footer-left">
-                <img className="lj-logo-footer" src={LjLogo} alt="logo"></img>
-                {/*<p className="footer-text">
-                    Landing... nononoono onoo onono onon ooonoonn noono n
-    </p>*/}
+            <a
+                href="https://landing.jobs/home"
+                target="_blank"
+                rel="noopener noreferrer">
+                    <img className="lj-logo-footer" src={LjLogo} alt="logo"></img>
+                </a>
+
                 <div className="social-icons-desktop">
-                    <a
-                        href="https://www.linkedin.com/company/landing-jobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Linkedin}
-                            alt="linkedin"
-                        ></img>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/landing.jobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Instagram}
-                            alt="instagram"
-                        ></img>
-                    </a>
-                    <a
-                        href="https://github.com/LandingJobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Github}
-                            alt="github"
-                        ></img>
-                    </a>
+                    {
+                        socialsList.map((item, index) => { return (<a key={index} href={item.href} target="_blank" rel="noopener noreferrer" >
+                                <img
+                                    key={index}
+                                    className="social_icon"
+                                    src={item.src}
+                                    alt={item.alt} /> 
+                            </a>)})
+                    }
                 </div>
                 <h5 className="copyright-desktop">
-                    ©2021LandingJobs, a Future.Works company
+                    ©2021 LandingJobs, a Future.Works company
                 </h5>
             </div>
+                    <div className="landing-jobs-details">
+
+                    
             <div className="footer-center">
                 <h4 className="footer-title">RESOURCES</h4>
-                <p>
-                    <a
-                        href="https://landing.jobs/resources/"
+                {
+                    LandingJobsLinks[0].map((link, index) => {return ( <p key={index}>
+                         <a
+                         key={index}
+                        href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-link"
                     >
-                        Reading Materials
+                        {link.name}
                     </a>
-                </p>
-                <p>
-                    <a
-                        href="https://blog.landing.jobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        Blog
-                    </a>
-                </p>
-                <p>
-                    <a
-                        href="https://drive.google.com/drive/folders/1zhIwaq5nvGeFqo6ML80HC5ZK2StC5J8n"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        Press Kit
-                    </a>
-                </p>
+                    </p>)})
+                }
             </div>
+
             <div className="footer-right">
                 <h4 className="footer-title">HELP</h4>
-                <p>
-                    <a
-                        href="https://landing.jobs/faq"
+                {
+                    LandingJobsLinks[1].map((link, index) => {return ( <p key={index}>
+                         <a
+                         key={index}
+                        href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="footer-link"
                     >
-                        About
+                        {link.name}
                     </a>
-                </p>
-                <p>
-                    <a
-                        href="https://landing.jobs/contacts"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        Contacts
-                    </a>
-                </p>
-                <p>
-                    <a
-                        href="https://landing.jobs/faq"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        FAQ
-                    </a>
-                </p>
-                <p>
-                    <a
-                        href="https://landing.jobs/privacy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        Privacy
-                    </a>
-                </p>
-                <p>
-                    <a
-                        href="https://landing.jobs/tos"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="footer-link"
-                    >
-                        Terms
-                    </a>
-                </p>
+                    </p>)})
+                }
+            </div>
             </div>
             <div className="end-footer-mobile">
                 <div className="social-icons-mobile">
-                    <a
-                        href="https://www.linkedin.com/company/landing-jobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Linkedin}
-                            alt="linkedin"
-                        ></img>
-                    </a>
-                    <a
-                        href="https://www.instagram.com/landing.jobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Instagram}
-                            alt="instagram"
-                        ></img>
-                    </a>
-                    <a
-                        href="https://github.com/LandingJobs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            className="social_icon"
-                            src={Github}
-                            alt="github"
-                        ></img>
-                    </a>
+                {
+                        socialsList.map((item, index) => { return (<a key={index} href={item.href} target="_blank" rel="noopener noreferrer" >
+                                <img
+                                    key={index}
+                                    className="social_icon"
+                                    src={item.src}
+                                    alt={item.alt} /> 
+                            </a>)})
+                    }
                 </div>
+
                 <h5 className="copyright-mobile">
-                    ©2021LandingJobs, a Future.Works company
+                    ©2021 LandingJobs, a Future.Works company
                 </h5>
             </div>
         </div>

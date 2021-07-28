@@ -16,8 +16,6 @@
     display: none;
 }
 
-/* Jobs Container Display */
-
 .landingjobs-list-title {
     margin: 0, auto;
     font-weight: 600;
@@ -77,7 +75,6 @@
     width: 100%;
 }
 
-/*  Job Card is a column with the job-description box and the "view more details" button  */
 .job-card, div.talent-card {
     width: 35rem;
     border-radius: 12px;
@@ -96,8 +93,6 @@
     background-color: #ecf0f5;
 }
 
-
-/* Job-description is a row with the job-logo and job-details */
 .job-description, .talent-description {
     width: 100%;
     display: flex;
@@ -122,7 +117,6 @@
     font-size: 0.9rem;
 }
 
-/* Job-details is a column with job-title, company-name, and location */
 div.job-details {
     width: 100%;
     padding-left: 1.5rem;
@@ -162,8 +156,6 @@ h3.location {
     white-space: nowrap;
 }
 
-
-
 .bttn-job-details {
  
     width: 90%;
@@ -179,8 +171,6 @@ h3.location {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .details-btn {
     width:100%;
@@ -206,10 +196,6 @@ h3.location {
     color: inherit;
 }
 
-
-
-/* Talents Container Display */
-
 div.talent-card {
     background-color: #efe6ed;
     padding: 1rem;
@@ -217,7 +203,6 @@ div.talent-card {
 div.talent-description {
     justify-content: flex-start;
 }
-
 
 .talent-details {
     box-sizing: content-box;
@@ -360,7 +345,6 @@ h2.talent-title {
     .landingjobs-items {
         flex-wrap: wrap;
         }
-
 }
 
 @media screen and (max-width: 1045px) {

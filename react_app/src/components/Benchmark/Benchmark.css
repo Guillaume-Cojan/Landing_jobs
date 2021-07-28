@@ -129,16 +129,19 @@
 }
 
 .calculate-btn:hover,
-.calculate-btn:active {
+.calculate-btn:focus, .calculate-btn:active {
     background-color: white;
     border: 3px solid #3bbcb0;
     color: #3bbcb0;
 }
+
+
 .calculate-btn:active {
     transform: translateY(4px);
 }
 
 .calculate-btn-company:hover,
+.calculate-btn-company:focus,
 .calculate-btn-company:active {
     background-color: white;
     border: 3px solid #a729d2;
@@ -149,6 +152,7 @@
 }
 
 .calculate-btn-talent:hover,
+.calculate-btn-talent:focus,
 .calculate-btn-talent:active {
     background-color: white;
     border: 3px solid #007eff;
