@@ -435,8 +435,6 @@ Secondly, Landing.Jobs Salary uses an API developed by us which retrieves the sa
 
 URL: `https://landing-pay-server.herokuapp.com/salarybenchmark/`
 
-![Image](react_app/src/assets/jobs_screenshot.png)
-
 Example response:
 ```JSON
 {
