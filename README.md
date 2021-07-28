@@ -10,7 +10,7 @@
 Use our salary benchmark tool to check how your salary compares to that of your peers!
     <br />
     <br />
-    <a href="https://landingpay.netlify.app/">View Demo</a>
+    <a href="https://landingsalary.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Report Bug</a>
     ·
