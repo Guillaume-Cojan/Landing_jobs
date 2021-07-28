@@ -32,6 +32,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
               <ul>
                   <li><a href="#react-i18next">react-i18next</a></li>
                   <li><a href="#react-select">react-select</a></li>
+                  <li><a href="#react-spinners">react-spinners</a></li>
                   <li><a href="#sweet-alert">sweet-alert</a></li>
                   <li><a href="#react-chartjs-2">react-chartjs-2</a></li>
                 </ul>
@@ -191,6 +192,62 @@ class App extends React.Component {
 
 _For live demos and comprehensive documentation see : [Documentation](https://react-select.com/home)_
 
+### > react-spinners
+
+A collection of loading spinners with React.js based on [Halogen](https://github.com/yuanyan/halogen).
+
+```bash
+npm install --save react-spinners
+
+  # or
+
+yarn add react-spinners
+```
+
+**Usage**
+
+IMPORTANT: This package uses emotion. Remember to add the plugin to .babelrc, for example:
+
+```json
+{
+    "presets": ["@babel/preset-react", "@babel/preset-env"],
+    "plugins": ["@emotion"]
+}
+```
+
+Example
+
+```javascript
+import { useState } from "react";
+import { css } from "@emotion/react";
+import ClipLoader from "react-spinners/ClipLoader";
+
+// Can be a string as well. Need to ensure each key-value pair ends with ;
+const override = css`
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+`;
+
+function App() {
+  let [loading, setLoading] = useState(true);
+  let [color, setColor] = useState("#ffffff");
+
+  return (
+    <div className="sweet-loading">
+      <button onClick={() => setLoading(!loading)}>Toggle Loader</button>
+      <input value={color} onChange={(input) => setColor(input.target.value)} placeholder="Color of the loader" />
+
+      <ClipLoader color={color} loading={loading} css={override} size={150} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+_For comprehensive documentation see : [Documentation](https://github.com/davidhu2000/react-spinners)_
+_For live demos see: [React-Spinners](https://www.davidhu.io/react-spinners/)_
 
 ### > sweetalert2
 
