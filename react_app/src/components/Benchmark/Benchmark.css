@@ -4,7 +4,7 @@
     width: 100%;
 }
 
-.benchmark-container-company,
+.benchmark-container-company, 
 .benchmark-container-talent {
     margin-bottom: -3rem;
 }
@@ -65,34 +65,48 @@
 }
 
 .cancel-btn {
-    background: white;
+    background: #E7F2F1;
+    border: 3px solid #3bbcaf96;
+    color: #3bbcafa1;
+}
+
+.cancel-btn-company {
+    background: #EFE6ED;
+    border: 3px solid #a829d296;
+    color: #a829d28e;
+}
+
+.cancel-btn-talent {
+    background: #ECF0F5;
+    border: 3px solid #0080ff8c;
+    color: #0080ff8c;
+}
+
+.cancel-btn:hover,
+.cancel-btn:focus,
+.cancel-btn:active {
+    background-color: white;
     border: 3px solid #3bbcb0;
     color: #3bbcb0;
 }
-.cancel-btn-company {
+
+.cancel-btn-company:hover,
+.cancel-btn-company:focus,
+.cancel-btn-company:active{
     background: white;
     border: 3px solid #a729d2;
     color: #a729d2;
 }
-.cancel-btn-talent {
+
+.cancel-btn-talent:hover,
+.cancel-btn-talent:focus,
+.cancel-btn-talent:active {
     background: white;
-    border: 3px solid #007eff;
-    color: #007eff;
+    border: 3px solid #007EFF;
+    color: #007EFF;
 }
 
-.cancel-btn:hover,
-.cancel-btn-company:hover,
-.cancel-btn-talent:hover,
-.cancel-btn:focus,
-.cancel-btn-company:focus,
-.cancel-btn-talent:focus,
-.cancel-btn:active,
-.cancel-btn-company:active,
-.cancel-btn-talent:active {
-    background-color: white;
-    border: 3px solid red;
-    color: red;
-}
+
 .cancel-btn:active,
 .cancel-btn-company:active,
 .cancel-btn-talent:active {
@@ -130,7 +144,7 @@
 }
 
 .calculate-btn:hover,
-.calculate-btn:focus,
+.calculate-btn:focus, 
 .calculate-btn:active {
     background-color: white;
     border: 3px solid #3bbcb0;
@@ -205,13 +219,6 @@
     border: 1.9px solid #c4c4c4;
     border-radius: 10px;
     padding: 5px;
-}
-
-.loader {
-    height: 169px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 @media screen and (min-width: 1100px) {

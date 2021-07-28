@@ -4,7 +4,7 @@ import ProfileTalent from "../../assets/profile_talent.svg";
 import "./Profile.css";
 import { useTranslation } from "react-i18next";
 
-function ProfileSection({ showJobs, setShowJobs, showLJ, setShowLJ }) {
+function ProfileSection({ setShowJobs, setShowLJ }) {
     const { t } = useTranslation(); 
  
     return (

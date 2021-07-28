@@ -42,8 +42,6 @@
     color: #a729d2;
 }
 
-/* Typography */
-
 .profile-title-blue,
 .profile-title-purple {
     font-size: 2rem;
@@ -125,8 +123,6 @@
     transition: 0.3s;
 }
 
-/* Media Queries */
-
 @media screen and (max-width: 1500px) {
     .profile-content {
         font-size: 1rem;
@@ -144,7 +140,6 @@
     .bttn-get-started-purple,
     .bttn-get-started-blue {
         font-size: 1rem;
-        /* padding: 1em 4em; */
         margin-left: -10%;
     }
 
@@ -303,7 +298,6 @@
     }
 }
 
-/* Phone */
 @media (max-width: 767px) {
     .profiles {
         background-color: #000000;

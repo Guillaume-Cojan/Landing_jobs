@@ -5,7 +5,6 @@ const Profile = ({
     title,
     content,
     image,
-    showLJ,
     setShowLJ,
     id,
     setShowJobs,

@@ -42,7 +42,6 @@ function Survey({ showLJ, showJobs, setShowResult, setGraphData }) {
             userSelection.organisation
         ) {
             fetch("https://landing-pay-server.herokuapp.com/salarybenchmark/", {
-                // mode: 'no-cors',
                 method: "POST",
                 headers: {
                     "Content-type": "application/json",

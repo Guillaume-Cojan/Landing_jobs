@@ -8,8 +8,6 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import Footer from "./components/Footer/Footer";
 
 
-
-
 function App() {
     const [showLJ, setShowLJ] = useState(false);
     const [showJobs, setShowJobs] = useState(true);

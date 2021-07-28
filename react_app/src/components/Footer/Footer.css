@@ -28,7 +28,6 @@
     
 }
 
-
 .footer-left {
     width: 30%;
 }
@@ -90,6 +89,7 @@
 .footer-link:active {
     text-decoration: underline;
 }
+
 @media screen and (max-width: 1241px){
     .footer-wrapper-lj {
         margin-top: -19rem;
@@ -107,6 +107,7 @@
         width: 40%
     }
 }
+
 @media screen and (max-width: 970px){
     .footer-wrapper-lj {
         margin-top: -20rem;
@@ -141,7 +142,6 @@
         margin-top: -1.5rem;
     }
 
-
     .footer-left {
         width: 100%;
     }
@@ -156,12 +156,14 @@
         margin-top: 20%;
     }
 }
+
 @media (max-width: 740px) {
     .footer-wrapper-lj {
         margin-top: -22rem;
         padding-top: 15rem;
     }
 }
+
 @media (max-width: 726px) {
     .footer-wrapper-lj {
         margin-top: -24rem;
@@ -184,7 +186,7 @@
     }
 
 }
-    /*Tablet Portrait*/
+
  @media only screen and (min-device-width: 768px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) {
     .lj-logo-footer {
         width: 90%;
@@ -198,7 +200,6 @@
     }
 } 
 
-/*Tablet Landscape*/
  @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
     .lj-logo-footer {
         width: 70%;
