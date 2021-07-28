@@ -9,7 +9,6 @@
     width: 100vw;
     text-align: center;
     padding-bottom: 12rem;
-
 }
 
 .hidden {
@@ -48,7 +47,8 @@
     color: #a729d2;
 }
 
-.a-job::after, .a-talent::after {
+.a-job::after, 
+.a-talent::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -93,7 +93,8 @@
     background-color: #ecf0f5;
 }
 
-.job-description, .talent-description {
+.job-description, 
+.talent-description {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -108,7 +109,8 @@
     margin-bottom: 1rem;
 }
 
-.job-logo, .talent-avatar {
+.job-logo, 
+.talent-avatar {
     border-radius: 50%;
     background-color: #322626;
     width: 10rem;
@@ -134,13 +136,15 @@ div.job-details {
     margin: 0;
 }
 
-h2.job-title, h2.talent-title {
+h2.job-title, 
+h2.talent-title {
     text-align: left;
     font-size: 1.6rem;
     font-weight: 600;
 }
 
-h3.company-name, h2.talent-experience {
+h3.company-name, 
+h2.talent-experience {
     text-align: left;
     margin-bottom: 2%;
     font-size: 1.2rem;
@@ -234,7 +238,8 @@ h2.talent-title {
 }
 
 @media screen and (max-width: 1976px) {
-    .job-card, div.talent-card {
+    .job-card, 
+    div.talent-card {
         width:30rem;
     }
 
@@ -254,14 +259,14 @@ h2.talent-title {
 }
 
 @media screen and (max-width: 1710px){
-    div.job-card, div.talent-card {
+    div.job-card, 
+    div.talent-card {
         width: 28rem;
     }
 
 }
 
 @media screen and (max-width: 1600px) {
-
     .landingjobs-items {
         padding: 1% 1.5rem 3% 1.5rem;
         flex-wrap: nowrap;
@@ -286,7 +291,8 @@ h2.talent-title {
         padding-top: 0.1rem;
         justify-content: space-around;
     }
-     .talent-description{
+
+    .talent-description{
         padding: .5rem .5rem ;
     }
 
@@ -311,6 +317,7 @@ h2.talent-title {
     h3.location, h3.talent-name {
         font-size: 0.9rem;
     }
+
     h2.talent-title {
         font-size: 1.3rem;
     }
@@ -322,7 +329,6 @@ h2.talent-title {
     .details-btn {
         padding: 0.8rem;
     }
-
 }
 
 @media screen and (max-width: 1405px) {

@@ -22,7 +22,6 @@ export const socialsList = [
 ]
 
 export const LandingJobsLinks = [
-    // This array  holds the links for the Resources Column:
     [
         {
             name: "Reading Materials",
@@ -40,7 +39,7 @@ export const LandingJobsLinks = [
 
         }
     ],
-    // This array holds the links for the Help Column:
+    
     [
         {
             name: "About",

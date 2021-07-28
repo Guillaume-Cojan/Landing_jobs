@@ -3,7 +3,6 @@ import "./Footer.css";
 import { socialsList, LandingJobsLinks } from "./LinksList"
 
 
-
 function Footer({showLJ}) {
     return (
         <div className={ showLJ ? "footer-wrapper-lj" : "footer-wrapper"}>

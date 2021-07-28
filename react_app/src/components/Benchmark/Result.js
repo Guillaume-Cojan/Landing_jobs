@@ -1,4 +1,3 @@
-// import ResultNoshow from "../../assets/calculator_all.svg";
 import ResultNoshow from "../../assets/BasicNoResult.svg";
 import ResultNoshowTalent from "../../assets/TalentNoResult.svg";
 import ResultNoshowCie from "../../assets/CompanyNoResult.svg";
