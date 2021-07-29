@@ -509,8 +509,6 @@ Anca Gheorghe - [Github](https://github.com/anca2196) -  [LinkedIn](https://www.
 
 Anna Gosme - [Github](https://github.com/AnnaGosme) - [LinkedIn](https://www.linkedin.com/in/anna-gosme/)  
 
-Carmen Llamas - [Github](https://github.com/makrmeen) - [LinkedIn](https://www.linkedin.com/in/makarmeen/)
-
 <p align="center">
 <img src="react_app/src/assets/LJicon.png" alt="Logo" width="50" height="50"> 
 </p>
