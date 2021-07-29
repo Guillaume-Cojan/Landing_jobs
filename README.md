@@ -10,7 +10,7 @@
 Use our salary benchmark tool to check how your salary compares to that of your peers!
     <br />
     <br />
-    <a href="https://landingpay.netlify.app/">View Demo</a>
+    <a href="https://landingsalary.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/Guillaume-Cojan/Landing_jobs/issues">Report Bug</a>
     ·
@@ -22,8 +22,7 @@ Use our salary benchmark tool to check how your salary compares to that of your 
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
+    <li><a href="frontend">Frontend</a></li>
       <ul>
               <li><a href="#about-the-project">About The Project</a></li>
               <li><a href="#getting-started">Getting Started</a></li>
@@ -33,27 +32,21 @@ Use our salary benchmark tool to check how your salary compares to that of your 
                   <li><a href="#react-i18next">react-i18next</a></li>
                   <li><a href="#react-select">react-select</a></li>
                   <li><a href="#react-spinners">react-spinners</a></li>
-                  <li><a href="#sweet-alert">sweet-alert</a></li>
+                  <li><a href="#sweetalert2">sweetalert2</a></li>
                   <li><a href="#react-chartjs-2">react-chartjs-2</a></li>
                 </ul>
                 <li><a href="#apis">APIs</a> </li>
-                </ul>
+      </ul>
         <li><a href="#backend">Backend</a></li>
      <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#getting-started-backend">Getting Started - Backend</a></li>
+        <li><a href="#installation">Installation</a></li>
         <li><a href="#api">API</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
       <li><a href="#license">License</a></li>
       <li><a href="#acknowledgements">Acknowledgements</a></li>
-    <li><a href="#contact">Contact the Developers</a></li>
+    <li><a href="#contact-the-developers">Contact the Developers</a></li>
   </ol>
 </details>
 
@@ -121,7 +114,7 @@ To get a local copy of the react app up and running follow these simple steps.
 
 ## Dependencies
 
-### > react-i18next
+### react-i18next
 
 React-i18next is a powerful internationalization framework for React / React Native which is based on i18next.
 The module provides multiple components eg. to assert that needed translations get loaded or that your content gets rendered when the language changes.
@@ -143,7 +136,7 @@ _Learn more about react-i18next : [Documentation](https://react.i18next.com/)_
 <img src="react_app/src/assets/fr-intro.png" alt="French" width="400">
 </p>
 
-### > react-select 
+### react-select 
 
 A flexible and beautiful Select Input control for ReactJS with multiselect, autocomplete, async and creatable support.
 
@@ -192,7 +185,7 @@ class App extends React.Component {
 
 _For live demos and comprehensive documentation see : [Documentation](https://react-select.com/home)_
 
-### > react-spinners
+### react-spinners
 
 A collection of loading spinners with React.js based on [Halogen](https://github.com/yuanyan/halogen).
 
@@ -249,7 +242,7 @@ export default App;
 _For comprehensive documentation see : [Documentation](https://github.com/davidhu2000/react-spinners)_
 _For live demos see: [React-Spinners](https://www.davidhu.io/react-spinners/)_
 
-### > sweetalert2
+### sweetalert2
 
 A beautiful, responsive, customizable, accessible replacement for Javascript's pop-up boxes - with ZERO dependencies!
 
@@ -274,7 +267,7 @@ yarn add sweetalert2
 _For live demos and comprehensive documentation see : [Documentation](https://sweetalert2.github.io/)_
 
 
-### > react-chartjs-2
+### react-chartjs-2
 
 For this project we used the library's "Vertical Bar Chart" but many more options are available at [React-chartjs-2 Demo](https://reactchartjs.github.io/react-chartjs-2/#/) !
 
@@ -452,6 +445,8 @@ Example response:
 
 <br/>
 
+## Backend
+
 ### Prerequisites
 
 Here is a list of things you need in order to use the web application and how to install them.
@@ -529,3 +524,4 @@ Click on the logo in order to view our app. Enjoy! 😊
     <img src="react_app/src/assets/LJ_Logo.svg" alt="Logo" width="400">
   </a>
 </p>
+
